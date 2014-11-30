@@ -27,7 +27,7 @@ system.
 Author
 ======
 
-Please send comments or bug reports to Olav Schettler, olav@werbemittel.com
+Please send comments or bug reports to Olav Schettler, olav@schettler.net
 
 I have written a book in which this software and its application in the
 encapsulation of EDA design tools is described:
@@ -59,4 +59,4 @@ Optional
 --------
 
 - The [incr Tcl] object-oriented extension to Tcl (http://www.tcltk.com/itcl/).
-- The Aegis project change supervisor (ftp://ftp.agso.gov.au/pub/Aegis/).
+- The Aegis project change supervisor (http://aegis.sourceforge.net/).
