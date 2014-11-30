@@ -1,0 +1,8 @@
+:
+exec ./vhdl <<'.EOF.'
+
+source tree.tcl
+source meta.tcl
+source import.tcl
+
+.EOF.

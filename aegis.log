@@ -1,0 +1,14 @@
+aegis: /bin/sh /opt/home/olav/cocos/delta.001/test/00/t0001a.sh
+gmake: Nothing to be done for `all'.
+PASSED
+aegis: project "cocos": change 1: test "test/00/t0001a.sh" passed
+aegis: /bin/sh /opt/home/olav/cocos/delta.001/test/00/t0002a.sh
+gmake: Nothing to be done for `all'.
+PASSED
+aegis: project "cocos": change 1: test "test/00/t0002a.sh" passed
+aegis: /bin/sh /opt/home/olav/cocos/delta.001/test/00/t0003a.sh
+/opt/home/olav/cocos/delta.001/test/00/t0003a.sh: /opt/home/olav/cocos/delta.001/t1: does not exist
+FAILED
+aegis: project "cocos": change 1: test "test/00/t0003a.sh" failed
+aegis: project "cocos": change 1: passed 2 tests
+aegis: project "cocos": change 1: failed 1 test

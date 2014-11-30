@@ -1,0 +1,1325 @@
+
+(************** Syntax for VHDL in LALR format ******************
+ *
+ * Version 1, 17- 4-1992.
+ *
+ * Jaap Hofstede
+ * Department of Computer Science (INF/SPA)
+ * University of Twente
+ * PB 217, 7500 AE ENSCHEDE, The Netherlands
+ * Tel: +31 53 893788
+ * Email: hofstede@cs.utwente.nl
+ *
+ * Please report discovered bugs, critics, suggestions
+ * and changes you make to the author.
+ *
+ * This file is intended not to be used for commercial purposes
+ * without permission of the University of Twente.
+ *
+ ****************************************************************
+ *
+ * This syntax is based on the syntax in appendix B of [LSU]:
+ * "Lipsett, Schaefer and Ussery: 'VHDL: Hardware Description and Design',
+ * Kluwer, fifth printing, 1991". The numbering of rules is the same as
+ * in [LSU]. The syntax has been checked carefully against [LRM]:
+ * "IEEE Standard VHDL Language Reference Manual, IEEE, 1988". [LSU] was
+ * taken as starting point because
+ * 1.	The rules are logically ordered in a pleasant way.
+ * 2.	The syntax is simpler than [LRM], mainly because
+ * 	. several single production rules are eliminated.
+ *	. "mark" is used for "name" in all places where only an "IDENTFIER"
+ *	  or a "selected_name" is allowed.
+ *	. expressions are simply described without operator priorities.
+ *	. at all places where applicable all possible declarations are
+ *	  accepted.
+ *
+ * Note that the context-free syntax of VHDL in [LRM] is ambiguous 
+ * (and so is not LR(1)) and that the language VHDL makes it impossible to
+ * construct a non-ambiguous context-free syntax. Therefore a deterministic
+ * parser based on a non-ambiguous context-free syntax has to accept a too
+ * large class of inputs. Inputs which are accepted by the parser but are not
+ * correct VHDL must be rejected by static semantical checks.
+ * 
+ * Starting with [LSU] the following steps were taken to get a syntax 
+ * which is LALR(1) and generates as close as possible the same language
+ * as the syntax of [LRM].
+ * 1.	Lexical conversion to the format required by the tool LALR.
+ * 2.	Correction of obvious errors in rules 12, 67 and 88.
+ * 3. Addition of priority and associativity for the operators according
+ *	to the rules of LALR. The associativity of boolean operators is so
+ *	irregular that only normal syntax rules could be used.
+ * 4.	Rewriting all declarative parts in accordance with [LRM].
+ * 5.	Removal of some minor simplifications in [LSU] compared to [LRM].
+ * 6.	Changing all rules of the syntax which cause parsing conflicts
+ *	because of the language as described by the syntax in [LRM] not
+ *	being context-free. The main problems are with literals, names
+ *	and comma-separated lists in parentheses.
+ * 7.	Rewriting rules causing parsing conflicts, without changing the
+ *	generated language. This is done mainly to avoid the empty productions
+ *	introduced with the conversion from EBNF to BNF according to the
+ *	conversion rules of LALR.
+ *
+ * It will be clear that point 6 is the hard part. The "ANSI Ada LALR Grammar"
+ * in the GMD Compiler Tool Box was a great help. (This grammar was written by
+ * Bernhard Mulder and Peter Dencker from Karlsruhe University and was
+ * based on the grammar published by Philippe Charles and Gerald Fisher in
+ * the Ada LETTERS, September, October 1982 and on the grammar written by
+ * Guido Persch for Ada 80.) The relevant changes in this VHDL syntax are
+ * shortly annotated with comments starting with an asterisk on each line.
+ * (Comments starting and ending with lines of minus-signs are the original
+ * comments from [LSU]). The necessary changes and the consequences for the
+ * static semantical checks will be published in an internal report of the
+ * University of Twente.
+ *
+ **************************************************************
+ *
+ * This file is intended to be input for the parser generator tool LALR of
+ * the GMD Compiler Tool Box of Josef Grosch from the University of Karlsruhe.
+ * This Tool Box is very well documented and contains among others tools for
+ * the generation of very efficient scanners and parsers in C as well as in
+ * Modula-2. The input format is EBNF. EBNF, as far as used in this file, is
+ * converted to BNF according to the following rules by the BNF-preprocessor
+ * of LALR:
+ *
+ * 	X : a [ b ] c .
+ * is converted to:
+ *	X : a X_1 c .
+ *	X_1 : .
+ *	X_1 : b .
+ *
+ *	X : a ( b )* c .
+ * is converted to:
+ *	X : a X_1 c .
+ *	X_1 : .
+ *	X_1 : X_1 b .
+ *
+ * It is not too difficult to change this file according to the lexical and
+ * syntactical conventions of tools like YACC or BISON, especially when the
+ * BNF form produced by the preprocessor of LALR is used.
+ *
+ *****************************************************************
+ *
+ * This syntax file for VHDL is supposed to be accompanied by a file with
+ * the definition of the lexical elements of VHDL in the format required by
+ * the scanner generator tool REX of the GMD Compiler Tool Box.
+ *
+ ******************************************************************
+ *
+ * All parts of the text which were in italics in [LSU] and [LRM] start with
+ * a dollar and end with an underline in this file.
+ *
+ *** Before using this file as input for a parser generator remove all text
+ *** starting with a dollar and ending with the next underline !!!
+ *
+ ******************************************************************
+ *)
+
+BEGIN
+
+(**********
+ * Interface to the scanner in C.
+ **********)
+
+{
+  BeginScanner ();
+}
+
+TOKEN
+
+(**********
+ * All tokens in the order as they are numbered in the scanner.
+ * Literal tokens are by convention in upper case. Keywords, by
+ * convention in lower case, stand for themselves. Delimiters are
+ * surrounded by single quotes, except the single quote, which is
+ * surrounded by double quotes.
+ **********)
+
+	IDENTIFIER	(* 1 *)
+	FLOATING_POINT_LITERAL
+	INTEGER_LITERAL
+	BIT_STRING_LITERAL
+	CHARACTER_LITERAL
+	STRING_LITERAL
+
+	"'"	(* 7 *)
+	'&'
+	'('
+	')'
+	'*'
+	'**'
+	'+'
+	','
+	'-'
+	'.'
+	'/'
+	':'
+	':='
+	';'
+	'<'
+	'<='
+	'/='
+	'='
+	'>='
+	'>'
+	'|'
+	'=>'
+	'<>'
+
+	abs access after alias all and architecture array	(* 30 *)
+	  assert attribute
+	begin block body buffer bus
+	case component configuration constant
+	disconnect downto
+	else elsif end entity exit
+	file for function
+	generate generic guarded
+	if in inout is
+	label library linkage loop
+	map mod
+	nand new next nor not null
+	of on open or others out
+	package port procedure process
+	range record register rem report return
+	select severity signal subtype
+	then to transport type
+	units until use
+	variable
+	wait when while with
+	xor
+		(* 110 *)
+
+OPER
+
+(**********
+ * Associativity of operators in increasing order of priority.
+ * The associativity and precedence of the logical operators
+ * (and, or, xor, nand, nor) are not used.
+ **********)
+
+LEFT	and or xor
+NONE	nand nor
+NONE	'=' '/=' '<' '<=' '>' '>='
+LEFT	'+' '-' '&'
+NONE	MONOP	(* unary '+' '-' *)
+LEFT	'*' '/' mod rem
+NONE	'**' abs not
+
+RULE
+
+(**********
+ * Syntax rules. Rules are numbered according to [LSU].
+ **********)
+		(* 0 *)
+(*
+ * "design_file" added as start symbol, according to [LRM].
+ *)
+
+design_file:
+	  design_unit ( design_unit)*
+	.
+(*------------------------------------------
+-- Literals and Miscellaneous
+--------------------------------------------*)
+		(* 1 *)
+designator :
+	  IDENTIFIER
+	| STRING_LITERAL
+	.
+		(* 2 *)
+(*
+ * "enumeration_literal" deleted; "STRING_LITERAL" deleted;
+ * "physical_literal" replaced with "physical_literal_no_default".
+ * Because "literal" is produced only by "primary", "enumeration_literal",
+ * "STRING_LITERAL" and a default "physical_literal" are parsed as other
+ * productions of "primary". { "primary" -> "name" -> "mark" ->
+ * "IDENTIFIER" for "enumeration_literal" and default "physical_literal";
+ * "primary" -> "name" -> "name2" -> "STRING_LITERAL" for
+ * "STRING_LITERAL. }
+ *)
+
+literal :
+	  abstract_literal
+	| CHARACTER_LITERAL
+	| BIT_STRING_LITERAL
+	| physical_literal_no_default
+	| null
+	.
+		(* 3 *)
+abstract_literal :
+	  INTEGER_LITERAL
+	| FLOATING_POINT_LITERAL
+	.
+		(* 4 *)
+enumeration_literal :
+	  CHARACTER_LITERAL
+	| IDENTIFIER
+	.
+		(* 5 *)
+physical_literal :
+	  [ abstract_literal ] IDENTIFIER
+	.
+		(* 5a *)
+(*
+ * "physical_literal_no_default" added.
+ *)
+
+physical_literal_no_default :
+	  abstract_literal IDENTIFIER
+	.
+		(* 6 *)
+identifier_list :
+	  IDENTIFIER ( ',' IDENTIFIER )*
+	.
+
+(*------------------------------------------
+--  Desing Unit
+--------------------------------------------*)
+		(* 7 *)
+design_unit :
+	  ( context_item )*
+	    library_unit
+	.
+		(* 8 *)
+library_unit :
+	  entity_declaration
+	| configuration_declaration
+	| package_declaration
+	| architecture_body
+	| package_body
+	.
+		(* 9 *)
+context_item :
+	  library_clause
+	| use_clause
+	.
+		(* 10 *)
+library_clause :
+	  library identifier_list ';'
+	.
+		(* 11 *)
+use_clause :
+	  use selected_name ( ',' selected_name )* ';'
+	.
+
+
+(*------------------------------------------
+--  Library Units
+--------------------------------------------*)
+		(* 12 *)
+entity_declaration :
+	  entity IDENTIFIER is
+	    [ generic interface_list ';' ]
+	    [ port interface_list ';' ]
+	    ( entity_declarative_item )*
+	  [ begin
+	      concurrent_statements ]
+	  end [ IDENTIFIER ] ';'
+	.
+		(* 13 *)
+architecture_body :
+	  architecture IDENTIFIER of $entity_mark is
+	    ( block_declarative_item )*
+	  begin
+	    concurrent_statements
+	  end [ IDENTIFIER ] ';'
+	.
+		(* 14 *)
+configuration_declaration :
+	  configuration IDENTIFIER of $entity_mark is
+	    ( configuration_declarative_item )*
+	    block_configuration
+	  end [ IDENTIFIER ] ';'
+	.
+		(* 15 *)
+package_declaration :
+	  package IDENTIFIER is
+	    ( package_declarative_item )*
+	  end [ IDENTIFIER ] ';'
+	.
+		(* 16 *)
+package_body :
+	  package body IDENTIFIER is
+	    ( package_body_declarative_item )*
+	  end [ IDENTIFIER ] ';'
+	.
+
+(*------------------------------------------
+--  Declarative Item
+--------------------------------------------*)
+		(* 17 *)
+(*
+ * "declarative_item" is split into all the different
+ * "declarative_item"s found in [LRM]. "object_declaration"
+ * is split into "constant_", "signal_" and "variable_declaration",
+ * just as in 4.3.1 of [LRM]. All productions containing
+ * "declarative_item" are changed so that they produce the correct
+ * subset of all the possible declarations, just as in [LRM].
+ *)
+		(* 17a *)
+common_declarative_item :
+	  type_declaration
+	| subtype_declaration
+	| constant_declaration
+	| file_declaration
+	| alias_declaration
+	| subprogram_declaration
+	| use_clause
+	.
+		(* 17b *)
+entity_declarative_item :
+	  common_declarative_item 
+	| subprogram_body
+	| attribute_declaration
+	| attribute_specification
+	| disconnection_specification
+	| signal_declaration
+	.
+		(* 17c *)
+block_declarative_item :
+	  common_declarative_item 
+	| subprogram_body
+	| component_declaration
+	| attribute_declaration
+	| attribute_specification
+	| configuration_specification
+	| disconnection_specification
+	| signal_declaration
+	.
+		(* 17d *)
+package_declarative_item :
+	  common_declarative_item 
+	| component_declaration
+	| attribute_declaration
+	| attribute_specification
+	| disconnection_specification
+	| signal_declaration
+	.
+		(* 17e *)
+package_body_declarative_item :
+	  common_declarative_item 
+	| subprogram_body
+	.
+		(* 17f *)
+subprogram_declarative_item :
+	  common_declarative_item 
+	| subprogram_body
+	| attribute_declaration
+	| attribute_specification
+	| variable_declaration
+	.
+		(* 17g *)
+process_declarative_item :
+	  common_declarative_item 
+	| subprogram_body
+	| attribute_declaration
+	| attribute_specification
+	| variable_declaration
+	.
+		(* 17h *)
+configuration_declarative_item :
+	  attribute_specification
+	| use_clause
+	.
+
+(*------------------------------------------
+--  Subprograms
+--------------------------------------------*)
+		(* 18 *)
+subprogram_declaration :
+	  subprogram_specification ';'
+	.
+		(* 19 *)
+(*
+ * "procedure designator" replaced with "procedure IDENTIFIER" to
+ * exclude "STRING_LITERAL" after "procedure", according to
+ * 2.1 of [LRM].
+ *)
+
+subprogram_specification :
+	  procedure IDENTIFIER [ interface_list ]
+	| function designator [ interface_list ] return $type_mark
+	.
+		(* 20 *)
+subprogram_body :
+	  subprogram_specification is
+	    ( subprogram_declarative_item )*
+	  begin
+	    sequential_statements
+	  end [ designator ] ';'
+	.
+
+
+(*--------------------------------------------------
+--  Interface Lists and Associaton Lists
+----------------------------------------------------*)
+		(* 21 *)
+interface_list :
+	  '(' interface_element ( ';' interface_element )* ')'
+	.
+		(* 22 *)
+interface_element :
+	  [ object_class ] identifier_list ':'
+	    [mode ] subtype_indication
+	    [ bus ] [ ':=' expression ]
+	.
+		(* 23 *)
+mode :
+	  in
+	| out
+	| inout
+	| buffer
+	| linkage
+	.
+		(* 24 *)
+association_list :
+	  '(' association_element ( ',' association_element )* ')'
+	.
+		(* 24a *)
+(*
+ * "gen_association_list" added as general construct for comma
+ * separated lists surrounded by parentheses. 
+ *)
+
+gen_association_list :
+	  '(' gen_association_element ( ',' gen_association_element )* ')'
+	.
+		(* 25 *)
+association_element :
+	  formal_part '=>' actual_part
+	| actual_part
+	.
+		(* 25a *)
+(*
+ * "gen_association_element" added. To avoid conflicts with
+ * "expression" { "gen_association_element" -> "association_element"
+ * -> "actual_part" -> "expression" } "discrete_range1", which
+ * excludes "expression", is produced in stead of "discrete_range".
+ *)
+
+gen_association_element :
+	  association_element
+	| discrete_range1
+	.
+		(* 26 *)
+(*
+ * "$function_mark '(' name ')'" is included in "name".
+ *)
+
+formal_part :
+	  name
+	.
+		(* 27 *)
+actual_part :
+	  expression
+	| open
+	.
+
+
+(*--------------------------------------------------
+--  Names and Expressions
+----------------------------------------------------*)
+		(* 28 *)
+mark :
+	  IDENTIFIER
+	| selected_name
+	.
+		(* 29 *)
+(*
+ * The irregular associativity of the boolean operators can not be
+ * expressed with the rules of LALR. The EBNF of [LRM] causes
+ * conflicts, so it looks a little bit complicated.
+ *)
+
+expression :
+	  and_expression
+	| or_expression
+	| xor_expression
+	| relation nand relation
+	| relation nor relation
+	| relation
+	.
+		(* 29a *)
+and_expression :
+	  relation and relation
+	| and_expression and relation
+	.
+		(* 29b *)
+or_expression :
+	  relation or relation
+	| or_expression or relation
+	.
+		(* 29c *)
+xor_expression :
+	  relation xor relation
+	| xor_expression xor relation
+	.
+		(* 29d *)
+relation :
+	  unary_operator primary
+	| primary
+	| relation binary_operator primary
+	.
+		(* 30 *)
+(*
+ * "function_call" and "type_conversion" are included in "name".
+ *)
+
+primary :
+	  name
+	| literal
+	| aggregate
+	| qualified_expression
+	| allocator
+	| '(' expression ')'
+	.
+		(* 31 *)
+(*
+ * "name" is split into "mark" and "name2" to avoid conflicts;
+ * "designator" is split into "IDENTIFIER" in "mark" and "STRING_LITERAL"
+ * in "name2".
+ *)
+
+name:
+	  mark
+	| name2
+	.
+		(* 31a *)
+(*
+ * "function_call" with parameters and "type_conversion" (from
+ * "primary") and "indexed_name" and "slice_name" (from "name")
+ * are combined into "ifts_name"; "function_call" without
+ * parameters (from "primary") is included in "IDENTIFIER".
+ *)
+
+name2:
+	  STRING_LITERAL
+	| attribute_name
+	| ifts_name
+	.
+
+		(* 32 *)
+(*
+ * "prefix" changed into "name".
+ *)
+
+selected_name :
+	  name '.' suffix
+	.
+		(* 33 *)
+(*
+ * "prefix" deleted; included in "name".
+ *)
+		(* 34 *)
+suffix :
+	  designator
+	| CHARACTER_LITERAL
+	| all
+	.
+		(* 35 *)
+(*
+ * "indexed_name" deleted; included in "ifts_name".
+ *)
+		(* 35a *)
+(*
+ * "ifts_name" added; "mark" and "name2" can not be combined
+ * into "name" because of conflicts.
+ *)
+
+ifts_name :
+	  mark gen_association_list
+	| name2 gen_association_list
+	.
+		(* 36 *)
+(*
+ * "slice_name" deleted; included in "ifts_name".
+ *)
+		(* 37 *)
+(*
+ * "prefix" changed into "mark" and "name2"; "mark" and "name2"
+ * can not be combined into "name" because of conflicts; this rule
+ * covers only "attribute_name" without the optional "( $static_expression )";
+ * "attribute_name" with the optional "( $static_expression )" is
+ * parsed as "ifts_name". { "name" -> "name2" -> "ifts_name" ->
+ * "name2 gen_association_list" -> "attribute_name gen_association_list" 
+ * ->...-> "attribute_name '(' expression ')'" }.
+ *)
+
+attribute_name :
+	  mark "'" $attribute_IDENTIFIER
+	| name2 "'" $attribute_IDENTIFIER
+	.
+		(* 38 *)
+(*
+ * "function_call" deleted; without parameters included in "mark";
+ * with parameters included in "ifts_name".
+ *)
+		(* 39 *)
+(*
+ * "aggregate" rewritten such that a single positional element
+ * association is not allowed; this is according to 7.3.2 of
+ * [LRM] and this is necessary to avoid conflicts.
+ *)
+
+aggregate :
+	  element_association_list2 ')'
+	| '(' choices '=>' expression ')'
+	.
+		(* 39a *)
+element_association_list2 :
+	 '(' element_association ',' element_association
+	| element_association_list2 ',' element_association
+	.
+		(* 40 *)
+qualified_expression :
+	  $type_mark "'" '(' expression ')'
+	| $type_mark "'" aggregate
+	.
+		(* 41 *)
+(*
+ * "type_conversion" deleted; included in "ifts_name".
+ *)
+		(* 42 *)
+(*
+ * According to 7.3.6 of [LRM], the optional "constraint" of
+ * "subtype_indication" as produced by "allocator" may only be an
+ * "index_constraint", which is in this grammar a
+ * "gen_association_list"; to avoid conflicts the intermediate
+ * "subtype_indication" (* 62 *) in this production is skipped.
+ *)
+
+allocator :
+	  new mark mark [ gen_association_list ]
+	| new mark [ gen_association_list ]
+	| new qualified_expression
+	.
+
+
+(*--------------------------------------------------
+--  Operators
+----------------------------------------------------*)
+		(* 43 *)
+(*
+ * The logical operators (and, or, xor, nand, nor) are handled
+ * individually and so they are not considered as "binary_operator".
+ *)
+
+binary_operator :
+	  '+'
+	| '-'
+	| '*'
+	| '/'
+	| '**'
+	| mod
+	| rem
+	| '&'
+	| '='
+	| '<'
+	| '>'
+	| '<='
+	| '>='
+	| '/='
+	.
+		(* 44 *)
+unary_operator :
+	  abs
+	| not
+	| '+' PREC MONOP
+	| '-' PREC MONOP
+	.
+
+
+(*--------------------------------------------------
+--  Element Association and Choices
+----------------------------------------------------*)
+		(* 45 *)
+element_association :
+	  choices '=>' expression
+	| expression
+	.
+		(* 46 *)
+choices :
+	  choice ( '|' choice )*
+	.
+		(* 47 *)
+(*
+ * "discrete_range" replaced with "discrete_range1" to avoid
+ * conflicts with "expression".
+ *)
+
+choice :
+	  expression
+	| discrete_range1
+	| others
+	.
+
+
+(*--------------------------------------------------
+--	Type Declarations
+----------------------------------------------------*)
+		(* 48 *)
+type_declaration :
+	  type IDENTIFIER [ is type_definition ] ';'
+	.
+		(* 49 *)
+type_definition :
+	  enumeration_type_definition
+	| range_constraint
+	| physical_type_definition
+	| unconstrained_array_definition
+	| constrained_array_definition
+	| record_type_definition
+	| access_type_definition
+	| file_type_definition
+	.
+		(* 50 *)
+enumeration_type_definition :
+	  '(' enumeration_literal ( ',' enumeration_literal )* ')'
+	.
+		(* 51 *)
+physical_type_definition :
+	  range_constraint
+	    units
+	      base_unit_declaration
+	      ( secondary_unit_declaration )*
+	    end units
+	.
+		(* 52 *)
+base_unit_declaration :
+	  IDENTIFIER ';'
+	.
+		(* 53 *)
+secondary_unit_declaration :
+	  IDENTIFIER '=' physical_literal ';'
+	.
+		(* 54 *)
+unconstrained_array_definition :
+	  array '(' index_subtype_definition
+	    ( ',' index_subtype_definition )* ')'
+	    of subtype_indication
+	.
+		(* 55 *)
+index_subtype_definition :
+	  $type_mark range '<>'
+	.
+		(* 56 *)
+constrained_array_definition :
+	  array index_constraint of subtype_indication
+	.
+		(* 57 *)
+record_type_definition :
+	  record
+	    element_declaration
+	    ( element_declaration )*
+	  end record
+	.
+		(* 58 *)
+element_declaration :
+	  identifier_list ':' subtype_indication ';'
+	.
+		(* 59 *)
+access_type_definition :
+	  access subtype_indication
+	.
+		(* 60 *)
+file_type_definition :
+	  file of $type_mark
+	.
+
+
+(*--------------------------------------------------
+--  Subtypes and Constraints
+----------------------------------------------------*)
+		(* 61 *)
+subtype_declaration :
+	  subtype IDENTIFIER is subtype_indication ';'
+	.
+		(* 62 *)
+(*
+ * To avoid conflicts, "index_constraint" is generalized to
+ * "gen_association_list". The production
+ * "$type_mark [ gen_association_list ]" of the original
+ * "subtype_indication" can not be distinguished from "expression" and
+ * so causes conflicts when produced by "discrete_range" produced by
+ * "choice" and "gen_association_element", because these two produce
+ * "expression" too; therefore these two now produce
+ * "discrete_range1", which produces "subtype_indication1".
+ *)
+
+subtype_indication :
+	  $type_mark [ gen_association_list ]
+	| subtype_indication1
+	.
+		(* 62a *)
+subtype_indication1 :
+	  $function_mark $type_mark range_constraint
+	| $type_mark range_constraint
+	| $function_mark $type_mark [ gen_association_list ]
+	.
+		(* 63 *)
+(*
+ * "constraint" deleted; all the alternatives are already included in
+ * "subtype_indication" and "subtype_indication1" directly.
+ *)
+		(* 64 *)
+range_constraint :
+	  range range_specification
+	.
+		(* 65 *)
+index_constraint :
+	  '(' discrete_range ( ',' discrete_range )* ')'
+	.
+		(* 66 *)
+discrete_range :
+	  subtype_indication
+	| range_specification
+	.
+		(* 66a *)
+(*
+ * "discrete_range1" added; produced by "choice" and
+ * "gen_association_element" to avoid conflicts with "expression".
+ *)
+ 
+discrete_range1 :
+	  subtype_indication1
+	| expression direction expression
+	.
+		(* 67 *)
+range_specification :
+	  attribute_name
+	| expression direction expression
+	.
+		(* 68 *)
+direction :
+	  to
+	| downto
+	.
+
+
+(*--------------------------------------------------
+--  Objects, Aliases, Files, Disconnections
+----------------------------------------------------*)
+		(* 69 *)
+(*
+ * "object_declaration" replaced with "constant_declaration",
+ * "signal_declaration" and "variable_declaration".
+ *)
+		(* 69a *)
+constant_declaration :
+	  constant identifier_list ':' subtype_indication
+	    [ ':=' expression ] ';'
+	.
+		(* 69b *)
+signal_declaration :
+	  signal identifier_list ':' subtype_indication
+	    [ signal_kind ]
+	    [ ':=' expression ] ';'
+	.
+		(* 69c *)
+variable_declaration :
+	  variable identifier_list ':' subtype_indication
+	    [ ':=' expression ] ';'
+	.
+		(* 70 *)
+object_class :
+	  constant
+	| signal
+	| variable
+	.
+
+		(* 71 *)
+signal_kind :
+	  bus
+	| register
+	.
+		(* 72 *)
+alias_declaration :
+	  alias IDENTIFIER ':' subtype_indication is name ';'
+	.
+		(* 73 *)
+file_declaration :
+	  file IDENTIFIER ':' subtype_indication is [ mode ]
+	    $string_expression ';'
+	.
+		(* 74 *)
+disconnection_specification :
+	  disconnect signal_list ':' $type_mark after
+	    $time_expression ';'
+	.
+		(* 75 *)
+signal_list :
+	  name ( ',' name )*
+	| others
+	| all
+	.
+
+
+(*--------------------------------------------------
+--  Attribute Declarations and Specifications
+----------------------------------------------------*)
+		(* 76 *)
+attribute_declaration :
+	  attribute IDENTIFIER ':' $type_mark ';'
+	.
+		(* 77 *)
+attribute_specification :
+	  attribute IDENTIFIER of entity_specification is
+	    expression ';'
+	.
+		(* 78 *)
+entity_specification :
+	  entity_name_list ':' entity_class
+	.
+		(* 79 *)
+entity_name_list :
+	  designator ( ',' designator )*
+	| others
+	| all
+	.
+		(* 80 *)
+entity_class :
+	  entity
+	| architecture
+	| package
+	| configuration
+	| component
+	| label
+	| type
+	| subtype
+	| procedure
+	| function
+	| signal
+	| variable
+	| constant
+	.
+
+
+(*--------------------------------------------------
+--  Schemes
+----------------------------------------------------*)
+		(* 81 *)
+generation_scheme :
+	  if_scheme
+	| for_scheme
+	.
+		(* 82 *)
+iteration_scheme :
+	  for_scheme
+	| while_scheme
+	.
+		(* 83 *)
+if_scheme :
+	  if $boolean_expression
+	.
+		(* 84 *)
+for_scheme :
+	  for IDENTIFIER in discrete_range
+	.
+		(* 85 *)
+while_scheme :
+	  while $boolean_expression
+	.
+
+(*--------------------------------------------------
+--  Concurrent Statements
+----------------------------------------------------*)
+		(* 86 *)
+concurrent_statements :
+	  ( concurrent_statement )*
+	.
+		(* 87 *)
+concurrent_statement :
+	  block_statement
+	| concurrent_assertion_statement
+	| concurrent_procedure_call
+	| concurrent_signal_assignment_statement
+	| component_instantiation_statement
+	| generate_statement
+	| process_statement
+	.
+		(* 88 *)
+block_statement :
+	  IDENTIFIER ':'
+	  block [ '(' $boolean_expression ')' ]
+	    [ generic interface_list ';'
+	    [ generic map association_list ';' ] ]
+	    [ port interface_list ';'
+	    [ port map association_list ';' ] ]
+	    ( block_declarative_item )*
+	  begin
+	    concurrent_statements
+	  end block [ IDENTIFIER ] ';'
+	.
+		(* 89 *)
+(*
+ * Alternative "IDENTIFIER ':' $component_mark ';'" is parsed
+ * as "concurrent_procedure_call".
+ *)
+
+component_instantiation_statement :
+	  IDENTIFIER ':' $component_mark
+	    generic map association_list
+	    [ port map association_list ] ';'
+	| IDENTIFIER ':' $component_mark
+	    port map association_list ';'
+	.
+		(* 90 *)
+concurrent_assertion_statement :
+	  IDENTIFIER ':' assertion_statement
+	| assertion_statement
+	.
+		(* 91 *)
+concurrent_procedure_call :
+	  IDENTIFIER ':' procedure_call_statement
+	| procedure_call_statement
+	.
+		(* 92 *)
+concurrent_signal_assignment_statement :
+	  IDENTIFIER ':' conditional_signal_assignment
+	| conditional_signal_assignment
+	| IDENTIFIER ':' selected_signal_assignment
+	| selected_signal_assignment
+	.
+		(* 93 *)
+conditional_signal_assignment :
+	  target '<=' options conditional_waveforms ';'
+	.
+		(* 94 *)
+conditional_waveforms :
+	  ( waveform when $boolean_expression else )*
+	  waveform
+	.
+		(* 95 *)
+waveform :
+	  waveform_element ( ',' waveform_element )*
+	.
+		(* 96 *)
+(*
+ * Alternative "null" deleted; "null" is included in
+ * "expression".
+ *)
+
+waveform_element :
+	  expression [ after $time_expression ]
+	.
+		(* 97 *)
+target :
+	  name
+	| aggregate
+	.
+		(* 98 *)
+options :
+	  [ guarded ] [ transport ]
+	.
+		(* 99 *)
+selected_signal_assignment :
+	  with expression select
+	    target '<=' options selected_waveforms ';'
+	.
+		(* 100 *)
+selected_waveforms :
+	  ( waveform when choices ',' )*
+	  waveform when choices
+	.
+		(* 101 *)
+generate_statement :
+	  IDENTIFIER ':' generation_scheme generate
+	    concurrent_statements
+	  end generate [ IDENTIFIER ] ';'
+	.
+		(* 102 *)
+(*
+ * "process_statement" rewritten with "process_statement1" to avoid
+ * conflicts with the optional leading "IDENTIFIER".
+ *)
+
+process_statement :
+	  IDENTIFIER ':' process_statement1
+	| process_statement1
+	.
+		(* 102a *)
+process_statement1 :
+	  process [ '(' sensitivity_list ')' ]
+	    ( process_declarative_item )*
+	  begin
+	    sequential_statements
+	  end process [ IDENTIFIER ] ';'
+	.
+		(* 103 *)
+sensitivity_list :
+	  name (',' name )*
+	.
+
+(*--------------------------------------------------
+--  Sequential Statements
+----------------------------------------------------*)
+		(* 104 *)
+sequential_statements :
+	  ( sequential_statement )*
+	.
+		(* 105 *)
+sequential_statement :
+	  assertion_statement
+	| case_statement
+	| exit_statement
+	| if_statement
+	| loop_statement
+	| next_statement
+	| null_statement
+	| procedure_call_statement
+	| return_statement
+	| signal_assignment_statement
+	| variable_assignment_statement
+	| wait_statement
+	.
+		(* 106 *)
+assertion_statement :
+	  assert $boolean_expression
+	    [ report $string_expression ]
+	    [ severity expression ] ';'
+	.
+		(* 107 *)
+case_statement :
+	  case expression is
+	    case_statement_alternative
+	    ( case_statement_alternative )*
+	  end case ';'
+	.
+		(* 108 *)
+case_statement_alternative :
+	  when choices '=>'
+	    sequential_statements
+	.
+		(* 109 *)
+exit_statement :
+	  exit [ $label_IDENTIFIER ]
+	  [ when $boolean_expression ] ';'
+	.
+		(* 110 *)
+if_statement :
+	  if $boolean_expression then
+	    sequential_statements
+	  ( elsif $boolean_expression then
+	    sequential_statements )*
+	  [ else
+	    sequential_statements ]
+	  end if ';'
+	.
+		(* 111 *)
+loop_statement :
+	  [ IDENTIFIER ':' ]
+	  [ iteration_scheme ] loop
+	    sequential_statements
+	  end loop [ IDENTIFIER ] ';'
+	.
+		(* 112 *)
+next_statement :
+	  next [ $label_IDENTIFIER ]
+	  [ when $boolean_expression ] ';'
+	.
+		(* 113 *)
+null_statement :
+	  null ';'
+	.
+(*		(* 114 *)
+ * All possible productions of "procedure_call_statement" are
+ * included in "name".
+ *)
+
+procedure_call_statement :
+	  name ';'
+	.
+		(* 115 *)
+return_statement :
+	  return [ expression ] ';'
+	.
+		(* 116 *)
+signal_assignment_statement :
+	  target '<=' [ transport ] waveform ';'
+	.
+		(* 117 *)
+variable_assignment_statement :
+	  target ':=' expression ';'
+	.
+		(* 118 *)
+wait_statement :
+	  wait [ on sensitivity_list ]
+	  [ until $boolean_expression ]
+	  [ for $time_expression ] ';'
+	.
+
+
+(*--------------------------------------------------
+--  Components and Configurations
+----------------------------------------------------*)
+		(* 119 *)
+component_declaration :
+	  component IDENTIFIER
+	    [ generic interface_list ';' ]
+	    [ port interface_list ';' ]
+	  end component ';'
+	.
+		(* 120 *)
+block_configuration :
+	  for block_specification
+	    ( use_clause )*
+	    ( configuration_item )*
+	  end for ';'
+	.
+		(* 121 *)
+(*
+ * All possible productions of "block_specification" are
+ * included in "name".
+ *)
+
+block_specification :
+	  name
+	.
+		(* 122 *)
+(*
+ * "index_specification" deleted; included in "name".
+ *)
+		(* 123 *)
+configuration_item :
+	  block_configuration
+	| component_configuration
+	.
+		(* 124 *)
+component_configuration :
+	  for component_specification
+	    [ use binding_indication ';' ]
+	    [ block_configuration ]
+	  end for ';'
+	.
+		(* 125 *)
+configuration_specification :
+	  for component_specification use
+	    binding_indication ';'
+	.
+		(* 126 *)
+component_specification :
+	  instantiation_list ':' $component_mark
+	.
+		(* 127 *)
+instantiation_list :
+	  identifier_list
+	| all
+	| others
+	.
+		(* 128 *)
+binding_indication :
+	  entity_aspect
+	  [ generic map association_list ]
+	  [ port map association_list ]
+	.
+		(* 129 *)
+(*
+ * "entity $entity_mark [ '(' $architecture_IDENTIFIER ')' ]"
+ * replaced with "entity name".
+ *)
+
+entity_aspect :
+	  entity name
+	| configuration $configuration_mark
+	| open
+	.
+

@@ -1,0 +1,124 @@
+#
+# bind/bind.code -- 
+#
+#	Code blocks for cocos, read by the coc_blocks command
+#	These code blocks are used in cbind, the wrapper generator
+#
+# Copyright (c) 1993-1997 Olav Schettler
+#
+# See the file "license.terms" for information on usage and redistribution
+# of this file, and for a DISCLAIMER OF ALL WARRANTIES.
+#
+# $Id: bind.code,v 1.1 1995/10/25 20:09:21 olav Exp $
+#--------------------------------------------------------------------------
+# $Log: bind.code,v $
+# Revision 1.1  1995/10/25  20:09:21  olav
+# 1
+#
+#
+
+block banner SCHEMA
+#include <tcl.h>
+#include <bind.h>
+#include <stdio.h>
+
+#include "SCHEMA.h"
+
+extern "C" int
+SCHEMA_Init (Coc_Info* info)
+{
+  printf ("SCHEMA!\n");
+  return TCL_OK;
+}
+end_block
+
+block constructor CLASS
+extern "C" int
+new_CLASS (Coc_Info* info, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ result.oval = (void*) new CLASS;
+  return TCL_OK;
+}
+end_block
+
+block destructor CLASS
+extern "C" int
+del_CLASS (Coc_Info* info, void* obj, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ delete (CLASS*) obj;
+  return TCL_OK;
+}
+end_block
+
+block set SET CLASS ATTR TYPE COMP
+extern "C" int
+SET (Coc_Info* info, void* obj, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ Coc_Value* value = Coc_useParameter (0, parmCnt, parm);
+  if (!value)
+	return TCL_ERROR;
+  ((CLASS*) obj)->ATTR = (TYPE) value->COMP;
+  return TCL_OK;
+}
+end_block
+
+block set_string SET CLASS ATTR
+extern "C" int
+SET (Coc_Info* info, void* obj, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ Coc_Value* value = Coc_useParameter (0, parmCnt, parm);
+  if (!value)
+	return TCL_ERROR;
+  ((CLASS*) obj)->ATTR = strdup (value->sval);
+  return TCL_OK;
+}
+end_block
+
+block get GET CLASS ATTR COMP
+extern "C" int
+GET (Coc_Info* info, void* obj, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ result.COMP = ((CLASS*) obj)->ATTR;
+  return TCL_OK;
+}
+end_block
+
+block proc_prefix PROC
+extern "C" int
+PROC (Coc_Info* info, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ Coc_Value* value;
+end_block
+
+block proc_parm TYPE PARM IDX COMP
+  if (!(value = Coc_useParameter (IDX, parmCnt, parm)))
+	return TCL_ERROR;
+  TYPE PARM = (TYPE) value->COMP;
+end_block
+
+block proc_call ASGN CLASS PROC
+  ASGN CLASS_PROC (
+end_block
+
+block proc_suffix
+  );
+  return TCL_OK;
+}
+end_block
+
+block method_prefix PROC
+extern "C" int
+PROC (Coc_Info* info, void* obj, Coc_Value& result, int parmCnt, Coc_Variable parm[])
+{ Coc_Value* value;
+end_block
+
+block method_parm TYPE PARM IDX COMP
+  if (!(value = Coc_useParameter (IDX, parmCnt, parm)))
+	return TCL_ERROR;
+  TYPE PARM = (TYPE) value->COMP;
+end_block
+
+block method_call ASGN CLASS PROC
+  ASGN ((CLASS*) obj)->PROC (
+end_block
+
+block method_suffix
+  );
+  return TCL_OK;
+}
+end_block
+

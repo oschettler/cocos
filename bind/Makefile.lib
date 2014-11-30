@@ -1,0 +1,39 @@
+#
+# bind/Makefile.lib --
+#
+#	This Makefile describes the construction process for
+#	the cocos library
+#
+# Copyright (c) 1993-1997 Olav Schettler
+#
+# See the file "license.terms" for information on usage and redistribution
+# of this file, and for a DISCLAIMER OF ALL WARRANTIES.
+#
+# $Id: Makefile.lib,v 1.1 1995/10/25 20:09:21 olav Exp $
+#--------------------------------------------------------------------------
+# $Log: Makefile.lib,v $
+# Revision 1.1  1995/10/25  20:09:21  olav
+# 1
+#
+#
+
+include ../../config.mk
+
+all: libcocos.so x
+
+%.o: ../%.cc
+	$(CC) $(CFLAGS) \
+		-fpcc-struct-return -fpic \
+		-c $<
+
+bind.o compile.o blocks.o: ../bind.h
+bind.o: ../bind.cc
+compile.o: ../compile.cc
+blocks.o: ../blocks.cc
+tkApplInit.o: ../tkApplInit.cc
+
+libcocos.so: bind.o compile.o blocks.o
+	ld -dy -G -o libcocos.so bind.o compile.o blocks.o
+
+x: x.o tkApplInit.o
+	$(CC) -g -o x x.o tkApplInit.o $(LDFLAGS)
