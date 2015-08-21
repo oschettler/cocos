@@ -1,0 +1,3014 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.3 841.89 0 1 5 FMDOCUMENT
+0 0 /Helvetica-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Helvetica FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "mini" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(163) 517.18 765.79 T
+0 8.05 Q
+(References) 318.5 742.17 T
+1 5.36 Q
+([Adams) 318.5 734.57 T
+(79]) 336.83 734.57 T
+(Adams, Douglas,) 324.94 728.31 T
+2 F
+(\322The Hitch Hiker) 363.39 728.31 T
+(\325) 401.44 728.31 T
+(s Guide to the Galaxy\323) 402.53 728.31 T
+1 F
+(, Pan Books, London, 1979, p. 135) 452.3 728.31 T
+([Ashenden) 318.5 720.27 T
+(90]) 343.08 720.27 T
+(Ashenden, Peter J.,) 324.94 714.01 T
+2 F
+(\322The VHDL Cookbook\323) 367.56 714.01 T
+1 F
+(, First Edition, Dept. Computer Science,) 420.02 714.01 T
+(University of Adelaide, South Australia, July 1990) 324.94 707.75 T
+([Batory) 318.5 699.7 T
+(85]) 336.23 699.7 T
+(Batory) 324.94 693.44 T
+(,D.S. Kim,W) 339.2 693.44 T
+(.,) 366.87 693.44 T
+2 F
+(\322Modeling Concepts for VLSI CAD Objects\323) 370.89 693.44 T
+1 F
+(, ACM T) 468.21 693.44 T
+(ransactions on) 487.55 693.44 T
+(Database Systems, vol.) 324.94 687.18 T
+(10, #3, 1985, pp.) 376.05 687.18 T
+(322-346) 413.61 687.18 T
+([Beaty) 318.5 679.13 T
+(94]) 334.15 679.13 T
+(Beaty) 324.94 672.87 T
+(, Steven J.,) 337.11 672.87 T
+2 F
+(\322ParsesraP: Using one grammar to specify both input and output\323) 361.85 672.87 T
+1 F
+(, Cray) 506.26 672.87 T
+(Computer Corporation, 1) 324.94 666.61 T
+(1) 378.84 666.61 T
+(10 Bay\336eld Drive, Colorado Springs, Colorado 80906) 381.32 666.61 T
+(URL=http://www) 324.94 660.35 T
+(.craycos.com/~beaty/ParsesraP/ParsesraP) 362.79 660.35 T
+(.html) 451.22 660.35 T
+([Biliris) 318.5 652.31 T
+(89]) 335.05 652.31 T
+(Biliris, A.,) 324.94 646.05 T
+2 F
+(\322Database support for evolving design objects\323) 348.94 646.05 T
+1 F
+(, 26th ACM/IEEE Design) 452.22 646.05 T
+(Automation Conference, 1989) 324.94 639.79 T
+([Blackburn) 318.5 631.74 T
+(85]) 343.98 631.74 T
+-0.21 (Blackburn, Robert L.; Thomas. Donald E.,) 324.94 625.48 P
+2 F
+-0.21 (\322Linking the Behavioral and Structural Domains of) 416.54 625.48 P
+(Repr) 324.94 619.22 T
+(esentation in a Synthesis System\323) 335.17 619.22 T
+1 F
+(, 22nd Design Automation Conference, 1985,) 407.3 619.22 T
+(pp. 374-380) 324.94 612.96 T
+([Brannon) 318.5 604.91 T
+(94]) 340.11 604.91 T
+(Brannon, T) 324.94 598.65 T
+(errence Monroe,) 349 598.65 T
+2 F
+(\322Survey of Quick Interpr) 385.8 598.65 T
+(eted Languages\323) 439.39 598.65 T
+1 F
+(, P) 476.2 598.65 T
+(.O. Box 5027,) 481.27 598.65 T
+(Bethlehem, P) 324.94 592.4 T
+(A 18015, tb06@122e.eecs.lehigh.edu, March 1994) 353.36 592.4 T
+([Bredenfeld) 318.5 584.35 T
+(90]) 345.47 584.35 T
+(Bredenfeld, Ansgar) 324.94 578.09 T
+(,) 366.74 578.09 T
+2 F
+(\322De\336nition of Modeling Concepts for a Pr) 369.42 578.09 T
+(ocedural Interface between) 460.73 578.09 T
+(VLSI-Design T) 324.94 571.83 T
+(ools and a Common Database\322) 356.49 571.83 T
+1 F
+(, Proc. of the 2nd International W) 424.45 571.83 T
+(orkshop on) 496.14 571.83 T
+(Electronic Design Automation Frameworks, Charlotteville, USA, 1990) 324.94 565.57 T
+([Brielmann) 318.5 557.52 T
+(92]) 344.28 557.52 T
+(Brielmann, Maria; Kupitz, Elisabeth,) 324.94 551.26 T
+2 F
+(\322Repr) 405.86 551.26 T
+(esenting the Har) 419.07 551.26 T
+(dwar) 454.64 551.26 T
+(e Design Pr) 465.47 551.26 T
+(ocess by a) 490.9 551.26 T
+(Common Data Schema\323) 324.94 545 T
+1 F
+(, IEEE, 1992) 377.39 545 T
+([Brown) 318.5 536.96 T
+(92]) 336.23 536.96 T
+(Brown,Alan W) 324.94 530.7 T
+(.; McDermid, John A,) 357.23 530.7 T
+2 F
+(\322Learning fr) 405.66 530.7 T
+(om IPSE\325) 433.04 530.7 T
+(s Mistakes\322) 453.05 530.7 T
+1 F
+(, IEEE Software,) 478.54 530.7 T
+(March 1992, pp.) 324.94 524.44 T
+(23-27) 361.74 524.44 T
+([Camposano) 318.5 516.39 T
+(90]) 346.96 516.39 T
+(Camposano, Raul,) 324.94 510.13 T
+2 F
+(\322Fr) 365.77 510.13 T
+(om Behavior to Structur) 373.92 510.13 T
+(e: High-Level Synthesis\323) 425.74 510.13 T
+1 F
+(, IEEE Design & T) 479.68 510.13 T
+(est) 520.28 510.13 T
+(of Computers, 1990, pp.) 324.94 503.87 T
+(8-19) 378.44 503.87 T
+([Carlson) 318.5 495.82 T
+(92]) 338.32 495.82 T
+(Carlson, Steve; Lehbrink, W) 324.94 489.56 T
+(olfgang; Rothenaicher) 386.05 489.56 T
+(, Peter) 433.67 489.56 T
+(,) 447.16 489.56 T
+2 F
+(\322HDL-orientierte Synthese-) 449.85 489.56 T
+(Methodik \050T) 324.94 483.3 T
+(eil III\051\322) 350.82 483.3 T
+1 F
+( \050in German\051, 1992, pp.) 367.66 483.3 T
+(82-93) 419.51 483.3 T
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(164) 58.69 376.34 T
+3 F
+(References) 235.8 376.34 T
+1 5.36 Q
+([Carmichael) 58.69 354.52 T
+(92]) 86.55 354.52 T
+(Carmichael, Ian, H.; Cordy) 65.12 348.26 T
+(, James R.,) 123.19 348.26 T
+2 F
+(\322TXL - T) 147.93 348.26 T
+(r) 167.31 348.26 T
+(ee T) 169.2 348.26 T
+(ransformation Language; Syntax and) 177.99 348.26 T
+(Informal Semantics \050V) 65.12 342 T
+(ersion 6.0\051\323) 112.81 342 T
+1 F
+(, Kingston, Canada K7L 3N6 - cordy@quis.queensu.ca,) 139.04 342 T
+(1992) 65.12 335.74 T
+([Carter) 58.69 327.69 T
+(91]) 75.22 327.69 T
+(Carter) 65.12 321.43 T
+(, Donald E.; Stilwell Baker) 78.32 321.43 T
+(, Barbara,) 136.22 321.43 T
+2 F
+(\322Concurr) 158.57 321.43 T
+(ent Engineering: The Pr) 179.54 321.43 T
+(oduction) 231.64 321.43 T
+(Development Envir) 65.12 315.17 T
+(onment for the 1990s\323) 106.5 315.17 T
+1 F
+(, Addison-W) 154.93 315.17 T
+(esley Publishing Corporation, 1991) 182.22 315.17 T
+([Casotto) 58.69 307.12 T
+(90]) 78.21 307.12 T
+(Casotto, Andrea; Newton, Richard A.; Sangiovanni-V) 65.12 300.86 T
+(incentelli, Alberto,) 181.03 300.86 T
+2 F
+(\322Design) 222.76 300.86 T
+(Management based on T) 65.12 294.61 T
+(races\322) 117.73 294.61 T
+1 F
+(, 27th Design Automation Conference, 1990) 132.34 294.61 T
+([CFI-EL) 58.69 286.56 T
+(91]) 78.51 286.56 T
+(CAD Framework Initiative, Extension Language W) 65.12 280.3 T
+(orking Group; T) 175.86 280.3 T
+(imothy Barnes \050ed.\051,) 210.84 280.3 T
+2 F
+(\322Extension Language: Cor) 65.12 274.04 T
+(e Language Selection\323) 123.35 274.04 T
+1 F
+(, V) 172.52 274.04 T
+(ersion 0.6, 1991) 178.49 274.04 T
+([CFI-DRPI) 58.69 265.99 T
+(93]) 84.17 265.99 T
+(CAD Framework Initiative, Design Representation T) 65.12 259.73 T
+(echnical Subcommittee,) 178.89 259.73 T
+2 F
+(\322Electrical) 231.79 259.73 T
+(Connectivity Pr) 65.12 253.47 T
+(ogramming Interface\323) 98.75 253.47 T
+1 F
+(, V) 147.18 253.47 T
+(ersion 1.0, 1993) 153.15 253.47 T
+([CFI-EII) 58.69 245.42 T
+(95]) 78.8 245.42 T
+(T) 65.12 239.17 T
+(eets, John,) 68.03 239.17 T
+2 F
+(\322EDA Industry Standar) 91.87 239.17 T
+(ds for Design and T) 142.64 239.17 T
+(est Roadmap\322) 184.77 239.17 T
+1 F
+(, in preparation of the) 215.62 239.17 T
+(EDA Industry Roadmap W) 65.12 232.91 T
+(orkshop Review) 123.26 232.91 T
+(, CFI EII, TLM, DMM working groups,) 157.93 232.91 T
+(August) 65.12 226.65 T
+(1995) 81.97 226.65 T
+(URL=ftp://c\336.or) 65.12 220.39 T
+(g/public/C\336/Development/Roadmap/EII/roadmap-eii-report.ps) 100.4 220.39 T
+([CFI-F) 58.69 212.34 T
+(AR) 73.19 212.34 T
+(93]) 81.99 212.34 T
+(CFI Architecture W) 65.12 206.08 T
+(orking Group,) 107.61 206.08 T
+2 F
+(\322Framework Ar) 139.35 206.08 T
+(chitectur) 173.87 206.08 T
+(e Refer) 192.75 206.08 T
+(ence\323) 207.89 206.08 T
+1 F
+(, V) 220.7 206.08 T
+(ersion 1.2, #91,) 226.66 206.08 T
+(1993) 65.12 199.82 T
+([CFI-TES) 58.69 191.77 T
+(93]) 81.49 191.77 T
+(CAD Framework Initiative, Design Methodology Management Subcommittee,) 65.12 185.51 T
+2 F
+(\322T) 235.75 185.51 T
+(ool) 241.23 185.51 T
+(Encapsulation Speci\336cation\323) 65.12 179.25 T
+1 F
+(, V) 128.17 179.25 T
+(ersion 1.0, 1993) 134.13 179.25 T
+([CFI-UGO) 58.69 171.21 T
+(90]) 83.57 171.21 T
+(CFI Architecture,) 65.12 164.95 T
+2 F
+(\322CAD Framework - Users, Goals, and Objectives\323) 104.31 164.95 T
+1 F
+(, V) 214.59 164.95 T
+(ersion 0.92, 1990) 220.55 164.95 T
+([Chen) 58.69 156.9 T
+(76]) 73.14 156.9 T
+(Chen, Peter Pin-Shan,) 65.12 150.64 T
+2 F
+(\322The Entity-Relationship Model - T) 113.86 150.64 T
+(owar) 189.97 150.64 T
+(ds a Uni\336ed V) 200.8 150.64 T
+(iew of Data\323) 230.95 150.64 T
+1 F
+(,) 258.97 150.64 T
+(ACM T) 65.12 144.38 T
+(ransactions on Database Systems, vol. 1, #1, March 1976, pp. 9-36) 81.78 144.38 T
+([DeMicheli) 58.69 136.33 T
+(92]) 84.76 136.33 T
+(DeMicheli, Giovanni; Ku, David; Mailbot, Frederic; T) 65.12 130.07 T
+(ruong, Thomas,) 182.21 130.07 T
+2 F
+(\322The Olympus) 217.38 130.07 T
+(Synthesis System for Digital Design\323) 65.12 123.81 T
+1 F
+(, Stanford, CA 94305) 145.01 123.81 T
+([DeMan) 58.69 115.77 T
+(92]) 77.9 115.77 T
+(De Man, Hugo,) 65.12 109.51 T
+2 F
+(\322Design T) 99.84 109.51 T
+(echnology Resear) 121.86 109.51 T
+(ch for the Nineties: Mor) 159.95 109.51 T
+(e of the Same?\322) 211.61 109.51 T
+1 F
+(, Proc.) 246.03 109.51 T
+(EURO-DAC92, pp. 592-596, September 1992) 65.12 103.25 T
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(165) 517.18 376.34 T
+1 5.36 Q
+([Dimes) 318.5 354.52 T
+(93a]) 335.64 354.52 T
+(Dimes Design and T) 324.94 348.26 T
+(est Centre,) 368.82 348.26 T
+2 F
+(\322DDL and DML for Meta Data Management in the Nelsis) 393.11 348.26 T
+(CAD   Framework\323) 324.94 342 T
+1 F
+(, Delft University of T) 367.71 342 T
+(echnology) 415.47 342 T
+(, P) 437.47 342 T
+(.O. Box 5053, 2600 GB Delft, The) 442.54 342 T
+(Netherlands, December 1993) 324.94 335.74 T
+([Dimes) 318.5 327.69 T
+(93b]) 335.64 327.69 T
+-0.05 (Dimes Design and T) 324.94 321.43 P
+-0.05 (est Centre,) 368.67 321.43 P
+2 F
+-0.05 (\322The Nelsis CAD Framework: DMI Application Notes\323) 392.86 321.43 P
+1 F
+-0.05 (, Delft) 512.67 321.43 P
+(University of T) 324.94 315.17 T
+(echnology) 357.65 315.17 T
+(, P) 379.65 315.17 T
+(.O. Box 5053, 2600 GB Delft, The Netherlands, December 1993) 384.72 315.17 T
+([ECMA) 318.5 307.12 T
+(91]) 337.13 307.12 T
+(National Institute for Standards and T) 324.94 300.86 T
+(echnology) 405.78 300.86 T
+(,) 427.78 300.86 T
+2 F
+(\322Refer) 430.46 300.86 T
+(ence Model for Frameworks of) 444.87 300.86 T
+(Softwar) 324.94 294.61 T
+(e Engineering Envir) 341.44 294.61 T
+(onments\322) 384.75 294.61 T
+1 F
+(, Draft V) 405.62 294.61 T
+(ersion 1.5, Gaithersbur) 424.24 294.61 T
+(g, Md., 1991) 473.31 294.61 T
+([EDIF) 318.5 286.56 T
+(88]) 333.55 286.56 T
+(Electronic Industries Association, Engineering Dept., Paul Stanford \050ed.\051,) 324.94 280.3 T
+2 F
+(\322Electr) 484.23 280.3 T
+(onic Design) 500.13 280.3 T
+-0.07 (Inter) 324.94 274.04 P
+-0.07 (change Format\323) 335.17 274.04 P
+1 F
+-0.07 (, V) 371.02 274.04 P
+-0.07 (ersion 2 0 0, ANSI/EIA-548-1988, Recommended Standard EIA-548,) 376.91 274.04 P
+(March 14, 1988) 324.94 267.78 T
+([Fiduk) 318.5 259.73 T
+(90]) 334.15 259.73 T
+(Fiduk, Kenneth W) 324.94 253.47 T
+(.; Kleinfeldt, Sally; Kosarchyn, Marta; Perez, Eileen B.,) 364.23 253.47 T
+2 F
+(\322Design) 485.53 253.47 T
+(Methodology Management - A CAD Framework Initiative Perspective\323) 324.94 247.21 T
+1 F
+(, 27th Design) 478.87 247.21 T
+(Automation Conference, 1990, pp. 278-282) 324.94 240.95 T
+([Gajski) 318.5 232.91 T
+(83]) 335.64 232.91 T
+(Gajski,D., Kuhn,R.H.,) 324.94 226.65 T
+2 F
+(\322Guest Editors Intr) 374.27 226.65 T
+(oduction - New VLSI T) 416.1 226.65 T
+(ools\323) 464.79 226.65 T
+1 F
+(, IEEE Computer) 476.71 226.65 T
+(,) 513.61 226.65 T
+(vol.) 324.94 220.39 T
+(16, #2, 1983, pp.) 334.48 220.39 T
+(14-17) 372.04 220.39 T
+([Gedye) 318.5 212.34 T
+(88]) 335.63 212.34 T
+-0.03 (Gedye, David; Katz, Randy) 324.94 206.08 P
+-0.03 (,) 383.96 206.08 P
+2 F
+-0.03 (\322Br) 386.61 206.08 P
+-0.03 (owsing the Chip Design Database\323) 394.76 206.08 P
+1 F
+-0.03 (, 25th IEEE/ACM Design) 470.95 206.08 P
+(Automation Conference, 1988, pp. 269-275) 324.94 199.82 T
+([Graver) 318.5 191.77 T
+(93]) 336.52 191.77 T
+(Graver) 324.94 185.51 T
+(, Justin O.,) 339.62 185.51 T
+2 F
+(\322T) 364.06 185.51 T
+(-gen User) 369.63 185.51 T
+(\325) 391.14 185.51 T
+(s Guide\323) 392.23 185.51 T
+1 F
+(, Computer & Information Sciences, U of Florida,) 411.75 185.51 T
+(E301 CSE, Gainesville, FL 361) 324.94 179.25 T
+(1, 1993) 392.7 179.25 T
+([Greiner) 318.5 171.21 T
+(93]) 338.02 171.21 T
+(Greiner) 324.94 164.95 T
+(, Alain; Pecheux, Francois,) 341.11 164.95 T
+2 F
+(\322ALLIANCE: A complete Set of CAD T) 400.57 164.95 T
+(ools for teaching) 484.73 164.95 T
+-0.05 (VLSI Design\323) 324.94 158.69 P
+1 F
+-0.05 (, Universite P) 355.14 158.69 P
+-0.05 (ARIS VI, 4, Place Jussieu 75252 P) 383.91 158.69 P
+-0.05 (ARIS Cedex 05 FRANCE, 1992) 457.92 158.69 P
+([Grosch) 318.5 150.64 T
+(91]) 337.12 150.64 T
+(Grosch, Josef,) 324.94 144.38 T
+2 F
+(\322Puma - A Generator for the T) 356.83 144.38 T
+(ransformation of Attributed T) 423.29 144.38 T
+(r) 486.65 144.38 T
+(ees\323) 488.54 144.38 T
+1 F
+(, technical) 498.37 144.38 T
+(report 26, Gesellschaft f\237r Mathematik und Datenverarbeitung mbH; Universit\212t Karlsruhe,) 324.94 138.12 T
+(November 1991) 324.94 131.86 T
+([vdHamer) 318.5 123.81 T
+(94]) 341.59 123.81 T
+(van den Hamer) 324.94 117.55 T
+(, Peter; Lepoeter) 357.5 117.55 T
+(, Kees,) 392.89 117.55 T
+2 F
+(\322Managing Design Data - The 5 dimensions of CAD) 408.98 117.55 T
+(Frameworks, Con\336guration management and Pr) 324.94 111.3 T
+(oduct Data management\323) 429.51 111.3 T
+1 F
+(, Philips Research,) 485.24 111.3 T
+(Eindhoven, NL, doc# JCF/Philips/001-1/7-Nov-94, November 1994) 324.94 105.04 T
+FMENDPAGE
+%%EndPage: "mini" 1
+%%Page: "mini" 2
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(166) 58.69 765.79 T
+3 F
+(References) 235.8 765.79 T
+1 5.36 Q
+([Harrison86]) 58.69 743.96 T
+(Harrison,D.S.; Moore,P) 65.12 737.7 T
+(.; Spicklmier) 115.64 737.7 T
+(,R.L.; Newton,A.R.) 143.15 737.7 T
+2 F
+(, \322Data Management and Graphics) 185.33 737.7 T
+(Editing in the Berkeley Design Envir) 65.12 731.44 T
+(onment\323) 144.05 731.44 T
+1 F
+(, ICCAD 86, Electronics Research Laboratory) 162.83 731.44 T
+(,) 261.57 731.44 T
+(University of California at Berkeley) 65.12 725.18 T
+(, 1986, pp.) 142.26 725.18 T
+(24-27) 166.4 725.18 T
+([Heusinger) 58.69 717.14 T
+(93]) 83.87 717.14 T
+(Heusinger) 65.12 710.88 T
+(, Peter; Ronge, Karlheinz; Stock, Gerhard,) 86.96 710.88 T
+2 F
+(\322Moderne Entwurfswerkzeuge - aber) 179.34 710.88 T
+(blo\247 welche \0501.) 65.12 704.62 T
+(T) 99.4 704.62 T
+(eil\051\323) 101.89 704.62 T
+1 F
+( \050in German\051 #2, 1993, pp.) 112.02 704.62 T
+(86-1) 170.58 704.62 T
+(1) 180.22 704.62 T
+(1) 182.7 704.62 T
+([Hunzelmann) 58.69 696.57 T
+(92]) 89.23 696.57 T
+(Hunzelmann, Uwe; W) 65.12 690.31 T
+(ilkes, W) 113.04 690.31 T
+(olfgang; Schlageter) 130.49 690.31 T
+(, G.,) 172.14 690.31 T
+2 F
+(\322Design of a T) 182.72 690.31 T
+(ool Interface for) 214.28 690.31 T
+(Integrated CAD-Envir) 65.12 684.05 T
+(onments\323) 113.06 684.05 T
+1 F
+(, European Design Automation Conference 1992, pp. 558-563) 133.92 684.05 T
+([H\237wel) 58.69 676 T
+(92]) 76.12 676 T
+(H\237wel, Gerd,) 65.12 669.74 T
+2 F
+(\322T) 95.52 669.74 T
+(op-Down-Design mit VHDL\323) 100.99 669.74 T
+1 F
+( \050in German\051, Elektronik, pp. 84-88, Franzis-) 164.48 669.74 T
+(V) 65.12 663.48 T
+(erlag, M\237nchen, September 1992) 68.4 663.48 T
+([JCF) 58.69 655.44 T
+(94a]) 70.46 655.44 T
+(Krannich, G\237nter \050ed.\051,) 65.12 649.18 T
+2 F
+(\322JESSI-COMMON-FRAMEWORK V4.0: Global V) 116.67 649.18 T
+(iew - Detailed) 226.25 649.18 T
+(Functional Speci\336cation\323) 65.12 642.92 T
+1 F
+(, SP2 Draft V) 120.71 642.92 T
+(ersion, JCF/SNI/???-01/29-Apr) 149.33 642.92 T
+(-94) 216.57 642.92 T
+([JCF) 58.69 634.87 T
+(94b]) 70.46 634.87 T
+(T) 65.12 628.61 T
+(ask force) 68.03 628.61 T
+2 F
+(\322Cadence Integration\323) 88.88 628.61 T
+1 F
+(, JCF internal report, 1994) 139.1 628.61 T
+([Johnson) 58.69 620.56 T
+(78]) 79.4 620.56 T
+-0.24 (Johnson, Stephen C.,) 65.12 614.3 P
+2 F
+-0.24 (\322Y) 110.91 614.3 P
+-0.24 (acc: Y) 116.38 614.3 P
+-0.24 (et Another Compiler) 129.2 614.3 P
+-0.24 (-Compiler\322) 172.73 614.3 P
+1 F
+-0.24 (, Bell Laboratories, Murray Hill,) 197.77 614.3 P
+(NJ 07974, 1978) 65.12 608.04 T
+([Kath\232fer) 58.69 599.99 T
+(90]) 80.88 599.99 T
+-0.05 (Kath\232fer) 65.12 593.74 P
+-0.05 (, Th.; Fox, W) 83.98 593.74 P
+-0.05 (.; Nolte, D.; Pielsticker) 112.24 593.74 P
+-0.05 (, K.; Quester) 161.34 593.74 P
+-0.05 (, R.; Rupprecht, F) 188.43 593.74 P
+-0.05 (.; Schrewe, M.,) 226.29 593.74 P
+2 F
+-0.05 (\322A) 260.25 593.74 P
+(Database Interface for Phased T) 65.12 587.48 T
+(ool Integration\323) 134.97 587.48 T
+1 F
+(, EuroDAC\32590, pp. 24-29) 170.29 587.48 T
+([Kath\232fer) 58.69 579.43 T
+(92]) 80.88 579.43 T
+(Kath\232fer) 65.12 573.17 T
+(, Thomas; Miller) 83.98 573.17 T
+(, Julia,) 119.98 573.17 T
+2 F
+(\322The JESSI-COMMON-FRAMEWORK Pr) 135.48 573.17 T
+(oject - Subpr) 227.37 573.17 T
+(oject) 254.89 573.17 T
+-0.15 (Development\323) 65.12 566.91 P
+1 F
+-0.15 (, in: T) 96.42 566.91 P
+-0.15 (. Rhyne ed., Electronic Design Automation Frameworks, Elsevier Science) 108.68 566.91 P
+(Publishers B.V) 65.12 560.65 T
+(. \050North-Holland\051, 1992) 96.92 560.65 T
+([Katz) 58.69 552.6 T
+(86]) 71.94 552.6 T
+(Katz, Randy H.; Anwarrudin, M.; Chang, E.,) 65.12 546.34 T
+2 F
+(\322A V) 162.88 546.34 T
+(ersion Server for Computer) 173.16 546.34 T
+(-Aided Design) 232.22 546.34 T
+(Data\322) 65.12 540.08 T
+1 F
+(, 23rd ACM/IEEE Design Automation Conference, 1986, pp. 27-33) 78.84 540.08 T
+([Katz) 58.69 532.04 T
+(87]) 71.94 532.04 T
+(Katz, Randy; Bhateja, Rajiv; Chang, Ellis E-Li; T) 65.12 525.78 T
+(rijanto, V) 171.94 525.78 T
+(ony) 191.81 525.78 T
+(, Gedye, David,) 199.51 525.78 T
+2 F
+(\322Design) 234.68 525.78 T
+(V) 65.12 519.52 T
+(ersion Management\323) 67.81 519.52 T
+1 F
+(, IEEE Design and T) 113.56 519.52 T
+(est of Computers, vol. 4, #1, February 1987) 157.73 519.52 T
+([Kupitz) 58.69 511.47 T
+(92]) 76.42 511.47 T
+(Kupitz, Elisabeth; T) 65.12 505.21 T
+(acken, J\237r) 108.12 505.21 T
+(gen,) 129.77 505.21 T
+2 F
+(\322DECOR - T) 140.2 505.21 T
+(ightly Integrated Design Contr) 168.22 505.21 T
+(ol and) 234.34 505.21 T
+(Observation\323) 65.12 498.95 T
+1 F
+(, IEEE International Conference on Computer) 94.63 498.95 T
+(-Aided Design \050ICCAD\051,) 193.16 498.95 T
+(Santa Clara, 1991, pp. 532-537) 65.12 492.69 T
+([Lesk) 58.69 484.64 T
+(75]) 72.25 484.64 T
+-0.14 (Lesk, M. E.,) 65.12 478.39 P
+2 F
+-0.14 (\322LEX - A Lexical Analyser Generator\323) 92.56 478.39 P
+1 F
+-0.14 (, Computing Science T) 176.35 478.39 P
+-0.14 (echnical Report 39,) 225.02 478.39 P
+(Bell T) 65.12 472.13 T
+(elephone Laboratories, Murray Hill, NJ, 1975) 78.31 472.13 T
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(167) 517.18 765.79 T
+1 5.36 Q
+([Linux]) 318.5 743.96 T
+(NFS-Server implementation within the Linux operating system,) 324.94 737.7 T
+(URL=ftp://ftp.sunsite.edu/pub/linux) 324.94 731.44 T
+([McLennan) 318.5 723.39 T
+(92]) 344.87 723.39 T
+(McLennan, Michael J.,) 324.94 717.14 T
+2 F
+(\322[incr T) 375.9 717.14 T
+(cl] - Object-Oriented Pr) 393.44 717.14 T
+(ogramming in T) 445.54 717.14 T
+(cl\323) 479.63 717.14 T
+1 F
+(, A) 486.48 717.14 T
+(T&T Bell) 492.45 717.14 T
+(Laboratories, 1247 S. Cedar Crest Blvd, Allentown, P) 324.94 710.88 T
+(A 18103) 440.24 710.88 T
+(URL=ftp://ftp.aud.alcatel.com/tcl/extensions/itcl-1.5.tar) 324.94 704.62 T
+(.gz) 444.65 704.62 T
+([Meersman) 318.5 696.57 T
+(94]) 344.28 696.57 T
+(Meersman, C.,) 324.94 690.31 T
+2 F
+(\322The VHDL Standar) 357.87 690.31 T
+(d\323) 402.39 690.31 T
+1 F
+(, European Space Agency Contract Report, E2S) 408.05 690.31 T
+(Software Engineering, T) 324.94 684.05 T
+(echnologiepark 5, B-9052 Zwijnaarde) 377.46 684.05 T
+(URL=ftp://aixesa2.estec.esa.nl/pub/vhdl/VHDLReport.ps.Z.uue) 324.94 677.79 T
+([Mentor]) 318.5 669.74 T
+(Mentor Graphics SupportNet) 324.94 663.48 T
+(URL=ftp://supportnet.mentor) 324.94 657.22 T
+(g.com/pub/mentortech/translators/utilities/) 388.23 657.22 T
+([NFS]) 318.5 649.18 T
+(Nowicki, Bill,) 324.94 642.92 T
+2 F
+(\322NFS: Network File System Pr) 356.84 642.92 T
+(otocol Speci\336cation\323) 423.4 642.92 T
+1 F
+(, Request for Comments) 468.86 642.92 T
+(\050RFC\051) 324.94 636.66 T
+(1094, Sun) 339.99 636.66 T
+(Microsystems, Inc., Mail Stop 1-40, 2550 Garcia A) 363.1 636.66 T
+(venue, CA 94043,) 473.12 636.66 T
+(March 1989) 324.94 630.4 T
+(URL=ftp://ftp.internic.net/rfc/rfc1094.txt) 324.94 624.14 T
+([ObjectDesign) 318.5 616.09 T
+(94]) 351.13 616.09 T
+(Object Design, Inc.,) 324.94 609.83 T
+2 F
+(\322ObjectStor) 369.34 609.83 T
+(e T) 395.37 609.83 T
+(echnical Overview) 401.59 609.83 T
+1 F
+(\323, Release 3, March 1994) 441.67 609.83 T
+(URL=ftp://ftp.odi.com/pub/docs/techsum.{framemaker) 324.94 603.57 T
+(,postscript}) 443.73 603.57 T
+([OMG) 318.5 595.52 T
+(90]) 334.15 595.52 T
+(Soley) 324.94 589.27 T
+(, Richard Mark \050ed.\051,) 336.81 589.27 T
+2 F
+(\322Object Management Ar) 383.45 589.27 T
+(chitectur) 436.6 589.27 T
+(e Guide - 1.0\323) 455.47 589.27 T
+1 F
+(, OMG TC) 486.46 589.27 T
+(Document 90.9.1, Object Management Group, Inc., 492 Old Connecticut Path, Framingham,) 324.94 583.01 T
+(MA 01701, 1990) 324.94 576.75 T
+([Ousterhout) 318.5 568.7 T
+(90]) 345.47 568.7 T
+(Ousterhout, John K.,) 324.94 562.44 T
+2 F
+(\322T) 370.84 562.44 T
+(cl: An Embeddable Command Language\323) 376.31 562.44 T
+1 F
+(, Proc. USENIX W) 466.62 562.44 T
+(inter) 507.68 562.44 T
+(Conference, 1990) 324.94 556.18 T
+([Ousterhout) 318.5 548.13 T
+(91]) 345.47 548.13 T
+(Ousterhout, John,) 324.94 541.87 T
+2 F
+(\322An X1) 364.28 541.87 T
+(1 T) 380.13 541.87 T
+(oolkit Based on the T) 386.64 541.87 T
+(cl Language\323) 431.76 541.87 T
+1 F
+(, Proc. USENIX W) 461.41 541.87 T
+(inter) 502.47 541.87 T
+(Conference, January) 324.94 535.61 T
+(1991) 370.38 535.61 T
+(URL=ftp://sprite.berkeley) 324.94 529.35 T
+(.edu/tcl/tkUsenix91.ps) 380.52 529.35 T
+([Ousterhout) 318.5 521.31 T
+(94]) 345.47 521.31 T
+(Ousterhout, John,) 324.94 515.05 T
+2 F
+(\322T) 364.28 515.05 T
+(cl and the Tk T) 369.76 515.05 T
+(oolkit\323) 401.45 515.05 T
+1 F
+(, Addison-W) 416.66 515.05 T
+(esley Publishing,) 443.95 515.05 T
+(ISBN: 0-201-63337-X, 1994) 324.94 508.79 T
+([Parikh) 318.5 500.74 T
+(93]) 335.64 500.74 T
+(Parikh, Sandip; Bushnell, Michael L.; Sienicki, Jim; Ganesh, Ramakrishnan,) 324.94 494.48 T
+2 F
+(\322Distributed) 490.81 494.48 T
+-0.21 (Computing, Automatic Design, and Err) 324.94 488.22 P
+-0.21 (or Recovery in the UL) 408.55 488.22 P
+-0.21 (YSSES II Framework\323) 455.29 488.22 P
+1 F
+-0.21 (, European) 503.45 488.22 P
+(Design and T) 324.94 481.96 T
+(est Conference \050EDAC\051, Paris, 1994, pp. 610-617) 353.47 481.96 T
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(168) 58.69 376.34 T
+3 F
+(References) 235.8 376.34 T
+1 5.36 Q
+([Parr) 58.69 354.52 T
+(94]) 70.75 354.52 T
+(Parr) 65.12 348.26 T
+(, T) 73.85 348.26 T
+(erence John,) 79.43 348.26 T
+2 F
+(\322An Overview of SORCERER: A Simple T) 107.59 348.26 T
+(r) 198.2 348.26 T
+(ee-Parser Generator\323) 200.09 348.26 T
+1 F
+(,) 247.92 348.26 T
+(technical report, University of Minnesota, Army High Performance Computing Research) 65.12 342 T
+(Center) 65.12 335.74 T
+(, February 1994) 79.21 335.74 T
+(URL=ftp://marvin.ecn.purdue.edu/pub/pccts/sorcerer) 65.12 329.48 T
+([Per) 58.69 321.43 T
+(gande) 67.53 321.43 T
+(93]) 81.68 321.43 T
+(Per) 65.12 315.17 T
+(gande, Michael,) 72.18 315.17 T
+2 F
+(\322Inside STF\323) 107.94 315.17 T
+1 F
+(, #FZI.055.0, Forschungszentrum Informatik, Haid-und-) 137.3 315.17 T
+(Neu-Str) 65.12 308.91 T
+(. 10-14, D-7500 Karlsruhe 1) 81.82 308.91 T
+([Schettler) 58.69 300.86 T
+(94a]) 80.89 300.86 T
+(Schettler) 65.12 294.61 T
+(, Olav) 83.98 294.61 T
+(,) 96.75 294.61 T
+2 F
+( \322Advanced T) 98.09 294.61 T
+(ool Encapsulation - Goals, Issues, and T) 127.4 294.61 T
+(echnology\323) 214.24 294.61 T
+1 F
+(, Poster and) 239.27 294.61 T
+(Demonstration, W) 65.12 288.35 T
+(orkshop on Applied Framework Research, JCF Project, Karlsruhe,) 104.33 288.35 T
+(April 14-15, 1994) 65.12 282.09 T
+([Schettler) 58.69 274.04 T
+(94b]) 80.89 274.04 T
+(Schettler) 65.12 267.78 T
+(, Olav; Heymann, Susanne,) 83.98 267.78 T
+2 F
+(\322T) 144.04 267.78 T
+(owar) 149.51 267.78 T
+(ds Support for Design Description Languages in) 160.34 267.78 T
+(EDA Frameworks\322) 65.12 261.52 T
+1 F
+(, IEEE International Conference on Computer) 107 261.52 T
+(-Aided Design \050ICCAD\051,) 205.53 261.52 T
+(San Jose, 1994) 65.12 255.26 T
+([Silva) 58.69 247.21 T
+(93]) 72.85 247.21 T
+(Silva, Mario J.; Katz, Randy H.,) 65.12 240.95 T
+2 F
+(\322Active Documentation: a New Interface for VLSI Design\323) 135.61 240.95 T
+1 F
+(,) 263.02 240.95 T
+(30th ACM/IEEE Design Automation Conference, 1993, pp.) 65.12 234.69 T
+(654-660) 195.07 234.69 T
+([Smith) 58.69 226.65 T
+(77]) 74.64 226.65 T
+(Smith, J.M. Smith, D.C.P) 65.12 220.39 T
+(.,) 119.54 220.39 T
+2 F
+(\322Database Abstractions: Aggr) 123.56 220.39 T
+(egation and Generalization\323) 189.24 220.39 T
+1 F
+(, ACM) 251.24 220.39 T
+(T) 65.12 214.13 T
+(ransactions on Database Systems, vol. 2, #2, 1977, pp.) 68.21 214.13 T
+(105-122) 186.39 214.13 T
+([Spiby) 58.69 206.08 T
+(93]) 74.34 206.08 T
+(Spiby) 65.12 199.82 T
+(, Phil \050ed.\051,) 77.3 199.82 T
+2 F
+(\322STEP Part 1) 102.63 199.82 T
+(1: The EXPRESS Language Refer) 132.35 199.82 T
+(ence Manual\323) 204.87 199.82 T
+1 F
+(, WG5, doc#) 235.71 199.82 T
+(14, release draft, 29 April 1993) 65.12 193.56 T
+([Synopsys) 58.69 185.51 T
+(92]) 82.39 185.51 T
+2 F
+(\322VHDL - Br\237cke zwischen Systemanalyse und Siliziumdesign\323) 65.12 179.25 T
+1 F
+(\050in German\051 Synopsys) 201.48 179.25 T
+(Produkt\237bersicht, in: CADS, Jahr) 65.12 172.99 T
+(gang 5, Heft 6, September 1992, VP-V) 137.31 172.99 T
+(erlagsgesellschaft,) 220.31 172.99 T
+(Herrenber) 65.12 166.73 T
+(g, 1992) 86.77 166.73 T
+([Synopsys]) 58.69 158.69 T
+2 F
+(\322Synopsys Online Documentation\323) 65.12 152.43 T
+1 F
+(, V) 141.13 152.43 T
+(ersion 3.1, Synopsys, Inc. 700 East Middle\336eld Road,) 147.09 152.43 T
+(Mountain V) 65.12 146.17 T
+(iew) 90.88 146.17 T
+(, CA 94043-4033 USA) 98.28 146.17 T
+([terBekke) 58.69 138.12 T
+(92]) 81.18 138.12 T
+(terBekke, Johan H.,) 65.12 131.86 T
+2 F
+(\322Semantic Data Modeling\323) 108.93 131.86 T
+1 F
+(, Prentice Hall International \050UK\051, 1992) 168.54 131.86 T
+([terBekke) 58.69 123.81 T
+(93]) 81.18 123.81 T
+(terBekke, Johan H.,) 65.12 117.55 T
+2 F
+(\322Object Databases: structur) 108.93 117.55 T
+(e and behaviour\323) 170.13 117.55 T
+1 F
+(, TU Delft, report 93-58,) 207.98 117.55 T
+(Delft, 1993) 65.12 111.3 T
+([Thomas) 58.69 103.25 T
+(83]) 79.1 103.25 T
+(Thomas, Donald, E; Hitchcock III, Charles Y) 65.12 96.99 T
+(.; Kowalski, Thaddeus J.; Rajan, Jayanth V) 162.03 96.99 T
+(.;) 254.03 96.99 T
+-0.19 (W) 65.12 90.73 P
+-0.19 (alker) 69.76 90.73 P
+-0.19 (, Robert A.,) 80.27 90.73 P
+2 F
+-0.19 (\322Automatic Data Path Synthesis\323) 106.22 90.73 P
+1 F
+-0.19 (, Computer vol. 16, #12, December 1983,) 178.53 90.73 P
+(pp.) 65.12 84.47 T
+(59-70) 73.17 84.47 T
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(169) 517.18 376.34 T
+1 5.36 Q
+([Thomas) 318.5 354.52 T
+(92]) 338.92 354.52 T
+(Thomas, I.; Nejmeh,B.A. \050HP) 324.94 348.26 T
+(, Innovative Software Practices\051,) 388.72 348.26 T
+2 F
+(\322De\336nitions of T) 460.24 348.26 T
+(ools) 496.12 348.26 T
+(Integration for Envir) 324.94 342 T
+(onments\323) 369.75 342 T
+1 F
+(, 1992, pp.) 390.61 342 T
+(29-35) 414.76 342 T
+([T) 318.5 333.95 T
+(oolT) 323.19 333.95 T
+(alk]) 332.95 333.95 T
+2 F
+(\322Solaris OpenW) 324.94 327.69 T
+(indows - T) 360.26 327.69 T
+(oolT) 382.43 327.69 T
+(alk in Electr) 391.77 327.69 T
+(onic Design Automation, A White Paper\323) 418.1 327.69 T
+1 F
+(, Sun) 507.52 327.69 T
+(Microsystems, Inc., 2550 Carcia A) 324.94 321.43 T
+(venue, Mountain V) 399.49 321.43 T
+(iew) 440.75 321.43 T
+(, CA 94043-1) 448.15 321.43 T
+(100 USA) 477.31 321.43 T
+(URL=ftp://sunsite.unc.edu/pub/sun-info/white-papers/T) 324.94 315.17 T
+(oolT) 444.72 315.17 T
+(alk/T) 454.48 315.17 T
+(oolT) 465.43 315.17 T
+(alk_EDA.ps.Z) 475.19 315.17 T
+([Udell) 318.5 307.12 T
+(94]) 333.55 307.12 T
+(Udell, Jon,) 324.94 300.86 T
+2 F
+(\322Componentwar) 349.68 300.86 T
+(e\323) 385.55 300.86 T
+1 F
+(, Byte, 19 \0505\051, pp. 46-56, May 1994) 390.92 300.86 T
+([W) 318.5 292.82 T
+(agner) 324.92 292.82 T
+(91]) 338.18 292.82 T
+(W) 324.94 286.56 T
+(agner) 329.58 286.56 T
+(, F) 341.28 286.56 T
+(.R.; V) 346.51 286.56 T
+(iegas de Lima, A.H.,) 359.16 286.56 T
+2 F
+(\322Design V) 405.05 286.56 T
+(ersion Management in the GARDEN) 427.26 286.56 T
+(Framework\323) 324.94 280.3 T
+1 F
+(, 28th ACM/IEEE Design Automation Conference, 1991, pp.) 352.96 280.3 T
+(705-71) 485.58 280.3 T
+(1) 500.58 280.3 T
+([W) 318.5 272.25 T
+(alker) 324.92 272.25 T
+(85]) 336.99 272.25 T
+(W) 324.94 265.99 T
+(alker) 329.58 265.99 T
+(, Robert A.; Thomas, Donald E,) 340.09 265.99 T
+2 F
+(\322A Model of Design Repr) 409.83 265.99 T
+(esentation and Synthesis\323) 464.77 265.99 T
+1 F
+(,) 520.51 265.99 T
+(22th ACM/IEEE Design Automation Conference, 1985, pp.) 324.94 259.73 T
+(453-459) 454.89 259.73 T
+([W) 318.5 251.68 T
+(alker) 324.92 251.68 T
+(91]) 336.99 251.68 T
+(W) 324.94 245.42 T
+(alker) 329.58 245.42 T
+(, Robert A.; Camposano, Raul,) 340.09 245.42 T
+2 F
+(\322Intr) 407.6 245.42 T
+(oduction to High-Level Synthesis\323) 418.43 245.42 T
+1 F
+(, Kluwer) 492.49 245.42 T
+(Academic Publishers, Boston/Dordrecht/London, 1991, pp.) 324.94 239.17 T
+(3-34) 453.84 239.17 T
+([W) 318.5 231.12 T
+(asserman) 324.92 231.12 T
+(90]) 346.23 231.12 T
+(W) 324.94 224.86 T
+(asserman, Anthony I.,) 329.58 224.86 T
+2 F
+(\322T) 378.15 224.86 T
+(ool Integration in Softwar) 383.62 224.86 T
+(e Engineering Envir) 439.32 224.86 T
+(onments\323) 482.63 224.86 T
+1 F
+(, in) 503.5 224.86 T
+(Software Engineering Environments: Proc. Int\325l W) 324.94 218.6 T
+(orkshop on Environments, F) 433.89 218.6 T
+(. Long, ed.,) 494.56 218.6 T
+(Springer) 324.94 212.34 T
+(-V) 343.31 212.34 T
+(erlag, Berlin, 1990, pp. 137-149) 348.38 212.34 T
+([vanderW) 318.5 204.29 T
+(olf) 339.52 204.29 T
+(90]) 346.83 204.29 T
+(van der W) 324.94 198.03 T
+(olf, Pieter) 346.86 198.03 T
+(,) 367.8 198.03 T
+2 F
+(\322On the Ar) 370.48 198.03 T
+(chitectur) 394.43 198.03 T
+(e of a CAD Framework: The Nelsis Appr) 413.3 198.03 T
+(oach\322) 501.18 198.03 T
+1 F
+(,) 514.59 198.03 T
+(EuroDAC\32590, pp. 29-33) 324.94 191.77 T
+([vanderW) 318.5 183.73 T
+(olf) 339.52 183.73 T
+(93]) 346.83 183.73 T
+(van der W) 324.94 177.47 T
+(olf, Pieter) 346.86 177.47 T
+(,) 367.8 177.47 T
+2 F
+(\322Ar) 370.48 177.47 T
+(chitectur) 378.64 177.47 T
+(e of an Open and Ef\336cient CAD Framework\323) 397.51 177.47 T
+1 F
+(, PhD Thesis) 495.12 177.47 T
+(T) 324.94 171.21 T
+(echnische Universiteit Delft, June 1993) 327.84 171.21 T
+([VHDL) 318.5 163.16 T
+(87]) 336.53 163.16 T
+-0.1 (Institute of Electrical and Electronic Engineers,) 324.94 156.9 P
+2 F
+-0.1 (\322IEEE Standar) 427.59 156.9 P
+-0.1 (d VHDL - Language Refer) 460.23 156.9 P
+-0.1 (ence) 516.55 156.9 P
+(Manual\323) 324.94 150.64 T
+1 F
+(, IEEE Std 1076-1987, March 31, 1988) 344.61 150.64 T
+FMENDPAGE
+%%EndPage: "mini" 2
+%%Page: "mini" 3
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(170) 58.69 765.79 T
+3 F
+(References) 235.8 765.79 T
+FMENDPAGE
+%%EndPage: "mini" 3
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.89
+%%PageOrder: Ascend
+%%Pages: 3
+%%DocumentFonts: Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Helvetica
+%%EOF

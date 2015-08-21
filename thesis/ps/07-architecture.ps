@@ -1,0 +1,6852 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.3 841.89 0 1 15 FMDOCUMENT
+0 0 /Helvetica FMFONTDEFINE
+1 0 /Helvetica-Bold FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-BoldItalic FMFONTDEFINE
+4 0 /Times-Italic FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "mini" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.1 Overview) 318.5 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(49) 520.66 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 8.05 Q
+(4.) 318.5 742.17 T
+(Tool encapsulation architecture) 327.45 742.17 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 7.15 Q
+(4.1) 318.5 725.33 T
+(Overview) 330.43 725.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+0.16 0.17 (Principles 1 \050\322granularity of design objects\323\051 and 2 \050\322design representation in) 318.5 712.07 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (f) 318.5 704.47 B
+0.16 0.03 (iles\323\051 presented in Section) 320.27 704.47 B
+0.16 0.03 (2.10 clearly deviate from the classical assumption that) 388.99 704.47 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (granularities of design data storage, browsing, and transport are equal. In this sce-) 318.5 696.87 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (nario, design data are either handled at a f) 318.5 689.27 B
+0.16 0.03 (ile-based granularity or at a value-based) 425.44 689.27 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(granularity) 318.5 681.67 T
+(. On the other hand, we want to achieve granularities as follows:) 345.56 681.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (While gap \0502\051 is bridged by the input/output processors of design tools themselves,) 318.5 595.98 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (our encapsulation mechanism has to consider gap \0501\051. As outlined in the Introduc-) 318.5 588.38 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tion, this encompasses) 318.5 580.78 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 572.29 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (the analysis of design \336les and storage of extracted structural information in) 328.01 572.29 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the design information management component of the framework, and) 328.01 564.68 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 556.19 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.98 (the construction of design \336les from structural information and design) 328.01 556.19 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(representation managed by the framework.) 328.01 548.59 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.09 (The structural information is managed separately from the design representation) 318.5 535.62 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 (information which is stored as text chunks attached to design objects. On export,) 318.5 528.02 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (these text chunks have to be recombined as required by the current design step and) 318.5 520.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(design con\336guration to be fed into the design tool.) 318.5 512.82 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.43 (For control integration, our minimum requirement is that we have to be able to) 324.84 504.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.3 (communicate an initial request for some activity from the framework to a design tool) 318.5 496.73 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (and to transfer noti\336cations of activities on design objects between framework and) 318.5 489.12 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.37 (tool. Despite this low level of control integration without intermediate requests being) 318.5 481.52 P
+0 0 0 1 0 0 0 K
+317.95 606.86 528.17 679.58 C
+0 0 0 1 0 0 0 K
+317.95 611.14 528.33 679.58 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 0 0 1 0 0 0 K
+317.95 612.07 528.17 614.75 C
+0 0 0 1 0 0 0 K
+317.95 613.86 422.57 613.86 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+317.95 606.86 528.17 679.58 C
+0 0 0 1 0 0 0 K
+3 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.35 (T) 317.95 616.84 P
+-0.35 (able 8.) 321.2 616.84 P
+4 F
+-0.35 (Granularities for storage, transport, pr) 339.1 616.84 P
+-0.35 (ocessing and br) 435.89 616.84 P
+-0.35 (owsing of design data) 474.61 616.84 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(aspect of) 329.19 656.4 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(data handling) 323.1 648.8 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(storage/) 374.07 660.21 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(browsing) 372.85 652.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050DIM\051) 377.55 645 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+407.22 640.23 423.39 667.95 R
+5 X
+V
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+(transport) 432.89 656.4 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050\336le system\051) 428.38 648.8 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+467.09 640.23 482.54 667.95 R
+5 X
+V
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 X
+(processing) 489.26 656.4 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050tool\051) 497.26 648.8 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(granularity) 327.29 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(object-based) 367.45 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+407.22 627.72 423.39 640.23 R
+5 X
+V
+1 F
+0 X
+(\0501\051) 411.48 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(\336le-based) 431.67 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+467.09 627.72 482.54 640.23 R
+5 X
+V
+1 F
+0 X
+(\0502\051) 470.99 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(value-based) 487.34 632.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+320.15 667.84 320.15 627.83 2 L
+V
+0.22 H
+0 Z
+N
+363.08 667.84 363.08 627.83 2 L
+V
+N
+364.19 667.84 364.19 627.83 2 L
+V
+N
+407.11 667.84 407.11 627.83 2 L
+V
+N
+423.5 667.84 423.5 627.83 2 L
+V
+N
+466.98 667.84 466.98 627.83 2 L
+V
+N
+482.65 667.84 482.65 627.83 2 L
+V
+N
+526.13 667.84 526.13 627.83 2 L
+V
+N
+320.04 667.95 407.22 667.95 2 L
+V
+N
+423.39 667.95 467.09 667.95 2 L
+V
+N
+482.54 667.95 526.24 667.95 2 L
+V
+N
+320.27 640.79 407 640.79 2 L
+V
+N
+320.27 639.68 407 639.68 2 L
+V
+N
+423.61 640.79 466.87 640.79 2 L
+V
+N
+423.61 639.68 466.87 639.68 2 L
+V
+N
+482.76 640.79 526.02 640.79 2 L
+V
+N
+482.76 639.68 526.02 639.68 2 L
+V
+N
+320.04 627.72 407.22 627.72 2 L
+V
+N
+423.39 627.72 467.09 627.72 2 L
+V
+N
+482.54 627.72 526.24 627.72 2 L
+V
+N
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(50) 58.69 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 376.34 T
+(ool encapsulation architecture) 184.65 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.07 (passed to the tool, there can be no general solution due to a lack of agreed standards) 58.69 353.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(in the area of tool control.) 58.69 346.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (Even less can be achieved for presentation integration. As tools generally do not) 65.02 337.83 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.55 (provide access to their internal object structures, it is by and lar) 58.69 330.22 P
+0.55 (ge not feasible to) 223.2 330.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.48 (combine browsers that work on framework data structures as well as on tool data) 58.69 322.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (structures. Integration in this area has to be achieved on a case-by-case basis. At) 58.69 315.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (least, due to the possibility to manage meaningful relationships between design ob-) 58.69 307.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (jects in the design information management \050DIM\051 component, useful browsers can) 58.69 299.82 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(be implemented on top of it.) 58.69 292.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (Principle 3 of Section) 65.02 283.73 P
+0.4 (2.10 prescribes that design tools be encapsulated into the) 122.21 283.73 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (framework. Y) 58.69 276.12 P
+-0.22 (et, with purely \336le-based storage and transport, writing the appropriate) 92.95 276.12 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (tool wrappers can be quite lengthy and error prone due to the lack of standard behav-) 58.69 268.53 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (iour on the side of design tools. The amount of work would simply be overwhelming) 58.69 260.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (if we attempted to bridge the gap between object-based storage and \336le-based trans-) 58.69 253.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (port in an equally ad-hoc manner) 58.69 245.72 P
+-0.04 (. A new framework service is called for) 141.07 245.72 P
+-0.04 (. This serv-) 239.54 245.72 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (ice replaces the UNIX shell conventionally used for programming wrappers for en-) 58.69 238.12 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.19 (capsulated tools. By looking again at the execution protocols introduced in) 58.69 230.52 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (Section) 58.69 222.92 P
+0.17 (2.8, we conclude that such a service must be able to perform the following) 79.03 222.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tasks:) 58.69 215.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(1.) 61.22 206.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Determine af) 68.19 206.83 T
+(fected design objects from tool ar) 100.93 206.83 T
+(guments) 184.78 206.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(2.) 61.22 198.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Elaborate dynamic version bindings) 68.19 198.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(3.) 61.22 189.84 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+0.01 (Map between physical design \336les and text chunks attached to design objects) 68.19 189.84 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(in the design information manager) 68.19 182.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(4.) 61.22 173.74 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Check in/out design objects) 68.19 173.74 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(5.) 61.22 165.24 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+0.16 0.08 (Establish an execution context \050f) 68.19 165.24 B
+0.16 0.08 (ile system directories, environment varia-) 153.28 165.24 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(bles, global libraries, start-up \336les, resource \336les\051) 68.19 157.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(6.) 61.22 149.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Start tool) 68.19 149.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(7.) 61.22 140.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Maintain message connection with activity in tool) 68.19 140.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 5.36 Q
+(8.) 61.22 132.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(Scrutinize tool execution) 68.19 132.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 7.15 Q
+(4.2) 58.69 114.57 T
+(A new framework service) 70.62 114.57 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+0.16 0.08 (W) 58.69 101.31 B
+0.16 0.08 (e assume that tight integration is too expensive to be feasible for a majority of) 64.17 101.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (design tools so that in many cases only encapsulation will be attempted. W) 58.69 93.71 B
+0.16 0.03 (e assist) 249.56 93.71 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.26 (design tool encapsulation by an architecture that directly supports the tasks) 58.69 86.11 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.2 A new framework service) 318.5 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(51) 520.66 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.17 (addressed by an environment builder with appropriate services. As a f) 318.5 353.92 B
+0.16 0.17 (irst step) 506.46 353.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (towards such an architecture, we ref) 318.5 346.32 B
+0.16 0.01 (ine the CFI reference architecture \050cf. Figure) 409.56 346.32 B
+0.16 0.01 (3) 524.49 346.32 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(on page) 318.5 338.72 T
+(15\051 as shown in Figure) 339.71 338.72 T
+(7.) 398.65 338.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (In this re\336ned architecture, an encapsulated tool is augmented by a set of tool-spe-) 324.84 330.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (ci\336c adaptors. While the tool is not aware of its encapsulation into a framework,) 318.5 322.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (these adaptors connect to the public interfaces of) 318.5 315.02 P
+-0 (fered by the framework services in) 440.56 315.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (much the same way as tools that are directly integrated with these framework serv-) 318.5 307.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 (ices would. From the framework point of view) 318.5 299.82 P
+0 (, an augmented tool behaves just like) 434.94 299.82 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (a tightly integrated tool. As suggested in this architecture, tool adaptors are consid-) 318.5 292.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (ered tool speci\336c and not subject to direct framework support. Thus, ad-hoc tech-) 318.5 284.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(niques prosper) 318.5 277.02 T
+(, giving little room to the reuse of adaptor code.) 354.93 277.02 T
+0 0 0 1 0 0 0 K
+318.01 76.74 528.11 261.77 C
+0 0 0 1 0 0 0 K
+337.98 109.27 513.78 161.26 R
+5 X
+0 0 0 1 0 0 0 K
+V
+0.22 H
+2 Z
+0 X
+N
+342.24 114.14 509.51 122.27 R
+7 X
+V
+0 X
+N
+432.89 127.85 468.78 144.65 R
+7 X
+V
+0 X
+N
+473.87 127.85 509.75 144.65 R
+7 X
+V
+0 X
+N
+0 4.92 Q
+(Methodology) 436.76 137.11 T
+(Management) 436.48 132.97 T
+(Session) 483.06 137.11 T
+(Manager) 482.11 132.97 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(System Environment) 403.19 116.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+441.61 149.1 440.13 143.94 438.65 149.1 440.13 149.1 4 Y
+V
+483.08 145.21 483.08 158.54 440.13 158.54 440.13 149.1 4 L
+N
+412.95 157.04 411.48 151.88 410 157.04 411.48 157.04 4 Y
+V
+440.13 158.54 411.48 158.54 411.48 157.04 3 L
+N
+450.52 127.43 449.04 122.27 447.56 127.43 449.04 127.43 4 Y
+V
+449.04 127.69 449.04 127.43 2 L
+N
+492.68 127.43 491.2 122.27 489.73 127.43 491.2 127.43 4 Y
+V
+491.2 127.69 491.2 127.43 2 L
+N
+337.98 166.74 513.78 233.24 R
+7 X
+V
+0 X
+N
+(T) 0 -270 335.93 190.82 TF
+(ools) 0 -270 335.93 193.28 TF
+386.63 170.74 510.85 229.25 8.05 RR
+7 X
+V
+0 X
+N
+408.55 213.9 459.7 225.25 R
+5 X
+V
+0 X
+N
+483.09 173.9 506.47 185.25 R
+5 X
+V
+0 X
+N
+464.09 192.64 499.16 205.25 6.3 RR
+7 X
+V
+0 X
+N
+353.02 187.92 382.25 201.25 6.67 RR
+7 X
+V
+0 X
+N
+318.01 78.18 527.12 102.93 R
+7 X
+V
+3 6.26 Q
+0 X
+-0.16 (Figure 7.) 318.01 98.76 P
+4 F
+-0.16 (Service view of the CFI reference architecture. Also shown is an encapsu-) 343.24 98.76 P
+-0.35 (lated design tool with its tool wrapper that performs file import and export and some) 318.01 91.16 P
+0 0 0 1 0 0 0 K
+318.01 78.79 527.12 81.47 C
+0 0 0 1 0 0 0 K
+318.01 80.57 422.63 80.57 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+318.01 76.74 528.11 261.77 C
+0 0 0 1 0 0 0 K
+4 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(other services.) 318.01 83.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+451.7 149.77 450.23 144.61 448.75 149.77 450.23 149.77 4 Y
+V
+450.23 166.59 450.23 149.77 2 L
+0.22 H
+2 Z
+N
+492.68 149.08 491.2 143.93 489.73 149.08 491.2 149.08 4 Y
+V
+491.2 166.59 491.2 149.08 2 L
+N
+0 4.92 Q
+(encapsulation user-) 412.67 220.26 T
+(interface and scripting) 410.08 215.6 T
+(integrated) 356.7 196.5 T
+(tool) 363.67 191.58 T
+(encapsulated) 467 199 T
+(tool) 477.66 194.35 T
+(\336le) 491.64 181.52 T
+(export) 487.95 176.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+437.8 209.07 436.32 203.92 434.84 209.07 436.32 209.07 4 Y
+V
+436.32 214.58 436.32 209.07 2 L
+N
+417.32 192.57 455.32 203.92 R
+5 X
+V
+0 X
+N
+(inter-process) 422.11 198.93 T
+(communication) 419.79 194.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+458.93 200.06 464.09 198.58 458.93 197.11 458.93 198.58 4 Y
+V
+455.32 198.58 458.93 198.58 2 L
+N
+464.09 214.58 497.7 225.93 R
+7 X
+V
+0 X
+N
+(native tool) 469.69 220.94 T
+(user-interface) 465.86 216.29 T
+478.68 209.42 480.16 214.58 481.64 209.42 480.16 209.42 4 Y
+V
+480.16 209.42 480.16 205.25 2 L
+N
+469.21 186.83 464.08 185.25 467.59 189.31 468.4 188.07 4 Y
+V
+474.32 191.92 468.41 188.07 2 L
+N
+491.96 189.83 494.77 185.26 489.97 187.64 490.96 188.73 4 Y
+V
+487.47 191.92 490.97 188.73 2 L
+N
+407.09 173.26 430.47 184.6 R
+5 X
+V
+0 X
+N
+(tool) 414.82 179.61 T
+(control) 411.4 174.96 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+421.69 186.76 423.17 191.92 424.65 186.76 423.17 186.76 4 Y
+V
+423.17 185.25 423.17 186.76 2 L
+N
+447.24 178.73 452.4 177.25 447.24 175.78 447.24 177.25 4 Y
+V
+430.48 177.25 447.24 177.25 2 L
+N
+477.93 182.73 483.09 181.25 477.93 179.78 477.93 181.25 4 Y
+V
+430.48 181.25 477.93 181.25 2 L
+N
+452.06 173.9 475.44 185.25 R
+5 X
+V
+0 X
+N
+(\336le) 460.61 180.26 T
+(import) 456.92 175.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+411.46 209.42 412.94 214.58 414.42 209.42 412.94 209.42 4 Y
+V
+412.94 185.25 412.94 209.42 2 L
+N
+J
+341.33 151.88 420.63 151.88 420.63 127.02 341.33 127.02 4 Y
+7 X
+V
+J
+341.33 151.88 420.63 151.88 420.63 127.02 341.33 127.02 4 Y
+J
+341.33 150.2 341.33 151.88 343.01 151.88 3 L
+0 X
+N
+[7.301 6.328] 7.301 I
+343.01 151.88 418.95 151.88 2 L
+N
+J
+418.95 151.88 420.63 151.88 420.63 150.2 3 L
+N
+[7.438 6.446] 7.438 I
+420.63 150.2 420.63 128.7 2 L
+N
+J
+420.63 128.7 420.63 127.02 418.95 127.02 3 L
+N
+[7.301 6.328] 7.301 I
+418.95 127.02 343.01 127.02 2 L
+N
+J
+343.01 127.02 341.33 127.02 341.33 128.7 3 L
+N
+[7.438 6.446] 7.438 I
+341.33 128.7 341.33 150.2 2 L
+N
+(Design Information Management) 347.09 147.53 T
+J
+383.96 127.69 419.85 144.48 R
+7 X
+V
+0 X
+N
+341.99 127.69 377.88 144.48 R
+7 X
+V
+0 X
+N
+(Design) 352.29 136.95 T
+(Information) 347.64 132.81 T
+(Data) 396.71 136.95 T
+(Management) 387.56 132.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Framework) 0 -270 335.94 124.74 TF
+425.69 134.33 420.53 135.81 425.69 137.29 425.69 135.81 4 Y
+V
+433 135.81 425.69 135.81 2 L
+N
+378.55 137.29 383.71 135.81 378.55 134.33 378.55 135.81 4 Y
+V
+377.77 135.81 378.55 135.81 2 L
+N
+360.84 127.43 359.36 122.27 357.88 127.43 359.36 127.43 4 Y
+V
+359.36 127.69 359.36 127.43 2 L
+N
+402.41 127.43 400.93 122.27 399.45 127.43 400.93 127.43 4 Y
+V
+400.93 127.69 400.93 127.43 2 L
+N
+360.84 157.08 359.36 151.92 357.88 157.08 359.36 157.08 4 Y
+V
+359.36 166.59 359.36 157.08 2 L
+N
+402.41 157.08 400.93 151.92 399.45 157.08 400.93 157.08 4 Y
+V
+400.93 166.59 400.93 157.08 2 L
+N
+427.36 127.43 425.88 122.27 424.4 127.43 425.88 127.43 4 Y
+V
+425.88 166.59 425.88 127.43 2 L
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+330.36 245.59 325.2 247.07 330.36 248.55 330.36 247.07 4 Y
+V
+330.36 247.07 334.53 247.07 2 L
+N
+(uses services from) 337.87 245.8 T
+(potential framework components) 337.87 240.44 T
+326.96 240.73 332.8 243.57 R
+5 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tool) 393.88 201.34 T
+(wrapper) 388.96 196.42 T
+J
+452.35 181.25 475.16 181.25 2 L
+J
+452.35 181.25 452.68 181.25 2 L
+N
+[1.415 4.245] 1.415 I
+452.68 181.25 474.83 181.25 2 L
+N
+J
+474.83 181.25 475.16 181.25 2 L
+N
+0 0 0 1 0 0 0 K
+J
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 1
+%%Page: "mini" 2
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(52) 58.69 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 765.79 T
+(ool encapsulation architecture) 184.65 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.07 (Our approach is to consider the adaptors needed for tool encapsulation as additional) 58.69 743.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (framework services. Code can be shared among tools with similar adaptor require-) 58.69 735.76 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.17 (ments. For example, all tools that interface to the design description language) 58.69 728.16 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.09 (VHDL can reuse the same f) 58.69 720.56 B
+0.16 0.09 (ile processing adaptors. Encapsulated simulators can) 130.94 720.56 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (share the same inter) 58.69 712.96 B
+0.16 0.05 (-process link to a text editor that displays the source line cur-) 109.97 712.96 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (rently executed. W) 58.69 705.36 P
+0.1 (e conclude that adaptors for encapsulated tools should be part of) 105.84 705.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (the framework \050Figure) 58.69 697.76 P
+0.14 (8\051. While Figure) 117.2 697.76 P
+0.14 (8 identi\336es the tasks addressed by the new) 160.6 697.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.04 (tool encapsulation service, we will introduce a detailed component architecture in) 58.69 690.16 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the next section.) 58.69 682.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 7.15 Q
+(4.3) 58.69 664.97 T
+(Component architecture) 70.62 664.97 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 6.26 Q
+(4.3.1) 58.69 647.24 T
+(Language selection) 74.35 647.24 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.09 (The new encapsulation service is built as a language driven, programmable engine.) 58.69 634.27 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.13 (This architecture provides the required f) 58.69 626.67 B
+0.16 0.13 (lexibility to cope with widely dif) 165.16 626.67 B
+0.16 0.13 (ferent) 252.55 626.67 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (encapsulation tasks. At the heart of this engine is an interpreter of the T) 58.69 619.07 B
+0.16 0.05 (ool Com-) 243.49 619.07 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mand Language) 58.69 611.47 T
+4 F
+(T) 100.4 611.47 T
+(cl) 103.31 611.47 T
+2 F
+( [Ousterhout) 107.83 611.47 T
+(91].) 140.86 611.47 T
+0 0 0 1 0 0 0 K
+58.19 466.18 268.3 604.33 C
+0 0 0 1 0 0 0 K
+146.92 586 184.94 597.99 5.99 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.22 H
+2 Z
+0 X
+N
+0 4.92 Q
+(encapsulated) 151.3 591.98 T
+(tool) 161.97 587.56 T
+72.82 488.19 258.45 577.93 R
+5 X
+V
+0 X
+N
+J
+77.22 572.92 254.65 572.92 254.65 536.1 77.22 536.1 4 Y
+7 X
+V
+J
+77.22 572.92 254.65 572.92 254.65 536.1 77.22 536.1 4 Y
+J
+77.22 571.25 77.22 572.92 78.89 572.92 3 L
+0 X
+N
+[7.595 6.582] 7.595 I
+78.89 572.92 252.97 572.92 2 L
+N
+J
+252.97 572.92 254.65 572.92 254.65 571.25 3 L
+N
+[7.339 6.36] 7.339 I
+254.65 571.25 254.65 537.78 2 L
+N
+J
+254.65 537.78 254.65 536.1 252.97 536.1 3 L
+N
+[7.595 6.582] 7.595 I
+252.97 536.1 78.89 536.1 2 L
+N
+J
+78.89 536.1 77.22 536.1 77.22 537.78 3 L
+N
+[7.339 6.36] 7.339 I
+77.22 537.78 77.22 571.25 2 L
+N
+J
+(Framework) 0 -270 70.65 513.81 TF
+171.35 557.7 243.24 569.31 R
+7 X
+V
+0 X
+N
+58.19 467.95 267.31 476.38 R
+7 X
+V
+0 0 0 1 0 0 0 K
+58.19 467.44 267.31 470.12 C
+0 0 0 1 0 0 0 K
+58.19 469.23 162.81 469.23 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+58.19 466.18 268.3 604.33 C
+0 0 0 1 0 0 0 K
+3 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(Figure 8.) 58.19 472.21 T
+4 F
+(Service view of the framework, extended with tool encapsulation service) 83.76 472.21 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 4.92 Q
+(encapsulation user-) 185.84 564.23 T
+(interface and scripting) 183.24 559.47 T
+171.35 539.97 211.12 551.58 R
+7 X
+V
+0.22 H
+2 Z
+0 X
+N
+(inter-process) 177.02 546.51 T
+(communication) 174.7 541.74 T
+218.77 540.64 243.24 552.24 R
+7 X
+V
+0 X
+N
+(tool) 227.04 547.17 T
+(control) 223.62 542.41 T
+92.51 551.51 116.99 563.12 R
+7 X
+V
+0 X
+N
+(\336le) 101.61 558.04 T
+(import) 97.92 553.28 T
+123.1 551.51 148.19 563.12 R
+7 X
+V
+0 X
+N
+(\336le) 132.5 558.04 T
+(export) 128.81 553.28 T
+(Encapsulation Service) 81.81 566.88 T
+167.41 583.08 165.93 577.93 164.45 583.08 165.93 583.08 4 Y
+V
+165.93 585.53 165.93 583.08 2 L
+7 X
+V
+0 X
+N
+92.54 541.3 148.19 549.48 R
+N
+(interface to DIM) 103.01 544.08 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+77.22 493.3 254.65 501.42 R
+7 X
+V
+0 X
+N
+171 505.69 210.06 522.48 R
+7 X
+V
+0 X
+N
+215.59 505.69 254.65 522.48 R
+7 X
+V
+0 X
+N
+(Methodology) 176.45 514.95 T
+(Management) 176.18 510.81 T
+(Session) 226.37 514.95 T
+(Manager) 225.42 510.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(System Environment) 143.25 495.7 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+J
+77.89 530.54 162.81 530.54 162.81 505.69 77.89 505.69 4 Y
+7 X
+V
+J
+77.89 530.54 162.81 530.54 162.81 505.69 77.89 505.69 4 Y
+J
+77.89 528.87 77.89 530.54 79.57 530.54 3 L
+0 X
+N
+[7.258 6.29] 7.258 I
+79.57 530.54 161.13 530.54 2 L
+N
+J
+161.13 530.54 162.81 530.54 162.81 528.87 3 L
+N
+[7.438 6.446] 7.438 I
+162.81 528.87 162.81 507.36 2 L
+N
+J
+162.81 507.36 162.81 505.69 161.13 505.69 3 L
+N
+[7.258 6.29] 7.258 I
+161.13 505.69 79.57 505.69 2 L
+N
+J
+79.57 505.69 77.89 505.69 77.89 507.36 3 L
+N
+[7.438 6.446] 7.438 I
+77.89 507.36 77.89 528.87 2 L
+N
+(Design Information Management) 84.06 526.19 T
+J
+123.55 506.35 161.97 523.15 R
+7 X
+V
+0 X
+N
+78.61 506.35 117.03 523.15 R
+7 X
+V
+0 X
+N
+(Design) 90.17 515.61 T
+(Information) 85.52 511.48 T
+(Data) 137.57 515.61 T
+(Management) 128.41 511.48 T
+0 0 0 1 0 0 0 K
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.3 Component architecture) 318.5 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(53) 520.66 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.07 (The main reason to select T) 318.5 743.36 P
+0.07 (cl over CFI\325) 387.79 743.36 P
+0.07 (s choice) 418.18 743.36 P
+4 F
+0.07 (Scheme) 440.23 743.36 P
+2 F
+0.07 ( \050[CFI-EL) 459.35 743.36 P
+0.07 (91]\051 is its mode-) 486.19 743.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lessness:) 318.5 735.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+2.25 (\322T) 328.01 727.27 P
+2.25 (cl does not enfor) 334.39 727.27 P
+2.25 (ce any particular pr) 382.82 727.27 P
+2.25 (ogramming paradigm such as) 439.59 727.27 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(functional, logic, or object-oriented.\323) 328.01 720.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([Brannon) 328.01 713.86 T
+(94], p.) 353.92 713.86 T
+(12) 372 713.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.05 (The language is not to replace the framework\325) 318.5 701.79 B
+0.16 0.05 (s extension language but to supple-) 437.04 701.79 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.18 (ment it with a language that is more familiar to tool integrators already being) 318.5 694.18 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.04 (exposed to UNIX shell programming. T) 318.5 686.58 B
+0.16 0.04 (cl was chosen over its competitors for the) 420.58 686.58 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(following reasons:) 318.5 678.98 T
+2 5.01 Q
+(*) 364.92 681.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+(\245) 324.84 670.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (The language syntax is close enough to UNIX shell languages so that tool) 328.01 670.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.24 (integrators, familiar with writing shell wrappers, will quickly adapt to the new) 328.01 662.89 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(language.) 328.01 655.29 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 646.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (It is interpreted, so tool integrators and even designers can readily con\336gure) 328.01 646.79 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.88 (the design environment. This is especially useful when encapsulating new) 328.01 639.19 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (design tools or extending the granularity at which design data is managed by) 328.01 631.59 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.49 (the design management system. Not least, it provides an easy-to-use) 328.01 623.99 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(environment for rapid prototyping of new design management tasks.) 328.01 616.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 607.89 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (It has but one data type, i.e. character strings. Experience shows that what) 328.01 607.89 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.68 (looks like a serious \337aw both for script writers and from the standpoint of) 328.01 600.29 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.02 (ef) 328.01 592.69 P
+0.02 (\336ciency) 332.76 592.69 P
+0.02 (, hardly ever is a restriction. However) 352.17 592.69 P
+0.02 (, it dramatically simpli\336es the) 446.6 592.69 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (interface to the language from \322C\323 as well as the language itself. When more) 328.01 585.09 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (complex types are needed, time-critical parts of an encapsulation wrapper can) 328.01 577.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (always be written in \322C\323. The \322C\323 code is demand-loaded into the engine and) 328.01 569.89 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (becomes available as new T) 328.01 562.29 P
+0.03 (cl commands. From T) 397.9 562.29 P
+0.03 (cl scripts there is no visible) 452.82 562.29 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(dif) 328.01 554.69 T
+(ference except for improved execution speed.) 334.85 554.69 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 546.2 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (It has a complete language kernel with variables, lists, arrays, procedures, as) 328.01 546.2 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.46 (well as string and \336le handling capabilities. An object-oriented extension is) 328.01 538.59 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(available to help structuring lar) 328.01 530.99 T
+(ge applications.) 406.12 530.99 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 522.5 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.13 (It is designed to be embedded in applications. It has an orthogonal, well) 328.01 522.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (designed and documented procedural interface that makes it easy to de\336ne) 328.01 514.9 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (new commands, access variables and other state information in an interpreter) 328.01 507.3 P
+-0.11 (.) 519.72 507.3 P
+0 0 0 1 0 0 0 K
+318.5 484.96 527.62 490.77 C
+0 0 0 1 0 0 0 K
+318.5 488.54 366.79 488.54 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+2 4.29 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 326.55 483.53 T
+2 5.36 Q
+(Despite this list of good ar) 330.84 481.39 T
+(guments in favour of T) 387.52 481.39 T
+(cl, our new encapsulation framework) 436.62 481.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(service could have been based on Scheme, with some more ef) 326.55 475.12 T
+(fort needed for the imple-) 459.21 475.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mentation and adaptation to a lisp-like language for the tool encapsulator) 326.55 468.87 T
+(.) 483.01 468.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(54) 58.69 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 376.34 T
+(ool encapsulation architecture) 184.65 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(\245) 65.02 353.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (It is easily extendible. A single procedure call in \322C\323 is required to register a) 68.19 353.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(new command with an interpreter) 68.19 346.32 T
+(.) 152.33 346.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 337.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.41 (It is integrated with a powerful and easy-to-use, Motif compliant toolkit for) 68.19 337.83 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.26 (the X1) 68.19 330.22 P
+1.26 (1 W) 86.09 330.22 P
+1.26 (indow System as well as for Microsoft W) 97.7 330.22 P
+1.26 (indows, so creating) 210.43 330.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.64 (execution protocols which require fancy user interaction is possible not) 68.19 322.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (depending on a single platform without too much ef) 68.19 315.02 P
+0.22 (fort. The key features of) 199.91 315.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (this toolkit are a constraint driven geometry management and useful default) 68.19 307.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (values for all widget parameters so only the really necessary values have to be) 68.19 299.82 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(given.) 68.19 292.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 283.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (A versatile extension) 68.19 283.73 P
+4 F
+0.17 (expect) 123.11 283.73 P
+2 F
+0.17 ( exists that allows to control a design tool via its) 139.1 283.73 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(input/output.) 68.19 276.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 267.63 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.38 (Extensions exist which allow to easily use mechanisms for inter) 68.19 267.63 P
+1.38 (-process) 240.61 267.63 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.73 (communication \050IPC\051 such as sockets, remote procedure calls, or T) 68.19 260.03 P
+0.73 (oolT) 242.43 260.03 P
+0.73 (alk) 253.82 260.03 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([T) 68.19 252.43 T
+(oolT) 73.66 252.43 T
+(alk].) 85.05 252.43 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(4.3.2) 58.69 234.99 T
+(The Tool Command Language) 74.35 234.99 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.09 (For the purposes of this thesis we will explain only that part of T) 58.69 222.03 B
+0.16 0.09 (cl\325) 228.86 222.03 B
+0.16 0.09 (s syntax and) 235.4 222.03 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (semantics that is necessary to understand the T) 58.69 214.43 P
+-0.09 (cl code examples given in the sequel.) 174.98 214.43 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (For a more thorough introduction to T) 58.69 206.83 B
+0.16 0.01 (cl and the Tk toolkit the reader is referred to) 155.19 206.83 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 ([Ousterhout) 58.69 199.22 B
+0.16 0.06 (94]. A T) 90.89 199.22 B
+0.16 0.06 (cl command consists of a command name and a list of com-) 112.65 199.22 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (mand ar) 58.69 191.62 B
+0.16 0.05 (guments, separated by white space. Newline characters or semicolons are) 79.39 191.62 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (used as command separators. Each T) 58.69 184.02 B
+0.16 0.02 (cl command returns a string result and a code) 152.1 184.02 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(signalling success or failure.) 58.69 176.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Four additional syntactic constructs give the language a Lisp-like character:) 58.69 163.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 154.96 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.26 (Curly braces act as nestable quote characters used to group complex) 68.19 154.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ar) 68.19 147.36 T
+(guments.) 72.94 147.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 138.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Square brackets are used to invoke command substitution.) 68.19 138.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 130.37 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dollar signs are used for variable substitution.) 68.19 130.37 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 121.88 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Backslashes may be used to insert special characters into ar) 68.19 121.88 T
+(guments.) 217.05 121.88 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.04 (There is only one data type in T) 58.69 108.91 B
+0.16 0.04 (cl:) 140.3 108.91 B
+4 F
+0.16 0.04 (Strings) 148.43 108.91 B
+2 F
+0.16 0.04 (. ASCII strings are used for commands,) 166.42 108.91 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.11 (command ar) 58.69 101.31 B
+0.16 0.11 (guments, results returned by commands, and variable values. Some) 90.97 101.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (commands expect one or more of their ar) 58.69 93.71 B
+0.16 0.02 (guments to have one of the special forms) 163.36 93.71 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.08 (of string: list, expression, or command. What makes T) 58.69 86.11 B
+0.16 0.08 (cl extremely usable in our) 200.07 86.11 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.3 Component architecture) 318.5 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(55) 520.66 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.03 (context is that it is easy to integrate into applications. The interpreter consists of a) 318.5 239.86 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (small library of \322C\323 functions used to invoke T) 318.5 232.26 P
+0.1 (cl commands, to bind \322C\323 functions) 437.07 232.26 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (de\336ned in the application to new T) 318.5 224.66 P
+-0.14 (cl commands, and to manipulate the values of T) 404.51 224.66 P
+-0.14 (cl) 523.1 224.66 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(variables \050Figure) 318.5 217.06 T
+(9\051.) 362.65 217.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (W) 324.84 208.56 P
+0.28 (e have extended the interpreter with new commands to \336t it to its new task as) 330.25 208.56 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.17 (execution protocol engine. Key to the extension is a module we added to make com-) 318.5 200.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (piled object-oriented classes, written in \322C\323 or \322C++\323, accessible from T) 318.5 193.36 P
+0.3 (cl scripts.) 503.33 193.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (Objects can thus be created, manipulated and deleted. The public features of com-) 318.5 185.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (piled classes have to be registered to the T) 318.5 178.16 P
+0.3 (cl interpreter) 426.53 178.16 P
+0.3 (. This is achieved either by) 458.65 178.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (invoking a schema programming interface or by feeding the interpreter a schema via) 318.5 170.56 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (extended T) 318.5 162.96 P
+-0.19 (cl scripts. The wrapper facility interfaces to objects through a small set of) 345.86 162.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (well-de\336ned procedures which have to be implemented for each public member of a) 318.5 155.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (class. W) 318.5 147.76 P
+-0.05 (e have implemented a generator that wraps the more regular cases of public) 339.15 147.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (data members and member functions, constructors, and destructors of \322C++\323 class-) 318.5 140.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(es.) 318.5 132.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.38 (It is desirable to load the parsers for particular design description language into) 324.84 124.06 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (the encapsulation engine on demand. Thus, support for new languages can be added) 318.5 116.46 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.13 (or existing modules replaced when requirements change. W) 318.5 108.86 P
+-0.13 (e have therefore added a) 466.95 108.86 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.23 (facility that is able to load a module with compiled class de\336nitions into a running) 318.5 101.26 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (encapsulation engine. Demand loading can be triggered while loading a schema for) 318.5 93.66 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a compiled class into the T) 318.5 86.06 T
+(cl interpreter) 385.35 86.06 T
+(.) 417.16 86.06 T
+0 0 0 1 0 0 0 K
+318.01 244.03 528.11 358.09 C
+0 0 0 1 0 0 0 K
+391.06 318.17 413.24 329.58 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0.22 H
+2 Z
+0 X
+N
+318.01 250.37 527.12 260.21 R
+7 X
+V
+0 0 0 1 0 0 0 K
+318.01 251.27 527.12 253.95 C
+0 0 0 1 0 0 0 K
+318.01 253.05 422.63 253.05 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+318.01 244.03 528.11 358.09 C
+0 0 0 1 0 0 0 K
+3 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(Figure 9.) 318.01 256.03 T
+4 F
+(Structure of an application that uses a Tcl interpreter [Ousterhout) 343.57 256.03 T
+(90].) 511.54 256.03 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 4.92 Q
+(Parser) 396.22 322.41 T
+(Built-in) 350.96 301.47 T
+(Commands) 350.96 296.47 T
+(Application) 470.9 304.06 T
+(Speci\336c) 470.9 299.17 T
+(Commands) 470.9 294.29 T
+442.07 318.46 464.25 329.86 R
+7 X
+V
+0.22 H
+2 Z
+0 X
+N
+(Collect) 447.01 322.69 T
+391.06 269.38 413.24 280.78 R
+7 X
+V
+0 X
+N
+(Utilities) 395.67 273.61 T
+442.07 342.89 464.25 354.29 R
+7 X
+V
+0 X
+N
+(Init) 450.48 347.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+377.75 297.26 381.55 301.7 R
+N
+387.89 297.26 391.69 301.7 R
+N
+408.17 297.26 411.97 301.7 R
+N
+398.03 297.26 401.83 301.7 R
+N
+441.12 297.26 444.92 301.7 R
+N
+451.26 297.26 455.06 301.7 R
+N
+461.4 297.26 465.2 301.7 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+453.9 332.79 453.16 330.21 452.42 332.79 453.16 332.79 4 Y
+V
+453.16 342.89 453.16 332.79 2 L
+N
+415.82 323.14 413.24 323.87 415.82 324.61 415.82 323.87 4 Y
+V
+441.75 323.87 415.82 323.87 2 L
+N
+464.04 304.27 463.3 301.7 462.56 304.27 463.3 304.27 4 Y
+V
+410.07 318.17 410.07 315 463.3 315 463.3 304.27 4 L
+N
+453.9 304.27 453.16 301.7 452.42 304.27 453.16 304.27 4 Y
+V
+407.53 318.17 407.53 313.1 453.16 313.1 453.16 304.27 4 L
+N
+443.76 304.27 443.02 301.7 442.28 304.27 443.02 304.27 4 Y
+V
+405 318.17 405 310.57 443.02 310.57 443.02 304.27 4 L
+N
+410.81 304.27 410.07 301.7 409.33 304.27 410.07 304.27 4 Y
+V
+402.46 318.17 402.46 308.03 410.07 308.03 410.07 304.27 4 L
+N
+400.67 304.27 399.93 301.7 399.19 304.27 399.93 304.27 4 Y
+V
+399.93 318.17 399.93 304.27 2 L
+N
+390.53 304.27 389.79 301.7 389.05 304.27 389.79 304.27 4 Y
+V
+397.39 318.17 397.39 308.03 389.79 308.03 389.79 304.27 4 L
+N
+380.39 304.27 379.65 301.7 378.91 304.27 379.65 304.27 4 Y
+V
+394.86 318.17 394.86 310.57 379.65 310.57 379.65 304.27 4 L
+N
+410.81 283.43 410.07 280.85 409.33 283.43 410.07 283.43 4 Y
+V
+410.07 283.43 410.07 284.02 463.3 284.02 463.3 297.32 4 L
+N
+408.27 283.43 407.53 280.85 406.8 283.43 407.53 283.43 4 Y
+V
+407.53 283.43 407.53 285.92 453.16 285.92 453.16 297.32 4 L
+N
+405.74 283.43 405 280.85 404.26 283.43 405 283.43 4 Y
+V
+405 283.43 405 288.45 443.02 288.45 443.02 297.32 4 L
+N
+403.2 283.43 402.46 280.85 401.73 283.43 402.46 283.43 4 Y
+V
+402.46 283.43 402.46 290.99 410.07 290.99 410.07 297.32 4 L
+N
+400.67 283.43 399.93 280.85 399.19 283.43 399.93 283.43 4 Y
+V
+399.93 283.43 399.93 297.32 2 L
+N
+398.14 283.43 397.39 280.85 396.66 283.43 397.39 283.43 4 Y
+V
+397.39 283.43 397.39 290.99 389.79 290.99 389.79 297.32 4 L
+N
+395.6 283.43 394.86 280.85 394.12 283.43 394.86 283.43 4 Y
+V
+394.86 283.43 394.86 288.45 379.65 288.45 379.65 297.32 4 L
+N
+467.14 323.77 464.57 324.51 467.14 325.25 467.14 324.51 4 Y
+V
+467.14 324.51 475.97 324.51 475.97 336.55 460.13 336.55 460.13 330.21 5 L
+N
+J
+347.33 356.19 420.84 356.19 420.84 265.58 347.33 265.58 4 Y
+J
+347.33 355.86 347.33 356.19 347.67 356.19 3 L
+N
+[1.468 4.403] 1.468 I
+347.67 356.19 420.51 356.19 2 L
+N
+J
+420.51 356.19 420.84 356.19 420.84 355.86 3 L
+N
+[1.49 4.471] 1.49 I
+420.84 355.86 420.84 265.91 2 L
+N
+J
+420.84 265.91 420.84 265.58 420.51 265.58 3 L
+N
+[1.468 4.403] 1.468 I
+420.51 265.58 347.67 265.58 2 L
+N
+J
+347.67 265.58 347.33 265.58 347.33 265.91 3 L
+N
+[1.49 4.471] 1.49 I
+347.33 265.91 347.33 355.86 2 L
+N
+J
+425.28 356.19 498.78 356.19 498.78 265.58 425.28 265.58 4 Y
+J
+425.28 355.86 425.28 356.19 425.61 356.19 3 L
+N
+[1.468 4.403] 1.468 I
+425.61 356.19 498.45 356.19 2 L
+N
+J
+498.45 356.19 498.78 356.19 498.78 355.86 3 L
+N
+[1.49 4.471] 1.49 I
+498.78 355.86 498.78 265.91 2 L
+N
+J
+498.78 265.91 498.78 265.58 498.45 265.58 3 L
+N
+[1.468 4.403] 1.468 I
+498.45 265.58 425.61 265.58 2 L
+N
+J
+425.61 265.58 425.28 265.58 425.28 265.91 3 L
+N
+[1.49 4.471] 1.49 I
+425.28 265.91 425.28 355.86 2 L
+N
+(T) 349.24 266.84 T
+(cl) 351.7 266.84 T
+(Application) 472.63 266.65 T
+0 0 0 1 0 0 0 K
+J
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 2
+%%Page: "mini" 3
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(56) 58.69 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 765.79 T
+(ool encapsulation architecture) 184.65 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.1 (Other than the generic modules for the wrapping of compiled classes and for de-) 65.02 743.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.23 (mand loading, the encapsulation engine is equipped with modules more speci\336c to) 58.69 735.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the task of tool encapsulation \050cf. Figure) 58.69 728.16 T
+(10\051:) 161.6 728.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 719.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.91 (Language independent parse tr) 68.19 719.67 P
+0.91 (ee and symbol table.) 149.1 719.67 P
+2 F
+0.91 (This module contains) 205.75 719.67 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (classes to construct and manipulate syntax trees and symbol tables in-core. A) 68.19 712.07 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.22 (corresponding schema is fed to the encapsulation engine through the T) 68.19 704.47 P
+1.22 (cl) 256.95 704.47 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.69 (interpreter to wrap these classes and make them accessible from execution) 68.19 696.87 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(protocols.) 68.19 689.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 65.02 680.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+-0.23 (The mapping between DIM Application Pr) 68.19 680.77 P
+-0.23 (ogramming Interface \050API\051 and the) 173.73 680.77 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.81 (base framework API) 68.19 673.17 P
+2 F
+1.81 ( is realized as a T) 123.27 673.17 P
+1.81 (cl script and is loaded into the) 175.5 673.17 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(encapsulation engine at start-up time.) 68.19 665.57 T
+0 0 0 1 0 0 0 K
+57.59 466.18 268.9 655.02 C
+0 0 0 1 0 0 0 K
+206.8 533.21 261.99 571.26 R
+4 X
+0 0 0 1 0 0 0 K
+V
+135.65 533.21 189.38 571.26 R
+V
+134.2 593 251.82 639.2 R
+V
+63.04 533.21 126.94 553.59 R
+V
+96.44 556.31 126.94 610.67 R
+V
+97.89 595.65 124.03 607.88 R
+7 X
+V
+0.22 H
+2 Z
+0 X
+N
+63.04 556.31 93.54 610.67 R
+4 X
+V
+58.59 467.53 267.97 483.5 R
+7 X
+V
+3 6.26 Q
+0 X
+(Figure 10.) 58.59 479.33 T
+4 F
+(Component architecture of the encapsulation service) 87.28 479.33 T
+0 0 0 1 0 0 0 K
+58.59 466.96 267.97 469.64 C
+0 0 0 1 0 0 0 K
+58.59 468.75 163.21 468.75 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+57.59 466.18 268.9 655.02 C
+0 0 0 1 0 0 0 K
+4 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(\050services in Figure) 58.59 471.73 T
+(8 are shaded\051) 107.44 471.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 4.92 Q
+(\336le export) 100.3 600.28 T
+(Design Information) 72.9 507.11 T
+(Management) 79.19 502.8 T
+(Session) 225.65 507.11 T
+(Manager) 224.69 502.8 T
+(Methodolgy) 150.68 507.11 T
+(Management) 149.04 502.8 T
+138.55 595.65 185.02 607.88 R
+7 X
+V
+0.22 H
+2 Z
+0 X
+N
+144.36 624.19 179.21 636.42 R
+7 X
+V
+0 X
+N
+216.97 538.58 251.82 550.81 R
+7 X
+V
+0 X
+N
+77.57 564.4 112.42 576.62 R
+7 X
+V
+0 X
+N
+208.26 492.37 260.53 519.55 R
+N
+137.25 492.37 189.53 519.55 R
+N
+67.4 492.37 119.68 519.55 R
+N
+80.47 537.22 106.61 549.45 R
+7 X
+V
+0 X
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+58.69 530.49 267.8 641.92 R
+N
+92.11 581.78 90.63 576.62 89.15 581.78 90.63 581.78 4 Y
+V
+77.57 595.65 77.57 587.5 90.63 587.5 90.63 581.78 4 L
+N
+109.49 590.49 110.96 595.65 112.44 590.49 110.96 590.49 4 Y
+V
+110.96 590.49 110.96 587.5 97.89 587.5 97.89 576.62 4 L
+N
+90.66 554.6 89.18 549.45 87.7 554.6 89.18 554.6 4 Y
+V
+89.18 564.4 89.18 554.6 2 L
+N
+96.42 559.24 97.89 564.4 99.37 559.24 97.89 559.24 4 Y
+V
+97.89 549.45 97.89 559.24 2 L
+N
+92.06 532.06 93.54 537.22 95.02 532.06 93.54 532.06 4 Y
+V
+95.02 524.71 93.54 519.55 92.06 524.71 93.54 524.71 4 Y
+V
+93.54 532.06 93.54 524.71 2 L
+0 Z
+N
+232.92 533.42 234.4 538.58 235.87 533.42 234.4 533.42 4 Y
+V
+235.87 524.71 234.4 519.55 232.92 524.71 234.4 524.71 4 Y
+V
+234.4 533.42 234.4 524.71 2 L
+N
+160.31 532.06 161.79 537.22 163.27 532.06 161.79 532.06 4 Y
+V
+163.27 524.71 161.79 519.55 160.31 524.71 161.79 524.71 4 Y
+V
+161.79 532.06 161.79 524.71 2 L
+N
+207.46 603.92 212.61 602.44 207.46 600.97 207.46 602.44 4 Y
+V
+185.02 602.44 207.46 602.44 2 L
+2 Z
+N
+163.27 613.04 161.79 607.88 160.31 613.04 161.79 613.04 4 Y
+V
+161.79 624.19 161.79 613.04 2 L
+N
+161.79 595.65 161.79 558.96 2 L
+1.79 H
+0 Z
+3 X
+N
+86.28 595.65 86.28 584.78 161.79 584.78 232.94 584.78 232.94 550.81 5 L
+N
+118.22 595.65 118.22 588.85 2 L
+N
+118.22 588.85 118.22 571.19 112.42 571.19 3 L
+N
+118.22 571.19 118.22 542.65 106.61 542.65 3 L
+N
+0 X
+(Encapsulation Service) 64.5 635.22 T
+(parse tree) 83.92 571.66 T
+(symbol tables) 79.96 567.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+65.95 595.65 92.08 607.88 R
+7 X
+V
+0.22 H
+2 Z
+0 X
+N
+(\336le import) 68.36 600.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DIM PI) 86.02 541.85 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+212.21 595.65 250.23 607.88 R
+7 X
+V
+0 X
+N
+(demand loading) 213.72 600.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 146.89 600.28 T
+(cl interpreter) 149.35 600.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(execution) 151.26 631.45 T
+(protocols) 151.81 627.13 T
+150.17 537.22 173.41 558.96 R
+7 X
+V
+0 X
+N
+(IPC:) 157.01 553.55 T
+(TCP/IP) 153.86 549.24 T
+(pipes) 155.91 544.92 T
+(T) 152.91 540.61 T
+(oolT) 155.37 540.61 T
+(alk) 164.38 540.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tool control:) 221.68 545.84 T
+(expect) 227.15 541.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+71.53 648.61 71.53 648.68 63.93 648.68 3 L
+1.79 H
+0 Z
+3 X
+N
+0 X
+(linked into one executable) 74.07 647.23 T
+146.22 650.16 151.38 648.68 146.22 647.21 146.22 648.68 4 Y
+V
+143.77 648.68 146.22 648.68 2 L
+0.22 H
+2 Z
+N
+(data/control \337ow) 154.08 647.23 T
+0 0 0 1 0 0 0 K
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.4 W) 318.5 765.79 T
+(rapping compiled \322C\323 and \322C++\323 objects) 334.74 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(57) 520.66 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(\245) 324.84 743.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.43 (File import and export.) 328.01 743.36 P
+2 F
+0.43 (Whenever a new language needs to be supported, a) 389.72 743.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3.11 (new language parser module is generated from a speci\336cation and) 328.01 735.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (dynamically loaded into the engine. In addition, reading out information from) 328.01 728.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.17 (the parse tree and storing it in the DIM system on import is performed in a T) 328.01 720.56 P
+-0.17 (cl) 516.76 720.56 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (script that is speci\336c to a design description language. Export can completely) 328.01 712.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (rely on the information stored in DIM and is therefore carried out by standard) 328.01 705.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(methods, invariant to design language and tool changes.) 328.01 697.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 324.84 689.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+-0.21 (Execution pr) 328.01 689.27 P
+-0.21 (otocols.) 359.73 689.27 P
+2 F
+-0.21 ( Assuming that language parsers for the supported design) 379.37 689.27 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.46 (description languages exist, the tool integrator is mostly concerned with) 328.01 681.67 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (writing execution protocols for the design tools to be encapsulated. Execution) 328.01 674.07 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (protocols handle all the details of preparing a tool run, starting and controlling) 328.01 666.46 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the tool, and \336nally cleaning up and evaluating the results.) 328.01 658.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 7.15 Q
+(4.4) 318.5 641.28 T
+(Wrapping compiled \322C\323 and \322C++\323 objects) 330.43 641.28 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 6.26 Q
+-0.1 (The execution protocol engine needs to make a number of compiled modules acces-) 318.5 628.01 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (sible to the tool integrator) 318.5 620.41 P
+0.11 (. These include the procedural interface to the underlying) 383.29 620.41 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DIM component, the scanner and parser for design description languages generated) 318.5 612.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (by scanner and parser generator tools, and the implementation of parse trees. Other) 318.5 605.21 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (modules, e.g. to support designer interaction, are conceivable. Although these mod-) 318.5 597.61 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (ules may not be implemented in an object-oriented language like \322C++\323, the object-) 318.5 590.01 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.11 (oriented paradigm is well accepted and so even pure \322C\323 implementations of) 318.5 582.41 B
+0.16 0.11 (fer) 520.46 582.41 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.04 (opaque handles as object identif) 318.5 574.81 B
+0.16 0.04 (iers. W) 400.5 574.81 B
+0.16 0.04 (e have therefore chosen to uniformly wrap) 418.54 574.81 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (compiled modules with object-oriented classes, regardless of whether the underly-) 318.5 567.21 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (ing implementation is fully object-oriented or only object-based. A basic require-) 318.5 559.61 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (ment for the wrapping mechanism was that it should blend nicely with the object-) 318.5 552.01 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (oriented extension) 318.5 544.41 P
+4 F
+0.05 (iT) 366.23 544.41 P
+0.05 (cl) 370.87 544.41 P
+2 F
+0.05 ( [McLennan) 375.39 544.41 P
+0.05 (92] we have adopted for our extended T) 407.76 544.41 P
+0.05 (cl inter-) 507.93 544.41 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(preter) 318.5 536.81 T
+(.) 332.75 536.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(4.4.1) 318.5 519.37 T
+(Schema representation) 334.16 519.37 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.02 (The challenge for the wrapping mechanism is to map between object identif) 318.5 506.4 B
+0.16 0.02 (iers in) 511.83 506.4 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (the compiled module and strings in the extended T) 318.5 498.8 P
+0.12 (cl interpreter) 445.98 498.8 P
+0.12 (. As objects may be) 477.92 498.8 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (created both from compiled code and from execution protocols, the strings repre-) 318.5 491.2 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (senting object identif) 318.5 483.6 B
+0.16 0.02 (iers need to be dynamically created whenever a new object is) 371.71 483.6 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (encountered. Figure) 318.5 476 P
+0.08 (1) 370.21 476 P
+0.08 (1 shows the information model we use to manage the schema) 373.11 476 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(58) 58.69 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 376.34 T
+(ool encapsulation architecture) 184.65 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.15 (of a compiled module. As it is used to represent schema information, it can be) 58.69 353.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(regarded as a meta schema for compiled modules.) 58.69 346.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (Every compiled object we want to handle from an execution protocol is associated) 65.02 193.35 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (with an object of type) 58.69 185.74 P
+4 F
+0.26 (W) 116.13 185.74 P
+0.26 (rapperObject) 121 185.74 P
+2 F
+0.26 (. A) 154.73 185.74 P
+4 F
+0.26 (W) 164.46 185.74 P
+0.26 (rapperObject) 169.33 185.74 P
+2 F
+0.26 ( has a unique) 203.06 185.74 P
+4 F
+0.26 (Handle) 238.51 185.74 P
+2 F
+0.26 ( and) 256.94 185.74 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.38 (identi\336es its associated compiled object.) 58.69 178.14 P
+4 F
+-0.38 (Identi\336ers) 159.34 178.14 P
+2 F
+-0.38 ( can be in-core memory addresses) 184.73 178.14 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (for \322C\323 or \322C++\323 objects, or database identi\336ers for objects residing in an \050object-) 58.69 170.54 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.58 (oriented\051 database) 58.69 162.94 P
+2 5.01 Q
+0.46 (*) 104.98 165.45 P
+2 6.26 Q
+0.58 (.) 107.48 162.94 P
+4 F
+0.58 (W) 111.19 162.94 P
+0.58 (rapperObjects) 116.06 162.94 P
+2 F
+0.58 ( are typed, that is, they are associated with a) 152.22 162.94 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(ClassT) 58.69 155.34 T
+(ype) 75.62 155.34 T
+2 F
+( object.) 84.31 155.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.72 (As subtype of type) 65.02 146.85 P
+4 F
+0.72 (T) 116.58 146.85 P
+0.72 (ype) 119.6 146.85 P
+2 F
+0.72 (,) 128.28 146.85 P
+4 F
+0.72 (ClassT) 132.13 146.85 P
+0.72 (ypes) 149.06 146.85 P
+2 F
+0.72 ( are named. In addition, they may have a) 160.19 146.85 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (number of data members \050objects of type) 58.69 139.25 P
+4 F
+0.22 (V) 164.7 139.25 P
+0.22 (ariable) 167.83 139.25 P
+2 F
+0.22 (\051 and member functions \050objects) 185.91 139.25 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.89 (of type) 58.69 131.65 P
+4 F
+0.89 (Pr) 79.58 131.65 P
+0.89 (ocedur) 85.61 131.65 P
+0.89 (e) 102.76 131.65 P
+2 F
+0.89 (\051.) 105.54 131.65 P
+4 F
+0.89 (ClassT) 111.64 131.65 P
+0.89 (ypes) 128.57 131.65 P
+2 F
+0.89 ( may also be involved in multiple inheritance by) 139.7 131.65 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(maintaining a list of) 58.69 124.05 T
+4 F
+(ancestor) 110.5 124.05 T
+(-ClassT) 131.93 124.05 T
+(ypes) 150.95 124.05 T
+2 F
+(.) 162.07 124.05 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.24 (V) 65.02 115.55 P
+0.24 (ariables) 68.15 115.55 P
+2 F
+0.24 ( and) 88.67 115.55 P
+4 F
+0.24 (Pr) 101.33 115.55 P
+0.24 (ocedur) 107.36 115.55 P
+0.24 (es) 124.51 115.55 P
+2 F
+0.24 ( both have a) 129.72 115.55 P
+4 F
+0.24 (Name) 162.68 115.55 P
+2 F
+0.24 ( and \050value- or return-\051) 177.29 115.55 P
+4 F
+0.24 (T) 237.43 115.55 P
+0.24 (ype) 240.44 115.55 P
+2 F
+0.24 (, which) 249.13 115.55 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (can be either a) 58.69 107.95 P
+4 F
+0.11 (ClassT) 97.03 107.95 P
+0.11 (ype) 113.96 107.95 P
+2 F
+0.11 (,) 122.65 107.95 P
+4 F
+0.11 (EnumerationT) 125.89 107.95 P
+0.11 (ype) 161.6 107.95 P
+2 F
+0.11 (, or one of the) 170.29 107.95 P
+4 F
+0.11 (PrimitiveT) 207.36 107.95 P
+0.11 (ypes) 233.67 107.95 P
+2 F
+0.11 ( void, in-) 244.8 107.95 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(teger) 58.69 100.35 T
+(, boolean, \337oat, or string.) 70.95 100.35 T
+0 0 0 1 0 0 0 K
+58.69 89.26 267.8 95.07 C
+0 0 0 1 0 0 0 K
+58.69 92.84 106.97 92.84 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+2 4.29 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 66.74 87.83 T
+2 5.36 Q
+(The types) 71.03 85.68 T
+4 F
+(Handle) 93.38 85.68 T
+2 F
+( and) 109.17 85.68 T
+4 F
+(Identi\336er) 119.6 85.68 T
+2 F
+( are not depicted in the schema diagram because they) 139.27 85.68 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(have a one-to-one relationship with type) 66.74 79.42 T
+4 F
+(W) 154.65 79.42 T
+(rapperObject) 158.82 79.42 T
+2 F
+(.) 187.73 79.42 T
+0 0 0 1 0 0 0 K
+57.82 199.75 268.67 344.23 C
+0 0 0 1 0 0 0 K
+90.77 274.31 116.12 283.18 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0.22 H
+2 Z
+0 X
+N
+0 4.92 Q
+(EnumT) 91.69 277.06 T
+(ype) 107.27 277.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+206.1 280.02 221.31 288.89 R
+7 X
+V
+0 X
+N
+(T) 209.34 282.77 T
+(ype) 212.08 282.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+209.9 272.41 235.25 281.28 R
+7 X
+V
+0 X
+N
+57.82 208.63 268.2 224.82 R
+7 X
+V
+3 6.26 Q
+0 X
+(Figure 11.) 57.82 220.65 T
+4 F
+(Schema for the object wrapping module. The name attributes of) 86.51 220.65 T
+2 F
+(Type) 247.68 220.65 T
+4 F
+(,) 260.55 220.65 T
+0 0 0 1 0 0 0 K
+57.82 208.28 268.2 210.96 C
+0 0 0 1 0 0 0 K
+57.82 210.07 162.44 210.07 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+57.82 199.75 268.67 344.23 C
+0 0 0 1 0 0 0 K
+2 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(Procedure) 57.82 213.05 T
+4 F
+(, and) 83.19 213.05 T
+2 F
+(Variable) 97.28 213.05 T
+4 F
+( are inherited from a common supertype) 118.83 213.05 T
+2 F
+(Named) 221.22 213.05 T
+4 F
+(.) 239.3 213.05 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 4.92 Q
+(T) 169.42 251.08 T
+(ype) 172.15 251.08 T
+(Procedure) 196.66 330.51 T
+(Constructor) 72.36 240.31 T
+(Destructor) 106.04 240.31 T
+(isStatic) 216.55 309.38 T
+(V) 145.3 330.93 T
+(ariable) 148.22 330.93 T
+(V) 133.93 309.38 T
+(alue) 136.85 309.38 T
+166.18 248.33 181.39 257.2 R
+0.22 H
+2 Z
+N
+104.71 237.56 130.06 246.43 R
+N
+70.49 237.56 99.64 246.43 R
+N
+214.97 306.63 233.98 315.5 R
+N
+195.96 327.76 220.04 336.63 R
+N
+131.33 306.63 146.53 315.5 R
+N
+144 328.18 164.28 337.05 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+166.18 257.14 152.24 259.04 2 L
+N
+142.73 267.98 98.37 328.18 2 L
+N
+154.14 328.18 173.78 257.14 2 L
+N
+142.1 267.98 208.63 327.76 2 L
+N
+141.46 259.32 116.75 246.43 2 L
+N
+141.46 259.32 84.43 246.65 2 L
+N
+208.63 327.76 223.84 315.5 2 L
+N
+154.14 328.18 138.93 315.5 2 L
+N
+142.73 267.98 M
+ 149.07 269.88 149.07 269.88 150.97 269.88 D
+ 152.87 269.88 152.87 269.88 154.77 269.67 D
+ 156.67 269.46 156.67 269.46 157.31 268.72 D
+ 157.94 267.98 157.94 267.98 158.57 266.82 D
+ 159.21 265.66 159.21 265.66 159.21 265.02 D
+ 159.21 264.39 159.21 264.39 159.21 263.76 D
+ 159.21 263.12 159.21 263.12 159.21 262.49 D
+ 159.21 261.85 159.21 261.85 158.57 260.48 D
+ 157.94 259.11 157.94 259.11 157.31 258.58 D
+ 156.67 258.05 156.67 258.05 155.4 257.95 D
+ 154.14 257.84 154.14 257.84 152.87 257.84 D
+ 151.6 257.84 151.6 257.84 143.37 259.11 D
+N
+(Element) 91.89 294.17 T
+90.77 291.42 111.05 300.29 R
+N
+100.91 291.42 100.91 283.18 2 L
+N
+104.71 266.92 135.76 275.58 R
+7 X
+V
+0 X
+N
+(PrimitiveT) 105.48 269.58 T
+(ype) 127.06 269.58 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+154.14 328.18 142.73 267.98 2 L
+N
+208.63 327.76 173.15 257.2 2 L
+N
+(returns) 171.88 284.48 T
+(parent) 173.15 293.14 T
+(parent) 133.86 294.42 T
+(value) 162.38 299.18 T
+88.24 328.18 109.15 337.05 R
+N
+(W) 89.31 333.4 T
+(rapper) 93.86 333.4 T
+(Object) 91.58 329.24 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 163.13 309.38 T
+(rapper) 167.68 309.38 T
+161.74 306.63 183.29 315.5 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(get) 160.48 317.65 T
+(set) 166.81 322.3 T
+(ancestor) 150.34 270.33 T
+(MaxID) 134.04 240.52 T
+132.59 237.78 149.7 246.65 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+141.46 259.32 141.46 246.65 2 L
+N
+154.14 328.18 166.81 315.5 2 L
+N
+154.14 328.18 176.95 315.5 2 L
+N
+208.63 327.76 170.61 315.5 2 L
+N
+(Procedure) 211.23 275.16 T
+(Named) 240 252.35 T
+239.05 249.6 256.79 258.47 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Name) 242.56 237.14 T
+239.05 234.39 256.79 243.26 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+247.92 249.6 247.92 243.26 2 L
+N
+239.05 258.47 237.78 264.81 2 L
+N
+217.51 264.81 237.78 273.68 R
+7 X
+V
+0 X
+N
+(V) 218.81 267.56 T
+(ariable) 221.72 267.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+255.53 300.29 M
+ 239.05 300.29 239.05 300.29 228.91 299.66 D
+ 218.77 299.03 218.77 299.03 211.8 297.76 D
+ 204.83 296.49 204.83 296.49 201.03 292.69 D
+ 197.23 288.89 197.23 288.89 195.96 286.35 D
+ 194.69 283.82 194.69 283.82 194.06 279.38 D
+ 193.43 274.95 193.43 274.95 194.69 269.24 D
+ 195.96 263.54 195.96 263.54 195.33 255.94 D
+ 194.69 248.33 194.69 248.33 192.79 246.43 D
+ 190.89 244.53 190.89 244.53 184.55 239.46 D
+1.79 H
+3 X
+N
+127.52 259.11 152.24 267.98 R
+7 X
+V
+0.22 H
+0 X
+N
+(ClassT) 128.4 261.85 T
+(ype) 143.43 261.85 T
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.4 W) 318.5 376.34 T
+(rapping compiled \322C\323 and \322C++\323 objects) 334.74 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(59) 520.66 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.34 (W) 324.84 353.92 P
+0.34 (rapperObjects) 329.71 353.92 P
+2 F
+0.34 ( access data members and member functions of their associated) 365.87 353.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (wrapped objects via wrapper procedures written in \322C\323. Data members are wrapped) 318.5 346.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (by associating them with a pair of wrapper procedures for read and write access. The) 318.5 338.72 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.33 (set-W) 318.5 331.12 P
+0.33 (rappe) 332.41 331.12 P
+2 F
+0.33 (r procedure may be omitted for read-only data members. T) 347.01 331.12 P
+0.33 (wo dif) 496.63 331.12 P
+0.33 (ferent) 513.02 331.12 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(signatures are de\336ned for these wrapper procedures:) 318.5 323.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(typedef) 328.01 315.02 T
+0 F
+( int \050*Enc_W) 350.27 315.02 T
+(rapper\051) 384.94 315.02 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050Enc_Info* info, Enc_Identi\336er obj, Enc_V) 331.18 307.42 T
+(alue& result,) 445.53 307.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int parmCnt, Enc_V) 332.92 299.82 T
+(ariable parm[]\051;) 386.72 299.82 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.06 (Procedures of type) 318.5 286.86 B
+4 F
+0.16 0.06 (Enc_W) 368.7 286.86 B
+0.16 0.06 (rapper) 386.76 286.86 B
+2 F
+0.16 0.06 ( are used to wrap ordinary member functions or) 404.19 286.86 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(give read or write access to a data member) 318.5 279.26 T
+(. An object identi\336er is required.) 424.88 279.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(typedef) 328.01 270.76 T
+0 F
+( int \050*Enc_StaticW) 350.27 270.76 T
+(rapper\051) 400.59 270.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050Enc_Info* info, Enc_V) 331.18 263.16 T
+(alue& result, int parmCnt, Enc_V) 393.69 263.16 T
+(ariable parm[]\051;) 484.02 263.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.03 (Procedures of type) 318.5 250.19 P
+4 F
+0.03 (Enc_StaticW) 367.09 250.19 P
+0.03 (rapper) 399.08 250.19 P
+2 F
+0.03 ( are used to wrap static member functions or) 416.12 250.19 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(constructors where no object identi\336er is needed as a parameter) 318.5 242.59 T
+(.) 477.21 242.59 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.75 (Using a purely procedural interface to wrapped objects has the advantage that) 324.84 234.1 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.36 (even objects implemented in \322C\323 may be wrapped. Only some kind of opaque handle) 318.5 226.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (mechanism is necessary which is a common concept in both operating system librar-) 318.5 218.9 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.35 (ies \050e.g. FILE*\051, and design data management systems \050e.g. CELL_HANDLE,) 318.5 211.3 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(STREAM_HANDLE in Nelsis\051.) 318.5 203.7 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.78 (The implementation of this meta-schema facility provides a set of classes and) 324.84 195.2 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.13 (member functions to easily de\336ne) 318.5 187.6 P
+4 F
+-0.13 (T) 404.24 187.6 P
+-0.13 (ypes) 407.26 187.6 P
+2 F
+-0.13 ( and associate them with) 418.38 187.6 P
+4 F
+-0.13 (V) 480.82 187.6 P
+-0.13 (ariables) 483.95 187.6 P
+2 F
+-0.13 ( and) 504.47 187.6 P
+4 F
+-0.13 (Pr) 516.37 187.6 P
+-0.13 (o-) 522.4 187.6 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.33 (cedur) 318.5 180 P
+0.33 (es) 332.52 180 P
+2 F
+0.33 (. At run-time, each) 337.74 180 P
+4 F
+0.33 (ClassT) 387.73 180 P
+0.33 (ype) 404.67 180 P
+2 F
+0.33 ( object maintains its extent in a hash-table to) 413.35 180 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (ef) 318.5 172.4 P
+0.09 (\336ciently map from handles to object identi\336ers. The reverse direction is also sup-) 323.25 172.4 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (ported: Whenever a new object identi\336er is encountered, maybe as a result of a pro-) 318.5 164.8 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (cedure call or as value of a data member) 318.5 157.2 P
+0.12 (, that has not yet been assigned a handle, a) 420.35 157.2 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(new object handle is generated consisting of the class name and a unique number) 318.5 149.6 T
+(.) 521.37 149.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (As the whole system is not persistent, object handles are only valid within a single) 324.84 141.1 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.49 (session and are not suitable as object identi\336ers per se. It is, however) 318.5 133.5 P
+0.49 (, possible to) 496.56 133.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (override the standard handle generation procedure and use e.g. a persistent object id) 318.5 125.9 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(as handle. This is achieved by writing a new procedure) 318.5 118.3 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(char* genId \050Enc_T) 328.01 109.8 T
+(ype* type, void* obj\051;) 381.59 109.8 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.08 (and registering it with the schema programming interface. Thus, handles may be) 318.5 97.73 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.14 (made valid between sessions or among dif) 318.5 90.13 B
+0.16 0.14 (ferent instances of the encapsulation) 430.92 90.13 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(service and can be used directly as object identi\336ers in inter) 318.5 82.53 T
+(-tool messaging.) 467.88 82.53 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 3
+%%Page: "mini" 4
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(60) 58.69 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 765.79 T
+(ool encapsulation architecture) 184.65 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.57 (Now that we are able to describe types implemented in compiled modules, the) 65.02 743.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (next step is to be able to load such modules into a running execution protocol engine.) 58.69 735.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (New modules, e.g. for new or modi\336ed design description languages, can be added) 58.69 728.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (to the engine by the tool integrator on demand. No relinking of the engine is needed.) 58.69 720.56 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (The implementation relies on the UNIX library functions) 58.69 712.96 P
+4 F
+-0.16 (dlopen) 202.05 712.96 P
+2 F
+-0.16 (,) 219.08 712.96 P
+4 F
+-0.16 (dlsym) 222.05 712.96 P
+2 F
+-0.16 (, and) 236.66 712.96 P
+4 F
+-0.16 (dlclose) 250.07 712.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.36 (to implement this feature. The only requirement on the demand loaded module is that) 58.69 705.36 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.66 (it must contain position independent code. This can be achieved with a compiler) 58.69 697.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(switch.) 58.69 690.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (Using a procedural interface to de\336ne a schema has little overhead but is compli-) 65.02 681.67 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (cated to use and dif) 58.69 674.07 P
+0.15 (\336cult to maintain. W) 107.84 674.07 P
+0.15 (e have therefore de\336ned two new T) 159.6 674.07 P
+0.15 (cl com-) 248.71 674.07 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (mands that allow to write schemas in T) 58.69 666.46 P
+0.12 (cl. The commands translate the class de\336ni-) 157.35 666.46 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (tions read from a schema de\336nition \336le into procedure calls to the meta-schema fa-) 58.69 658.86 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.81 (cility) 58.69 651.26 P
+1.81 (. They also automate the demand-loading of compiled modules into the) 71.15 651.26 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (execution protocol engine. Here is the grammar for the schema de\336nition language,) 58.69 643.66 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(using the syntax notation introduced in Section) 58.69 636.06 T
+(3.2:) 178.13 636.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 68.19 627.57 T
+0 F
+( tcl_command {) 79.67 627.57 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tcl_builtin_command) 74.84 619.97 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| \322enc_enum\323 IDENTIFIER \322{\322) 71.36 612.36 T
+1 F
+(repeat) 154.38 612.36 T
+0 F
+( { STRING_LITERAL } \322}\323) 173.16 612.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| \322enc_class\323 IDENTIFIER) 71.36 604.32 T
+1 F
+(opt) 144.98 604.32 T
+0 F
+( { module:IDENTIFIER }) 154.72 604.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322{\323) 74.84 596.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(opt) 84.03 596.72 T
+0 F
+( { \322inherit\323) 93.77 596.72 T
+1 F
+(repeat) 122.29 596.72 T
+0 F
+( { class:IDENTIFIER } }) 141.08 596.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(list) 84.03 589.12 T
+0 F
+( { class_member }) 93.08 589.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322}\323) 74.84 581.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 573.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 68.19 565.87 T
+0 F
+( class_member {) 79.67 565.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322constructor\323 c_proc) 74.84 558.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| \322destructor\323 c_proc) 71.36 550.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| { \322method\323 | \322proc\323 } type_designator IDENTIFIER) 71.36 543.07 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322{\323) 74.84 535.47 T
+1 F
+(list) 82.84 535.47 T
+0 F
+( { variable } \322}\323 c_proc) 91.89 535.47 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| \322public\323 type_designator IDENTIFIER get:c_proc) 71.36 527.86 T
+1 F
+(opt) 210.74 527.86 T
+0 F
+( { set:c_proc }) 220.48 527.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 520.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 68.19 512.22 T
+0 F
+( type_designator {) 79.67 512.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322void\323 | \322int\323 | \322\337oat\323 | \322boolean\323 | \322string\323 | type:IDENTIFIER) 74.84 504.62 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 497.01 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.07 (What is most remarkable about this schema language is the handling of demand-) 58.69 484.05 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 (loadable compiled modules as well as the use of \322C\323 function names to associate) 58.69 476.45 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (procedures and data members with the appropriate wrapper functions. T) 58.69 468.85 P
+0.04 (o automati-) 239.07 468.85 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.4 W) 318.5 765.79 T
+(rapping compiled \322C\323 and \322C++\323 objects) 334.74 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(61) 520.66 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.03 (cally load a compiled module, a class def) 318.5 743.36 B
+0.16 0.03 (inition may optionally name the location) 423.85 743.36 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (of this module in the UNIX \336le system. A table of already loaded modules is main-) 318.5 735.76 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (tained so that a module is loaded only once. When the module name is omitted, the) 318.5 728.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (corresponding class de\336nitions are assumed to be compiled into the engine. Naming) 318.5 720.56 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.19 (\322C\323 functions works in both cases. Whereas only f) 318.5 712.96 B
+0.16 0.19 (ixed numbers of positional) 455.45 712.96 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.1 (parameters are supported for ordinary methods, constructors and destructors are) 318.5 705.36 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 (allowed to have arbitrary) 318.5 697.76 B
+0.16 0.06 (, named parameters. The schema programming interface) 382.7 697.76 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(allows both alternatives for either type of function.) 318.5 690.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(4.4.2) 318.5 672.72 T
+(Object use) 334.16 672.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.13 (Once the engine has a description of the classes def) 318.5 659.76 B
+0.16 0.13 (ined in a compiled module,) 455.23 659.76 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (objects can be created from classes that def) 318.5 652.16 B
+0.16 0.01 (ine a constructor) 428.2 652.16 B
+0.16 0.01 (. In the interpreter into) 470.14 652.16 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.12 (which the schema has been read, each class def) 318.5 644.56 B
+0.16 0.12 (ines a new T) 443.23 644.56 B
+0.16 0.12 (cl command named) 476.5 644.56 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (after the class. New commands are also created for static member functions, named) 318.5 636.96 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.01 (with class name and member name separated by \322::\323. The class commands are used) 318.5 629.35 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.13 (to create new instances of the associated compiled objects with the following basic) 318.5 621.75 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(command syntax:) 318.5 614.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 328.01 605.66 T
+0 F
+( class_command {) 339.49 605.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(class:IDENTIFIER { object:IDENTIFER | \322#auto\323 }) 334.66 598.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(list) 334.66 590.46 T
+0 F
+( { named_parameter }) 343.7 590.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| class:IDENTIFIER \322info\323 { \322inherit\323 | \322heritage\323 }) 331.18 582.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 328.01 575.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 328.01 567.21 T
+0 F
+( named_parameter {) 339.49 567.21 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322-\323 parameter:IDENTIFER) 334.66 559.61 T
+0 5.01 Q
+(*) 405.95 562.11 T
+0 6.26 Q
+( typed_value) 407.9 559.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 328.01 552.01 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 328.01 543.96 T
+0 F
+( typed_value {) 339.49 543.96 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(INTEGER_LITERAL | FLOA) 334.66 536.36 T
+(T_LITERAL) 412.35 536.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| BOOLEAN_LITERAL | STRING_LITERAL) 331.18 528.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| enum:STRING_LITERAL | OBJECT_HANDLE }) 331.18 521.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 328.01 513.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.06 (The result of executing a class command is a new object handle, either automati-) 318.5 500.59 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (cally generated or chosen by the programmer) 318.5 492.99 B
+0.16 0.05 (. In addition a new command is cre-) 434.72 492.99 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (ated in the T) 318.5 485.39 P
+0.07 (cl interpreter that is used to invoke methods on the new object. A class) 349.74 485.39 P
+0 0 0 1 0 0 0 K
+318.5 472.44 527.62 478.26 C
+0 0 0 1 0 0 0 K
+318.5 476.02 366.79 476.02 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+2 4.29 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 326.55 471.01 T
+2 5.36 Q
+(no space is allowed between the dash \322-\323 and the parameter:IDENTIFIER) 330.84 468.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(62) 58.69 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 376.34 T
+(ool encapsulation architecture) 184.65 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.17 (command may fail if the underlying constructor function signals an error) 58.69 353.92 B
+0.16 0.17 (, e.g.) 254.64 353.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (because of con\337icting lock requests. It is the responsibility of the wrapper function) 58.69 346.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.11 (for the constructor to check the validity of any named parameters passed on the) 58.69 338.72 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (command line. A class command may also be used to retrieve the direct ancestors) 58.69 331.12 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of the associated class from the schema data structure.) 58.69 323.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.07 (The purpose of invoking a constructor through a class command is not always to) 65.02 315.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (create an entirely new object. As the execution protocol engine maintains no persist-) 58.69 307.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.54 (ent memory in itself, a constructor call is always needed to pull an object from a) 58.69 299.82 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (compiled module into the realm of execution protocols. In these cases the named pa-) 58.69 292.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.31 (rameters allowed on the constructor command line may pass selection criteria like) 58.69 284.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.15 (names to the constructor implementation. The check-out of a design object in Nelsis) 58.69 277.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.1 (could be regarded as a typical example of this. The Nelsis DMI returns a) 58.69 269.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.23 (CELL_HANDLE which is used as an object identi\336er in the wrapper module. The) 58.69 261.82 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.29 (destruction of the wrapped object using the standard message) 58.69 254.22 P
+4 F
+0.29 (destr) 216.57 254.22 P
+0.29 (oy) 228.85 254.22 P
+2 F
+0.29 ( on an object) 234.76 254.22 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (handle may then actually check in the design object. This application shows why de-) 58.69 246.62 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (structors may have parameters in execution protocols, too. Nelsis requires a comple-) 58.69 239.02 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tion code to accompany the check-in operation.) 58.69 231.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.17 (Object handles need not be created with class commands. They can either be re-) 65.02 222.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (turned from procedures or be referenced through a data member of a wrapped object.) 58.69 215.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.61 (The object handles are created the \336rst time the procedure is invoked or the data) 58.69 207.72 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.2 (member is accessed. The object handle can be used as value wherever an object of) 58.69 200.12 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (that type is expected. In any case, its value is also the name of a new T) 58.69 192.52 P
+0.11 (cl command) 236.92 192.52 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(that is used to invoke methods on the associated object:) 58.69 184.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 68.19 176.42 T
+0 F
+( object_command {) 79.67 176.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(object:IDENTIFIER \322destroy\323) 74.84 168.82 T
+1 F
+(list) 156.23 168.82 T
+0 F
+( { named_parameter }) 165.28 168.82 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| object:IDENTIFIER) 71.36 161.22 T
+1 F
+(opt) 129.68 161.22 T
+0 F
+( { ancestor:IDENTIFIER \322::\323) 139.42 161.22 T
+0 5.01 Q
+(*) 214.9 163.73 T
+0 6.26 Q
+( }) 216.85 161.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(method:IDENTIFIER) 74.84 153.62 T
+1 F
+(list) 133.97 153.62 T
+0 F
+( { positional_parameter }) 143.02 153.62 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| object:IDENTIFIER \322con\336g\323) 71.36 146.02 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(repeat) 74.84 138.42 T
+0 F
+( { \322-\323 attribute:IDENTIFIER) 93.62 138.42 T
+0 4.29 Q
+(*) 166.32 140.57 T
+0 6.26 Q
+( typed_value }) 167.99 138.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| object:IDENTIFIER \322info\323) 71.36 130.82 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ \322class\323 | \322inherit\323 | \322heritage\323 | \322proc\323 | \322method\323 | \322public\323 }) 74.84 123.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(| object:IDENTIFIER \322isa\323 class:IDENTIFIER) 71.36 115.62 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 108.02 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(rule) 68.19 99.97 T
+0 F
+( positional_parameter { typed_value }) 79.67 99.97 T
+0 0 0 1 0 0 0 K
+58.69 89.26 267.8 95.07 C
+0 0 0 1 0 0 0 K
+58.69 92.84 106.97 92.84 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+2 4.29 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 66.74 87.83 T
+2 5.36 Q
+(no space is allowed between the ancestor class name, the two colons \322::\323, and the) 71.03 85.68 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(method name) 66.74 79.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -422.96 888.43 418.93 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.4 W) 318.5 376.34 T
+(rapping compiled \322C\323 and \322C++\323 objects) 334.74 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(63) 520.66 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.02 (Methods and data members are searched in the class of the object f) 318.5 353.92 B
+0.16 0.02 (irst and then, if) 488.93 353.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (not found, recursively upwards the inheritance hierarchy of the object class. A list) 318.5 346.32 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (of class names in exactly the sequence of method lookup can be retrieved by issuing) 318.5 338.72 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.16 (the request) 318.5 331.12 B
+4 F
+0.16 0.16 (info heritage) 349.63 331.12 B
+2 F
+0.16 0.16 (. This default search can be overridden by pref) 384.07 331.12 B
+0.16 0.16 (ixing a) 509.27 331.12 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0 (method name with the base class that def) 318.5 323.52 B
+0.16 0 (ines the requested method. Data members) 422.09 323.52 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 (can be set with the standard message) 318.5 315.92 B
+4 F
+0.16 0.06 (conf) 415.55 315.92 B
+0.16 0.06 (ig) 426.23 315.92 B
+2 F
+0.16 0.06 (. A method with the name of the data) 431.22 315.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (member is automatically provided to read the value of a data member) 318.5 308.32 P
+0.09 (. Other stand-) 493.19 308.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.09 (ard messages exist to query the type data structures for certain information. The) 318.5 300.72 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.02 (standard message) 318.5 293.11 B
+4 F
+0.16 0.02 (destr) 364.66 293.11 B
+0.16 0.02 (oy) 377.04 293.11 B
+2 F
+0.16 0.02 ( invokes the destructor with optional parameters. A short) 382.98 293.11 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(example illustrates the use of class commands and the manipulation of objects:) 318.5 285.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(/* \336le: class.h */) 328.01 277.02 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(struct) 328.01 268.97 T
+0 F
+( base;) 345.4 268.97 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(struct) 328.01 261.37 T
+0 F
+( derived;) 345.4 261.37 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(struct) 328.01 253.32 T
+0 F
+( base {) 345.4 253.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int a;) 331.18 245.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(char* s;) 331.18 238.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base* obj;) 331.18 230.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base\050\051: a\0500\051, s\0500\051, obj\0500\051) 331.18 222.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ printf \050\322base \0500\051\134n\323\051; }) 407.22 222.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base \050char* s_\051: a\0500\051, s\050strdup\050s_\051\051, obj\0500\051) 331.18 215.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ printf \050\322base \050s=\325%s\325\051\134n\323, s\051; }) 407.22 207.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int incr \050int i\051) 331.18 200.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ printf \050\322incr\050%d\051->%d\134n\323, i, a+i\051;) 407.22 200.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(return a += i; }) 410.7 192.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 328.01 184.92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(struct) 328.01 176.87 T
+0 F
+( derived:) 345.4 176.87 T
+1 F
+(public) 371.14 176.87 T
+0 F
+( base {) 389.57 176.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int b;) 331.18 169.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(char* t;) 331.18 161.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived\050\051: b\0500\051, t\0500\051) 331.18 154.07 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ printf \050\322derived \0500\051\134n\323\051; }) 407.22 154.07 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived \050char* s_\051: b\0500\051, t\0500\051, derived \050s_\051) 331.18 146.47 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ printf \050\322derived \050s=\325%s\325\051\134n\323, s\051; }) 407.22 138.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(};) 328.01 131.27 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(int add \050base* a, base* b\051) 328.01 123.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({ return a->a + b->a; }) 407.22 123.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 4
+%%Page: "mini" 5
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(64) 58.69 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 765.79 T
+(ool encapsulation architecture) 184.65 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(/* \336le class.tcl */) 68.19 743.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_enum) 68.19 735.32 T
+0 F
+( blubber { blubber waber glibber }) 99.15 735.32 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 68.19 727.72 T
+0 F
+( base libclass.so.1.0 {) 98.12 727.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(constructor) 71.36 720.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(new_base) 185.42 720.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(destructor) 71.36 712.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(del_base) 185.42 712.52 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(method) 71.36 704.91 T
+0 F
+( int incr { {int incr} }) 93.96 704.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_incr) 185.42 704.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 697.31 T
+0 F
+( int a) 89.79 697.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_get_a) 134.73 697.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_set_a) 185.42 697.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 689.71 T
+0 F
+( blubber soft) 89.79 689.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_get_a) 134.73 689.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_set_a) 185.42 689.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 682.11 T
+0 F
+( string s) 89.79 682.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_get_s) 134.73 682.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_set_s) 185.42 682.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 674.51 T
+0 F
+( base obj) 89.79 674.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_get_obj) 134.73 674.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(base_set_obj) 185.42 674.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 666.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 68.19 658.86 T
+0 F
+( derived libclass.so.1.0 {) 98.12 658.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(inherit) 71.36 651.26 T
+0 F
+( base) 90.49 651.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(constructor) 71.36 643.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(new_bar) 185.42 643.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(destructor) 71.36 636.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(del_bar) 185.42 636.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 628.46 T
+0 F
+( int b) 89.79 628.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived_get_b) 134.73 628.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived_set_b) 185.42 628.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 71.36 620.86 T
+0 F
+( string t) 89.79 620.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived_get_t) 134.73 620.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived_set_t) 185.42 620.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 613.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 68.19 605.21 T
+0 F
+( ex libclass.so.1.0 {) 98.12 605.21 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(proc) 71.36 597.61 T
+0 F
+( int add { {base a} {base b} }) 84.92 597.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ex_add) 185.42 597.61 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 590.01 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(Now we can create some objects:) 58.69 577.05 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(% base b -s \322aBase\323) 68.19 568.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(-> base \050s=\323aBase\323\051) 147.4 568.55 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(% derived d -s \322aDerived\323) 68.19 560.5 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(-> base \050s=\323aDerived\323\051) 147.4 560.5 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(derived \050s=\323aDerived\323\051) 154.36 552.9 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(% b con\336g -soft glibber; d con\336g -a 40) 68.19 544.85 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(% ex::add b d) 68.19 536.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(-> 42) 147.4 536.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.02 (The last line shows the use of a static member function. Please note that enumera-) 58.69 523.84 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tion values are quietly coerced into integers.) 58.69 516.24 T
+2 5.01 Q
+(*) 169.42 518.74 T
+0 0 0 1 0 0 0 K
+58.69 478.7 267.8 484.52 C
+0 0 0 1 0 0 0 K
+58.69 482.28 106.97 482.28 2 L
+0.11 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+27 -33.52 622.28 808.37 C
+0 0 0 1 0 0 0 K
+2 4.29 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 66.74 477.27 T
+2 5.36 Q
+(The result of this addition operation is of course purely coincidental and has no philo-) 71.03 475.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(sophical meaning whatsoever [Adams) 66.74 468.87 T
+(79].) 149.88 468.87 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+293.15 -33.52 888.43 808.37 C
+0 0 0 1 0 0 0 K
+0 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(4.4 W) 318.5 765.79 T
+(rapping compiled \322C\323 and \322C++\323 objects) 334.74 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(65) 520.66 765.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(4.4.3) 318.5 743.36 T
+(An example: The Nelsis DMI) 334.16 743.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(The following is an excerpt from a schema de\336nition for the Nelsis DDM system:) 318.5 730.4 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_enum) 328.01 721.9 T
+0 F
+( completionModeEnum {quit complete}) 358.97 721.9 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_enum) 328.01 713.86 T
+0 F
+( openModeEnum {read write update}) 358.97 713.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_enum) 328.01 705.81 T
+0 F
+( purposeEnum {edit import derive export extract view}) 358.97 705.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 328.01 697.76 T
+0 F
+( DesignObject {}) 357.93 697.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 328.01 689.71 T
+0 F
+( Library $DDMLib/schemas/libnelsis.so.4.3 {) 357.93 689.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(constructor) 331.18 682.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(new_Library) 445.24 682.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(destructor) 331.18 674.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(del_Library) 445.24 674.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(method) 331.18 666.91 T
+0 F
+( string query {{string query}}) 353.78 666.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Library_query) 445.24 666.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(method) 331.18 658.86 T
+0 F
+( DesignObject designObject {) 353.78 658.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+({purposeEnum purpose} {string name} {string viewT) 343.85 651.26 T
+(ype}} \134) 486.84 651.26 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Library_designObject) 445.24 643.66 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(...) 331.18 636.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(}) 328.01 628.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 328.01 620.41 T
+0 F
+( DesignObject $DDMLib/schemas/libnelsis.so.4.3 {) 357.93 620.41 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(destructor) 331.18 612.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(del_DesignObject) 445.24 612.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 331.18 604.77 T
+0 F
+( Library lib) 349.61 604.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_getLib) 445.24 604.77 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 331.18 597.16 T
+0 F
+( string mod_name) 349.61 597.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_getModName) 445.24 597.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 331.18 589.56 T
+0 F
+( int v_number) 349.61 589.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_getVNumber) 445.24 589.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 331.18 581.96 T
+0 F
+( string view_type) 349.61 581.96 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_getV) 445.24 581.96 T
+(iewT) 499.05 581.96 T
+(ype) 511.92 581.96 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(public) 331.18 574.36 T
+0 F
+( string hierarchy) 349.61 574.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_getHierarchy \134) 445.24 574.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(DesignObject_setHierarchy) 445.24 566.76 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(...) 331.18 559.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(}) 328.01 551.56 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(enc_class) 328.01 543.51 T
+0 F
+( Nelsis $DDMLib/schemas/libnelsis.so.4.3 {) 357.93 543.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(proc) 332.92 535.91 T
+0 F
+( void init {{string tool}}) 346.48 535.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Nelsis_init) 445.24 535.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(proc) 332.92 528.31 T
+0 F
+( void quit {}) 346.48 528.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Nelsis_quit) 445.24 528.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(proc) 332.92 520.71 T
+0 F
+( void checkInAll {}) 346.48 520.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Nelsis_checkInAll) 445.24 520.71 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(...) 331.18 513.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(}) 328.01 505.51 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.17 (Only some of the class members are shown here to demonstrate the use of the) 318.5 492.54 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.05 (schema def) 318.5 484.94 B
+0.16 0.05 (inition language. The data member) 347.19 484.94 B
+4 F
+0.16 0.05 (hierar) 438.84 484.94 B
+0.16 0.05 (chy) 454.59 484.94 B
+2 F
+0.16 0.05 ( of class DesignObject is) 463.44 484.94 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.04 (worth noting. Nelsis allows to access hierarchical relationships through the use of) 318.5 477.34 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.56 (streams. The two wrapper functions) 318.5 469.74 B
+4 F
+0.16 0.56 (DesignObject_getHierar) 430.41 469.74 B
+0.16 0.56 (chy) 504.79 469.74 B
+2 F
+0.16 0.56 ( and) 515.17 469.74 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+27 -422.96 622.28 418.93 C
+0 0 0 1 0 0 0 K
+1 6.26 Q
+0 X
+0 0 0 1 0 0 0 K
+(66) 58.69 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 181.52 376.34 T
+(ool encapsulation architecture) 184.65 376.34 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+0.16 0.07 (DesignObject_setHierar) 58.69 353.92 B
+0.16 0.07 (chy) 121.53 353.92 B
+2 F
+0.16 0.07 ( map this stream interface to an interface to a pseudo) 130.43 353.92 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (data member) 58.69 346.32 P
+4 F
+-0.04 (hierar) 92.68 346.32 P
+-0.04 (chy) 108.1 346.32 P
+2 F
+-0.04 (. Whenever there is read access to this data member) 116.38 346.32 P
+-0.04 (, the cor-) 245.46 346.32 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (responding stream is read and its contents is returned as value of this data member) 58.69 338.72 P
+0.12 (.) 266.24 338.72 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.08 (On write access, the string passed as parameter to the) 58.69 331.12 B
+4 F
+0.16 0.08 (set) 199.73 331.12 B
+2 F
+0.16 0.08 ( procedure is written as) 206.92 331.12 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (new contents into the) 58.69 323.52 B
+4 F
+0.16 0.01 (hierar) 114.45 323.52 B
+0.16 0.01 (chy) 129.93 323.52 B
+2 F
+0.16 0.01 ( stream. The class) 138.64 323.52 B
+4 F
+0.16 0.01 (Nelsis) 185.86 323.52 B
+2 F
+0.16 0.01 ( collects functions that are) 201.22 323.52 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (not associated with any particular class. As such its member functions are static and) 58.69 315.92 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.08 (do not pass an object identif) 58.69 308.32 B
+0.16 0.08 (ier as parameter) 131.96 308.32 B
+0.16 0.08 (. A typical use of these classes in an) 173.24 308.32 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(execution protocol would look like this:) 58.69 300.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Nelsis::init browser_tools) 68.19 292.22 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Library lib -path ~/projects/DP32 -mode update) 68.19 284.17 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(browse \322DP32\323) 68.19 276.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lib) 68.19 268.08 T
+1 F
+(destroy) 76.19 268.08 T
+0 F
+( -mode complete) 98.8 268.08 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Nelsis::quit) 68.19 260.03 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(proc) 68.19 243.93 T
+0 F
+( browse {mod_name {lv 0}} {) 81.76 243.93 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(puts) 71.36 236.33 T
+0 F
+( \322[incr lv]: mod_name\323) 84.57 236.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(set) 71.36 228.73 T
+0 F
+( q [lib) 80.4 228.73 T
+1 F
+(query) 97.11 228.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(\322GET DesignObject) 115.89 228.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(WHERE) 85.77 221.13 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Module ITS Name == $mod_name AND) 122.06 221.13 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Module ITS V) 122.06 213.53 T
+(iewT) 159.86 213.53 T
+(ype == \325) 172.73 213.53 T
+(structure\325"]) 194.89 213.53 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(if) 71.36 205.93 T
+0 F
+( { [) 75.18 205.93 T
+1 F
+(llength) 82.5 205.93 T
+0 F
+( $q] == 1 }) 103.01 205.93 T
+1 F
+(return) 133.3 205.93 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(set) 71.36 198.33 T
+0 F
+( do [) 80.4 198.33 T
+1 F
+(lindex) 92.59 198.33 T
+0 F
+( $q 1]) 110.68 198.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(foreach) 71.36 190.73 T
+0 F
+( h [$do hierarchy] { browse $h $lv }) 93.97 190.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(}) 68.19 182.68 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.16 0.07 (This short T) 58.69 169.72 B
+0.16 0.07 (cl program will open the Nelsis project \322~/project/DP32\323 for update,) 89.96 169.72 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.03 (and list the elements of the hierarchical composition of a) 58.69 162.11 B
+4 F
+0.16 0.03 (Module) 205.79 162.11 B
+2 F
+0.16 0.03 ( \322DP32\323. All the) 225.11 162.11 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (real work is done by the procedure browse, which prints the) 58.69 154.52 P
+4 F
+-0.12 (Module) 208.9 154.52 P
+2 F
+-0.12 ( name passed as) 228.02 154.52 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.1 (parameter and then searches for a) 58.69 146.91 B
+4 F
+0.16 0.1 (DesignObject) 148.38 146.91 B
+2 F
+0.16 0.1 ( with) 183.95 146.91 B
+4 F
+0.16 0.1 (Module) 199.1 146.91 B
+2 F
+0.16 0.1 ( name \322DP32\323 and) 218.79 146.91 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+-0.16 (V) 58.69 139.31 P
+-0.16 (iewT) 62.05 139.31 P
+-0.16 (ype) 73.76 139.31 P
+2 F
+-0.16 ( \322structure\323 in the Nelsis database. The method) 82.45 139.31 P
+4 F
+-0.16 (query) 200.97 139.31 P
+2 F
+-0.16 ( of class) 215.23 139.31 P
+4 F
+-0.16 (Library) 236.84 139.31 P
+2 F
+-0.16 ( pro-) 255.96 139.31 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.18 (vides the interface to the Nelsis DML. It allows to pass queries as strings and) 58.69 131.71 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.06 (returns query results as a T) 58.69 124.11 B
+0.16 0.06 (cl list that are easily processed by T) 128.24 124.11 B
+0.16 0.06 (cl commands. The) 220.57 124.11 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.13 (\336rst list element always contains the list of attributes requested, followed by a - pos-) 58.69 116.51 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.13 (sibly empty - list of results. The \336rst) 58.69 108.91 P
+4 F
+0.13 (DesignObject) 152.43 108.91 P
+2 F
+0.13 ( found is extracted from the list.) 186.85 108.91 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (A loop then iterates over its children in the composition hierarchy returned as value) 58.69 101.31 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 0.01 (from the pseudo data member) 58.69 93.71 B
+4 F
+0.16 0.01 (hierar) 136.19 93.71 B
+0.16 0.01 (chy) 151.69 93.71 B
+2 F
+0.16 0.01 (, calling itself recursively with the) 160.02 93.71 B
+4 F
+0.16 0.01 (Module) 248.61 93.71 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(name of that child.) 58.69 86.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "mini" 5
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.89
+%%PageOrder: Ascend
+%%Pages: 5
+%%DocumentFonts: Helvetica
+%%+ Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-BoldItalic
+%%+ Times-Italic
+%%EOF

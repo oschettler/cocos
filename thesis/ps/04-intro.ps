@@ -1,0 +1,4921 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 595.3 841.89 0 1 14 FMDOCUMENT
+0 0 /Helvetica FMFONTDEFINE
+1 0 /Helvetica-Bold FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Times-Bold FMFONTDEFINE
+5 0 /Times-BoldItalic FMFONTDEFINE
+6 0 /Helvetica-Oblique FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "3" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.1 Overview) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(3) 516.64 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 18 Q
+(1.) 56.71 693.83 T
+(Introduction) 76.72 693.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.1) 56.71 656.16 T
+(Overview) 83.39 656.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.16 (T) 56.71 626.49 P
+0.16 (oday) 64.28 626.49 P
+0.16 (, there is a growing gap between IC fabrication technology and the capability) 90.59 626.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.24 (of Electronic Design Automation \050EDA\051 Systems to help design electronic systems.) 56.71 609.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.33 (Many design tasks on gate and register) 56.71 592.49 B
+0.35 0.33 (-transfer levels can be accomplished by) 288.86 592.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.03 (standard tools of) 56.71 575.49 B
+0.35 0.03 (fered by the big EDA system vendors. On higher levels, however) 150.91 575.49 B
+0.35 0.03 (,) 520.92 575.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.1 (tool development is still very vivid. The lar) 56.71 558.49 B
+0.35 0.1 (gest productivity improvements are to) 306.21 558.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.19 (be expected for design on algorithmic and architectural levels. Such \322advanced\323) 56.71 541.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.17 (solutions often cannot be bought of) 56.71 524.49 B
+0.35 0.17 (f-the-shelf from the big EDA system vendors) 261.9 524.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.28 (but have to be bought from innovative niche vendors or even have to be home-) 56.71 507.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(grown.) 56.71 490.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.45 (Innovative electronic design requires close cooperation between system engi-) 70.88 471.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.43 (neers, system architects and IC designers. Design environments with powerful facil-) 56.71 454.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (ities for design information management and browsing are needed to close the com-) 56.71 437.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.36 (munication gap between these people [DeMan) 56.71 420.49 P
+-0.36 (92]. In this thesis we describe how to) 318.52 420.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.67 (build an integrated environment for automated electronic design, based on the fol-) 56.71 403.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lowing observations:) 56.71 386.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(1.) 62.38 367.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.05 (Integrated design environments are constructed from framework components) 77.97 367.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (and design tools. While design tools perform the actual design steps, i.e. they) 77.97 350.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 (transform design descriptions, framework components provide an operating) 77.97 333.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(environment for design tools and a working environment for designers.) 77.97 316.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(2.) 62.38 297.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.1 (The design environment should be open to combine the best available design) 77.97 297.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.22 (tools for each design task. This implies that the design tools used have no) 77.97 280.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (built-in knowledge about the other tools and framework components in the) 77.97 263.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.13 (design environment. They have to rely on standards to accept control input) 77.97 246.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.11 (and to transfer design descriptions to and from the other constituents of the) 77.97 229.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(design environment.) 77.97 212.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(3.) 62.38 193.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0 (Although it is attractive to use procedural interfaces to interface design tools) 77.97 193.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 (to each other and to the framework components, none of the proposed solu-) 77.97 176.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.05 (tions is mature enough or generally accepted by tool vendors as the primary) 77.97 159.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.01 (design data interface of their choice to use with their tools. For example, the) 77.97 142.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (CFI Design Representation Programming Interface [CFI-DRPI) 77.97 125.49 B
+0.35 0.06 (93] is some-) 439.62 125.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.03 (times supported in addition to a tool\325) 77.97 108.49 B
+0.35 0.03 (s native design f) 287.33 108.49 B
+0.35 0.03 (ile interface. No exam-) 379.5 108.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 1
+%%Page: "4" 2
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(4) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.14 (ple is known to the author where such a standard programming interface is) 92.14 696.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of) 92.14 679.49 T
+(fered as the sole design data interface for a production design tool.) 103.55 679.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(4.) 76.55 660.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.3 (Instead, production design tools use \050standard\051 hardware description lan-) 92.14 660.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 (guages as their primary interface to design descriptions. They transfer input) 92.14 643.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.11 (and output data in design \336les. A design \336le may contain batches of arbitrary) 92.14 626.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(numbers of \322design units\323.) 92.14 609.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(5.) 76.55 590.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.14 (Design units are the natural building blocks of an electronic design. Some-) 92.14 590.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.42 (times they represent actual physical devices that are used to assemble a) 92.14 573.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.15 (design, sometimes they are logical abstractions that only exist to introduce) 92.14 556.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 (structure and thus make a design manageable by a team of designers. When) 92.14 539.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (designers work on a design, they manipulate design units and their relation-) 92.14 522.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.05 (ships to each other) 92.14 505.49 B
+0.35 0.05 (. Design units appear in schematic or block diagrams, are) 197.9 505.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.38 (used in part lists, are combined to form more complex design units, and) 92.14 488.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.36 (evolve over time. The habit to store and transport design units in f) 92.14 471.49 B
+0.35 0.36 (iles is) 489.65 471.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.02 (imposed by the f) 92.14 454.49 B
+0.35 0.02 (ile system centred user view of) 186.45 454.49 B
+0.35 0.02 (fered by contemporary oper-) 362.34 454.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ating systems.) 92.14 437.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.1 (T) 70.88 408.49 B
+0.35 0.1 (raditionally) 79.04 408.49 B
+0.35 0.1 (, research on design tool integration has focused on providing proce-) 143.87 408.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.67 (dural interfaces to tightly integrate design tools into a design environment) 70.88 391.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 ([Hunzelmann) 70.88 374.49 B
+0.35 0.07 (92]. Unfortunately) 151.46 374.49 B
+0.35 0.07 (, little of this work has found its way to everyday) 256.43 374.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (design reality) 70.88 357.5 P
+-0.06 (. Instead, state-of-the-art design tools interface to the outside world by) 145.73 357.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (means of standard design description languages like VHDL or V) 70.88 340.5 P
+-0.25 (erilog. The obvious) 429.83 340.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.02 (solution to integrate f) 70.88 323.49 B
+0.35 0.02 (ile-based design tools with framework components is to have) 191.75 323.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.35 (the framework manage design f) 70.88 306.49 B
+0.35 0.35 (iles. This approach is called) 258.85 306.49 B
+3 F
+0.35 0.35 (encapsulation) 430.42 306.49 B
+2 F
+0.35 0.35 ( and) 513.49 306.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (implies that the actual design tool is encapsulated in a wrapper that performs frame-) 70.88 289.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.12 (work-specif) 70.88 272.49 B
+0.35 0.12 (ic house-keeping like setting up an execution environment, importing) 138.32 272.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.15 (and exporting design f) 70.88 255.49 B
+0.35 0.15 (iles from a protected database managed by the framework,) 199.98 255.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and communicating with the framework user interface.) 70.88 238.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.09 (While everybody does it, \336le-based encapsulation is generally considered to be a) 85.05 219.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(bad thing for the following reasons:) 70.88 202.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(1.) 76.55 183.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.08 (There is considerable overhead in having each tool parse and analyse a tex-) 92.14 183.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.26 (tual design description. This holds even more for complex languages like) 92.14 166.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(VHDL.) 92.14 149.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(2.) 76.55 130.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.22 (Simple encapsulation assumes that all necessary design \336les can be provided) 92.14 130.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (to a design tool before its start. All results produced by a tool are determined) 92.14 113.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 2
+%%Page: "5" 3
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.1 Overview) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5) 516.64 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.17 (by the way it is invoked. Interactive tools are dif) 77.97 696.49 B
+0.35 0.17 (ferent in that they allow a) 360.72 696.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(designer to manipulate additional design \336les during the tool run.) 77.97 679.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(3.) 62.38 660.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.07 (Designers do not work on their designs in terms of design f) 77.97 660.49 B
+0.35 0.07 (iles but rather in) 416.68 660.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (terms of design units and their relationships. When managing complete \336les,) 77.97 643.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.03 (a framework can scarcely help the designer in keeping track of relationships) 77.97 626.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(between design units. There seem to be two completely dif) 77.97 609.49 T
+(ferent spheres:) 407.44 609.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050a\051 tightly integrated design tools, working on individual design units, and) 77.97 592.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (\050b\051 encapsulated tools working on \336les. Sophisticated graphical browsers and) 77.97 575.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (query interfaces help designers to keep track of design units and their rela-) 77.97 558.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tionships. Nothing but directory browsers are usable on design \336les.) 77.97 541.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.07 (Our goal is to provide a new framework service for design tool encapsulation that) 56.71 512.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.23 (bridges the mismatch between designers\325 notions of design units and the design) 56.71 495.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (f) 56.71 478.49 B
+0.35 0.09 (iles manipulated by design tools. Our solution is to analyse a design f) 60.69 478.49 B
+0.35 0.09 (ile on input) 458.95 478.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.26 (into the framework database and to split it into a set of text chunks each describing) 56.71 461.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.05 (an individual design unit. On export, these text chunks may be recombined in \337exi-) 56.71 444.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.05 (ble ways to form a complete design f) 56.71 427.49 B
+0.35 0.05 (ile which can be fed into a design tool. Thus,) 267.43 427.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0 (the framework can manage individual design units, establish relationships between) 56.71 410.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(them and recombine them any way the designer chooses.) 56.71 393.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (W) 70.88 374.49 P
+0.28 (e do not attempt to overcome the overhead of design \336le parsing. Design units) 82.98 374.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.32 (are still transported to and from design tools using \336les as carriers. However) 56.71 357.5 P
+-0.32 (, the de-) 479.58 357.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (signer has \336ner and more \337exible control over the selection of design units to be fed) 56.71 340.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.55 (to a design tool. Design \336les are dynamically created from a selected set of design) 56.71 323.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.65 (units to be manipulated during a particular design tool run. Hence, the design \336les) 56.71 306.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.19 (fed to a design tool need only contain the necessary design units and thus can be) 56.71 289.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(smaller) 56.71 272.49 T
+(.) 97.15 272.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(W) 70.88 253.49 T
+(e have chosen the following approach to design tool encapsulation:) 82.98 253.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(1.) 62.38 234.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.04 (T) 77.97 234.49 B
+0.35 0.04 (o def) 85.58 234.49 B
+0.35 0.04 (ine the architecture of a new framework service and integrate it into a) 113.74 234.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.15 (commonly accepted reference architecture [CFI-F) 77.97 217.49 B
+0.35 0.15 (AR) 365.16 217.49 B
+0.35 0.15 (93]. The new service) 388.55 217.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (facilitates the mapping between design units and their relationships carried in) 77.97 200.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.35 (design f) 77.97 183.49 B
+0.35 0.35 (iles and corresponding objects and relationships managed by the) 125.05 183.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0 (framework. It does so by performing design f) 77.97 166.49 B
+0.35 0 (ile analysis and construction. It) 334.12 166.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.08 (further starts and controls design tools, communicates with them, and inter-) 77.97 149.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.04 (prets their outputs. The proposed framework service is constructed around a) 77.97 132.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(scripting engine [Ousterhout) 77.97 115.49 T
+(90] to provide end-user programmability) 241.67 115.49 T
+(.) 469.39 115.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 3
+%%Page: "6" 4
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(6) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(2.) 76.55 696.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.16 (T) 92.14 696.49 B
+0.35 0.16 (o formally def) 99.88 696.49 B
+0.35 0.16 (ine a conceptual schema for objects and relationships man-) 182.15 696.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.01 (aged by the framework. Existing framework schemas are either not formally) 92.14 679.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.16 (de\336ned [W) 92.14 662.49 P
+0.16 (agner) 153.77 662.49 P
+0.16 (91], or do not provide the required \337exibility [Kath\232fer) 188.37 662.49 P
+0.16 (92],) 502.26 662.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.32 ([Dimes) 92.14 645.49 P
+-0.32 (93a]. De\336ning a completely new schema has the advantage of being a) 136.86 645.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(clean concept and being portable across dif) 92.14 628.49 T
+(ferent frameworks.) 333.71 628.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(3.) 76.55 609.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.28 (T) 92.14 609.49 B
+0.35 0.28 (o provide a toolkit for processing design f) 100 609.49 B
+0.35 0.28 (iles and mapping design units) 348.35 609.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.02 (found therein to objects managed by the framework. Rather than hand-craft-) 92.14 592.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.39 (ing language processors for important design description languages like) 92.14 575.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (VHDL and V) 92.14 558.49 P
+-0.31 (erilog, we are of the opinion that a general toolkit provides more) 166.18 558.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (\337exibility to the environment builder) 92.14 541.49 P
+-0.19 (. Thus, the framework is not restricted to) 297.51 541.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (supporting a limited set of languages. Support for dif) 92.14 524.49 P
+0.3 (ferent languages or dia-) 390.97 524.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(lects of existing languages can easily be constructed.) 92.14 507.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.42 (W) 70.88 478.49 B
+0.35 0.42 (e describe a prototype design environment that was implemented using this) 83.39 478.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.2 (approach. The portability of the conceptual schema was demonstrated by imple-) 70.88 461.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (menting it on a CAD Framework as well as on an object-oriented database. A set of) 70.88 444.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.08 (VHDL-based, state-of-the-art synthesis design tools was encapsulated using auto-) 70.88 427.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(matically generated language processors and a small number of scripts.) 70.88 410.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.2) 70.88 371.16 T
+(Design complexity) 97.57 371.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.03 (Electronic designs are complex. Several management techniques have been imple-) 70.88 341.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.24 (mented in integrated design environments over the years to reduce this inherent) 70.88 324.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (complexity) 70.88 307.49 P
+-0.11 (. Some techniques are unique to electronic design, others were borrowed) 132.97 307.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (from software engineering and related disciplines. W) 70.88 290.49 B
+0.35 0.06 (e assume the following prop-) 372.35 290.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(erty of electronic designs:) 70.88 273.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(Pr) 70.88 244.49 T
+(operty:) 85.4 244.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.77 (All aspects of an electronic design pertinent to its construction,) 150.25 244.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (test, and application are formally de\336ned in a set of) 150.25 227.49 P
+3 F
+0.99 (design de-) 451.33 227.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(scriptions) 150.25 210.49 T
+2 F
+(.) 205.48 210.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(1.2.1) 70.88 171.49 T
+(Views) 105.91 171.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.04 (One approach to tackle complexity is to or) 70.88 142.49 P
+-0.04 (ganize the various aspects of an evolving) 308.68 142.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.04 (electronic design into the categories) 70.88 125.49 B
+3 F
+0.35 0.04 (domain) 278.99 125.49 B
+2 F
+0.35 0.04 ( and) 321.22 125.49 B
+3 F
+0.35 0.04 (level of detail) 349.33 125.49 B
+2 F
+0.35 0.04 (. Collectively) 426.82 125.49 B
+0.35 0.04 (, these) 502.24 125.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.35 (two categories are often referred to as the) 70.88 108.49 B
+3 F
+0.35 0.35 (view dimension) 324.66 108.49 B
+2 F
+0.35 0.35 ( of electronic design) 416.63 108.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.18 ([vdHamer) 70.88 91.49 B
+0.35 0.18 (94]. Three, occasionally four domains are distinguished for electronic) 132.76 91.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 4
+%%Page: "7" 5
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.2 Design complexity) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(7) 516.64 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.4 (design descriptions \050Figure) 56.71 696.49 B
+0.35 0.4 (1, W) 224.43 696.49 B
+0.35 0.4 (alker and Thomas [Thomas) 252.45 696.49 B
+0.35 0.4 (83], [W) 420.48 696.49 B
+0.35 0.4 (alker) 466.02 696.49 B
+0.35 0.4 (85],) 499.89 696.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(based on earlier work by Gajski and Kuhn [Gajski) 56.71 679.49 T
+(83]\051. The four domains are char-) 341.71 679.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(acterized by the primitives used in design descriptions:) 56.71 662.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 643.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4.44 (The primitives in the) 77.97 643.49 P
+3 F
+4.44 (behavioural domain) 216.27 643.49 P
+2 F
+4.44 ( are operators specifying the) 333.88 643.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.49 (behaviour of a design. The operators are aggregated into data \337ow and control) 77.97 626.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (\337ow graphs. Operators may themselves be composed of data and control \337ow) 77.97 609.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(graphs composed of more primitive operators.) 77.97 592.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 573.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.94 (The primitives in the) 77.97 573.49 P
+3 F
+2.94 (structural domain) 210.29 573.49 P
+2 F
+2.94 ( are functional blocks with well-) 313.96 573.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.48 (de\336ned interfaces that link to other blocks through networks of electrical) 77.97 556.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(connections. Functional blocks may be composed of more primitive blocks.) 77.97 539.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 520.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.86 (The primitives in the) 77.97 520.49 P
+3 F
+-0.86 (physical domain) 195.09 520.49 P
+2 F
+-0.86 ( are objects with properties like material,) 286.39 520.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.19 (area, colour) 77.97 503.49 P
+0.19 (, texture, etc. They are related by spatial relationships like) 143.67 503.49 P
+3 F
+0.19 (above) 473.32 503.49 P
+2 F
+0.19 (,) 506.75 503.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(below) 77.97 486.49 T
+2 F
+(,) 110.5 486.49 T
+3 F
+(aside) 117.5 486.49 T
+2 F
+(. Physical objects may also be composed of more primitive ones.) 147.06 486.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 467.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.74 (Occasionally) 77.97 467.49 P
+-0.74 (, the) 150.15 467.49 P
+3 F
+-0.74 (test domain) 176.27 467.49 P
+2 F
+-0.74 ( is also considered. The primitives in this domain) 240.48 467.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.51 (are stimuli and their associated results. In the sequel, we will concentrate on) 77.97 450.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the other three domains and lar) 77.97 433.49 T
+(gely ignore the test domain.) 251.51 433.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The distinction between domains and levels of detail leads to the following) 56.71 404.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 56.71 375.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.24 (A) 136.08 375.49 P
+3 F
+-0.24 (design object) 149.45 375.49 P
+2 F
+-0.24 ( describes an electronic design in a particular do-) 223.48 375.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (main and on a particular level of detail, as it exists at a particular) 136.08 358.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (point in time. The set of all design objects for a single electronic) 136.08 341.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.69 (design is referred to as a) 136.08 324.49 P
+3 F
+1.69 (module) 286.18 324.49 P
+2 F
+1.69 (. A design object is uniquely) 327.4 324.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.55 (identi\336ed by the tuple \050module, domain, level of detail, version\051.) 136.08 307.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.19 (Synthesis steps transform design objects from a low level of detail in the behav-) 56.71 278.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.5 (ioural domain to higher levels of detail in the structural or physical domains) 56.71 261.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (\050Figure) 56.71 244.49 P
+-0.31 (1\051. Synthesis steps are one-to-many transformations, e.g. there are a number) 101.42 244.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (of possible sets of ALUs, MUXs, registers, etc. \050structural domain\051 implementing a) 56.71 227.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.32 (set of register transfers \050behavioural domain\051. Exploring the design space means to) 56.71 210.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.24 (construct a compound design object from any of a number of alternative sets of) 56.71 193.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (design objects from the behavioural, structural, or physical domains. This implies) 56.71 176.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (that although a design object is associated with a specif) 56.71 159.49 B
+0.35 0.09 (ic domain, it may itself be) 374.12 159.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.12 (composed of design objects from dif) 56.71 142.49 B
+0.35 0.12 (ferent domains. Quite commonly) 267.44 142.49 B
+0.35 0.12 (, alternative) 456.37 142.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.01 (decompositions of a design object are used for dif) 56.71 125.49 B
+0.35 0.01 (ferent domains and dif) 338.78 125.49 B
+0.35 0.01 (ferent lev-) 466.09 125.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(els of detail.) 56.71 108.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 5
+%%Page: "8" 6
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(8) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(1.2.2) 70.88 266.31 T
+(Abstraction) 105.91 266.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.24 (Another approach to handle complexity is) 70.88 237.31 P
+3 F
+-0.24 (abstraction) 308.18 237.31 P
+2 F
+-0.24 (, accomplished by the distinc-) 371.96 237.31 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.33 (tion of interface and implementation. This particular notion of abstraction was) 70.88 220.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.16 (made popular by structured programming in software engineering. The objective) 70.88 203.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.31 (for abstraction is information hiding and simplif) 70.88 186.31 B
+0.35 0.31 (ication of reuse. When using a) 357.45 186.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.1 (module, the designer should only have to deal with its well-def) 70.88 169.31 B
+0.35 0.1 (ined interfaces but) 432.66 169.31 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.34 (not with the intricacies of an underlying implementation. It must even be possible to) 70.88 152.31 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.24 (select a dif) 70.88 135.31 P
+0.24 (ferent implementation for a given interface, e.g. one on a higher level of) 131.76 135.31 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(detail.) 70.88 118.31 T
+0 0 0 1 0 0 0 K
+69.67 297.64 539.81 705.83 C
+0 0 0 1 0 0 0 K
+70.59 311.81 538.89 470.91 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 14 Q
+0 X
+-0.15 (Figure 1.) 70.59 461.58 P
+3 F
+-0.15 (The Y-Chart by Walker and Thomas, based on work by Gajski and Kuhn.) 127.46 461.58 P
+-0.06 (Every design description has a domain \050behavioural, structural, or physical\051 and a) 70.59 444.58 P
+-0.53 (level of detail) 70.59 427.58 P
+3 11.2 Q
+-0.42 (*) 145.74 433.18 P
+3 14 Q
+-0.53 (. Synthesis design steps are depicted by trajectories taken from one of) 151.35 427.58 P
+-1.03 (the outer circles \050abstract - low detail\051 towards the centre \050specific - high detail\051. The) 70.59 410.58 P
+-0.3 (diagram shows an example synthesis trajectory from the design methodology imple-) 70.59 393.58 P
+(mented in the CMU design automation system. Analysis steps \050extraction, simula-) 70.59 376.58 T
+0 0 0 1 0 0 0 K
+70.59 348.91 538.89 354.91 C
+0 0 0 1 0 0 0 K
+70.59 352.91 304.59 352.91 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+69.67 297.64 539.81 705.83 C
+0 0 0 1 0 0 0 K
+3 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(tion\051 derive an abstract description from a more specific one.) 70.59 359.58 T
+0 0 0 1 0 0 0 K
+70.59 339.81 538.89 352.81 C
+0 0 0 1 0 0 0 K
+70.59 347.81 178.59 347.81 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+69.67 297.64 539.81 705.83 C
+0 0 0 1 0 0 0 K
+2 9.6 Q
+0 X
+0 0 0 1 0 0 0 K
+(*.) 88.59 336.61 T
+2 12 Q
+(This is frequently called \322level of abstraction\323. T) 98.19 331.81 T
+(o avoid confusion, however) 332.63 331.81 T
+(, we will) 465.46 331.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(rather use \322level of detail\323 in the sequel.) 88.59 317.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+230.05 690.26 320.41 599.91 2 L
+0.5 H
+2 Z
+N
+320.41 599.91 410.76 690.26 2 L
+N
+320.41 599.91 320.41 482.98 2 L
+N
+90 450 54.67 54.67 320.41 599.91 A
+90 450 68.33 68.33 320.41 599.91 A
+90 450 82 82 320.41 599.91 A
+0 11 Q
+(behavioural) 177.38 672.18 T
+(physical) 401.28 672.18 T
+(structural) 325.72 492.22 T
+(architecture) 292.89 686.39 T
+(algorithm) 299 672.48 T
+(functional block) 283.71 658.58 T
+(logic) 310.31 644.67 T
+(circuit) 307.26 630.77 T
+90 450 41 41 320.41 599.91 A
+90 450 27.33 27.33 320.41 599.91 A
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+269.19 637.16 281.9 638.42 271.79 630.62 270.49 633.89 4 Y
+2 X
+V
+272.53 648.11 M
+ 268.15 638.11 268.15 638.11 268.31 635.92 D
+ 268.46 633.73 268.46 633.73 270.5 633.89 D
+ 270.5 633.89 270.5 633.89 270.5 633.89 D
+4 H
+N
+310.14 558.19 320.02 545.61 304.98 551.04 307.56 554.62 4 Y
+V
+281.9 638.42 M
+ 280.65 628.42 280.65 628.42 278 622.01 D
+ 275.34 615.61 275.34 615.61 274.25 607.48 D
+ 273.15 599.36 273.15 599.36 273.93 592.48 D
+ 274.71 585.61 274.71 585.61 277.53 579.2 D
+ 280.34 572.8 280.34 572.8 286.75 566.7 D
+ 293.15 560.61 293.15 560.61 301.59 557.17 D
+ 304.21 556.1 306.02 555.37 307.56 554.62 D
+N
+357.32 622.14 358.3 638.11 365.93 624.05 361.63 623.1 4 Y
+V
+361.64 623.09 M
+ 361.82 622.66 362.01 622.2 362.21 621.7 D
+ 364.87 615.3 364.87 615.3 365.96 607.17 D
+ 367.06 599.05 367.06 599.05 366.28 592.17 D
+ 365.49 585.3 365.49 585.3 362.68 578.89 D
+ 359.87 572.48 359.87 572.48 353.46 566.39 D
+ 347.06 560.3 347.06 560.3 338.62 556.86 D
+ 330.18 553.42 330.18 553.42 320.18 545.3 D
+N
+348.49 642.91 349.22 629.51 341.5 640.49 345 641.7 4 Y
+V
+345.01 641.7 M
+ 345.01 641.7 345.01 641.7 345.01 641.7 D
+ 345.16 643.89 345.16 643.89 347.19 643.73 D
+ 349.22 643.58 349.22 643.58 358.6 639.2 D
+N
+350.22 611.56 340.11 619.36 352.81 618.1 351.52 614.83 4 Y
+V
+349.49 629.04 M
+ 353.87 619.05 353.87 619.05 353.71 616.86 D
+ 353.55 614.67 353.55 614.67 351.52 614.83 D
+ 351.52 614.83 351.52 614.83 351.52 614.83 D
+N
+6 10 Q
+0 X
+(control step) 208.57 637.12 T
+(partitioning) 208.57 627.12 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(data path &) 219.9 564.91 T
+(controller) 219.9 554.91 T
+(allocation) 219.9 544.91 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(module binding) 361.64 553.82 T
+0 0 0 1 0 0 0 K
+0 -158.11 1000 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 6
+%%Page: "9" 7
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.2 Design complexity) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(9) 516.64 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 56.71 696.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.11 (The set of design objects de\336ned for a module is partitioned into) 136.08 696.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.99 (disjoint subsets, referred to as) 136.08 679.49 P
+3 F
+0.99 (interfaces) 311.32 679.49 P
+2 F
+0.99 (. Each design object is) 366.54 679.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.85 (placed into exactly one of these interface sets and is associated) 136.08 662.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.56 (with exactly one) 136.08 645.49 P
+3 F
+-0.56 (implementation.) 230.44 645.49 P
+2 F
+-0.56 (Whereas the interface speci\336es) 323.99 645.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.42 (a design object as seen from the outside, its implementation de-) 136.08 628.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\336nes its hierarchical decomposition.) 136.08 611.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.16 (An electronic module realizes a specif) 56.71 582.49 B
+0.35 0.16 (ic electrical behaviour) 277.99 582.49 B
+0.35 0.16 (. This behaviour can) 406.02 582.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (only be controlled and observed through its interface. An interface has a number of) 56.71 565.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.1 (interface elements which are used to interface the module with the outside world.) 56.71 548.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (The behaviour on a very low level of detail \050i.e. on architectural level\051 is re\337ected in) 56.71 531.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.23 (a core interface. The more ref) 56.71 514.49 B
+0.35 0.23 (ined the specif) 231.02 514.49 B
+0.35 0.23 (ication becomes on higher levels of) 316.08 514.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.38 (detail, the more the data types for interface elements are ref) 56.71 497.49 B
+0.35 0.38 (ined [W) 416.42 497.49 B
+0.35 0.38 (agner) 463.83 497.49 B
+0.35 0.38 (91].) 500.72 497.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.1 (T) 56.71 480.49 B
+0.35 0.1 (able) 64.39 480.49 B
+0.35 0.1 (1 gives some typical data types for interface elements on dif) 91.73 480.49 B
+0.35 0.1 (ferent levels of) 438.08 480.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(detail in the behavioural domain.) 56.71 463.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (In addition to data type re\336nement, there may be completely new interface elements) 56.71 172.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(on higher levels of detail:) 56.71 155.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 136.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.33 (alternative clocking schemes like single as opposed to 2-phase overlapping) 77.97 136.16 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(clocks) 77.97 119.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 70.88 100.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(dif) 77.97 100.16 T
+(ferent power line requirements due to dif) 93.27 100.16 T
+(ferent technologies) 322.41 100.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050+5V and low-power\051) 77.97 83.16 T
+0 0 0 1 0 0 0 K
+55.47 196.5 525.66 458.83 C
+0 0 0 1 0 0 0 K
+55.47 198.95 526.02 462.57 R
+7 X
+0 0 0 1 0 0 0 K
+V
+5 14 Q
+0 X
+(T) 55.47 227.23 T
+(able 1.) 62.74 227.23 T
+3 F
+(T) 104.35 227.23 T
+(ypical data types for interface elements on differ) 111.1 227.23 T
+(ent levels of detail in the) 382.39 227.23 T
+0 0 0 1 0 0 0 K
+55.47 199.57 525.66 205.57 C
+0 0 0 1 0 0 0 K
+55.47 203.57 289.47 203.57 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+55.47 196.5 525.66 458.83 C
+0 0 0 1 0 0 0 K
+3 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(behavioural domain) 55.47 210.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Level of detail) 159.76 410.73 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 286.3 419.23 T
+(ypical data types for) 294.08 419.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(interface elements) 295.25 402.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(architecture) 147.26 374.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ethernet, RS-232, SBus) 270.64 374.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(algorithm) 147.26 346.24 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(integer) 270.64 346.24 T
+(, \337oat, array) 308.96 346.24 T
+(, record) 375.7 346.24 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(functional block) 147.26 318.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(bit, bus, bundle) 270.64 318.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(logic) 147.26 290.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(bit_7) 270.64 290.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(transistors) 147.26 262.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0...3V) 270.64 262.23 T
+(olt) 303.45 262.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+141.26 436.32 141.26 251.82 2 L
+V
+0.5 H
+0 Z
+N
+264.64 436.82 264.64 251.32 2 L
+V
+N
+440.24 436.32 440.24 251.82 2 L
+V
+N
+141.01 436.57 440.49 436.57 2 L
+V
+N
+141.51 392.82 439.99 392.82 2 L
+V
+N
+141.51 390.32 439.99 390.32 2 L
+V
+N
+141.01 363.57 440.49 363.57 2 L
+V
+N
+141.01 335.57 440.49 335.57 2 L
+V
+N
+141.01 307.57 440.49 307.57 2 L
+V
+N
+141.01 279.57 440.49 279.57 2 L
+V
+N
+141.01 251.57 440.49 251.57 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0.01 0 595.29 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 7
+%%Page: "10" 8
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(10) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.03 (Moving to a dif) 70.88 514.42 B
+0.35 0.03 (ferent domain, however) 159.55 514.42 B
+0.35 0.03 (, will almost certainly change the interface,) 293.58 514.42 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.16 (simply because the interface primitives are dif) 70.88 497.42 B
+0.35 0.16 (ferent \050T) 339.39 497.42 B
+0.35 0.16 (able) 389.6 497.42 B
+0.35 0.16 (2\051. Especially design) 417.24 497.42 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.3 (objects in the physical domain have interfaces that are non-isomorphic with those in) 70.88 480.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.05 (the behavioural and structural domains due to the radically dif) 70.88 463.42 B
+0.35 0.05 (ferent kind of infor-) 424.99 463.42 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mation represented in this domain.) 70.88 446.42 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (Interfaces in one module are related to each other in an inheritance tree each node) 85.05 427.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.52 (of which is a re\336nement of its parent \050Figure) 70.88 410.42 P
+0.52 (2\051. It may add or re\336ne interface ele-) 328.93 410.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.39 (ments de\336ned by its parent. Arranging interfaces in inheritance trees ensures that in-) 70.88 393.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (terfaces in a module are compatible to each other in the sense that re\336ned interfaces) 70.88 376.42 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.36 (can only add new interface elements or re\336ne existing ones but can not introduce in-) 70.88 359.42 P
+0 0 0 1 0 0 0 K
+69.65 535.75 539.83 705.83 C
+0 0 0 1 0 0 0 K
+69.65 544.25 540.2 716.93 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 0 0 1 0 0 0 K
+69.65 543.93 539.83 549.93 C
+0 0 0 1 0 0 0 K
+69.65 547.93 303.65 547.93 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+69.65 535.75 539.83 705.83 C
+0 0 0 1 0 0 0 K
+5 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(T) 69.65 554.6 T
+(able 2.) 76.91 554.6 T
+3 F
+(Interface elements in differ) 118.52 554.6 T
+(ent domains) 269.26 554.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Domain) 193.4 673.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Interface primitives) 307.83 673.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(behavioural) 161.87 645.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(variables) 285.16 645.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(structural) 161.87 617.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(signal ports) 285.16 617.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(physical) 161.87 589.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(geometries) 285.16 589.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+155.87 690.68 155.87 579.18 2 L
+V
+0.5 H
+0 Z
+N
+279.16 691.18 279.16 578.68 2 L
+V
+N
+453.97 690.68 453.97 579.18 2 L
+V
+N
+155.62 690.93 454.22 690.93 2 L
+V
+N
+156.12 664.18 453.72 664.18 2 L
+V
+N
+156.12 661.68 453.72 661.68 2 L
+V
+N
+155.62 634.93 454.22 634.93 2 L
+V
+N
+155.62 606.93 454.22 606.93 2 L
+V
+N
+155.62 578.93 454.22 578.93 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0.01 0 595.29 841.89 C
+68.36 76.54 541.12 348.66 C
+0 0 0 1 0 0 0 K
+331.73 302.05 349.01 302.05 2 L
+4 H
+0 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+68.36 81.25 541.74 136.58 R
+7 X
+V
+5 14 Q
+0 X
+-0.53 (Figure 2.) 68.36 127.25 P
+3 F
+-0.53 (Inheritance tree of compatible interfaces. All interfaces belong to the same) 124.48 127.25 P
+-0.94 (module and thus are functionally equivalent. Interfaces are linked to implementations) 68.36 110.25 P
+0 0 0 1 0 0 0 K
+68.36 82.58 541.12 88.58 C
+0 0 0 1 0 0 0 K
+68.36 86.58 302.36 86.58 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+68.36 76.54 541.12 348.66 C
+0 0 0 1 0 0 0 K
+3 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(which in turn are related by version derivation relationships.) 68.36 93.25 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(micro-) 288.38 305.21 T
+(processor) 279.51 295.21 T
+(2-phase) 357.21 238.77 T
+(clocking scheme) 336.43 228.77 T
+(1-phase) 210.35 238.77 T
+(clocking scheme) 189.57 228.77 T
+(c-mos) 299.48 175.1 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+275.58 288.77 331.73 315.34 R
+0.5 H
+2 Z
+N
+189.19 222.33 271.26 248.91 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+336.05 222.33 418.12 248.91 R
+N
+297.17 164.75 331.73 191.33 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(n-mos) 420.12 175.1 T
+418.12 164.75 452.67 191.33 R
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+235.87 250.64 228.06 248.91 233.76 254.52 234.82 252.58 4 Y
+V
+301.49 288.77 234.82 252.57 2 L
+N
+369.21 254.52 374.92 248.91 367.11 250.64 368.16 252.58 4 Y
+V
+301.49 288.77 368.16 252.57 2 L
+N
+322.3 192.87 314.45 191.33 320.29 196.8 321.29 194.84 4 Y
+V
+374.92 222.33 321.29 194.84 2 L
+N
+429.55 196.8 435.39 191.33 427.54 192.87 428.55 194.84 4 Y
+V
+374.92 222.33 428.55 194.84 2 L
+N
+83.35 329.54 91.04 327.34 83.35 325.13 83.35 327.34 4 Y
+V
+71.19 327.34 83.35 327.34 2 L
+N
+6 10 Q
+(specialization) 97.2 324.1 T
+181.74 155.89 539.06 324.2 R
+N
+0 11 Q
+(module microprocessor) 181.74 326.47 T
+71.19 296.14 87.07 302.83 R
+N
+6 10 Q
+(interface object) 97.2 298.24 T
+90 450 3.97 3.35 79.13 283.84 A
+(implementation) 97.2 283.85 T
+(object) 97.2 275.6 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 4.32 4.86 349.01 301.63 G
+0 X
+90 450 4.32 4.86 349.01 301.63 A
+90 450 4.32 4.86 461.31 248.48 A
+90 450 4.32 4.86 461.31 227.19 A
+90 450 4.32 4.86 487.23 248.48 A
+90 450 4.32 4.86 508.83 235.19 A
+90 450 4.32 4.86 478.59 271.48 A
+J
+453.61 246.75 461.31 248.91 455.92 243 454.76 244.88 4 Y
+V
+J
+439.71 235.62 454.76 244.88 2 L
+J
+439.71 235.62 440.35 236.01 2 L
+N
+[1.47 4.409] 1.47 I
+440.35 236.01 454.12 244.48 2 L
+N
+J
+454.12 244.48 454.76 244.88 2 L
+N
+J
+455.03 231.72 461.31 226.76 453.36 227.64 454.2 229.68 4 Y
+V
+J
+439.71 235.62 454.2 229.68 2 L
+J
+439.71 235.62 440.41 235.33 2 L
+N
+[1.287 3.86] 1.287 I
+440.41 235.33 453.5 229.96 2 L
+N
+J
+453.5 229.96 454.2 229.68 2 L
+N
+J
+472.11 266.35 478.58 271.05 475.59 263.63 473.85 264.99 4 Y
+V
+J
+461.31 248.91 473.86 264.99 2 L
+J
+461.31 248.91 461.77 249.5 2 L
+N
+[1.26 3.78] 1.26 I
+461.77 249.5 473.4 264.4 2 L
+N
+J
+473.4 264.4 473.86 264.99 2 L
+N
+J
+479.54 251.11 487.23 248.91 479.54 246.7 479.54 248.91 4 Y
+V
+J
+461.31 248.91 479.54 248.91 2 L
+J
+461.31 248.91 462.06 248.91 2 L
+N
+[1.521 4.562] 1.521 I
+462.06 248.91 478.79 248.91 2 L
+N
+J
+478.79 248.91 479.54 248.91 2 L
+N
+J
+503.43 241.53 508.82 235.62 501.12 237.77 502.27 239.65 4 Y
+V
+J
+487.23 248.91 502.28 239.65 2 L
+J
+487.23 248.91 487.87 248.51 2 L
+N
+[1.47 4.409] 1.47 I
+487.87 248.51 501.64 240.04 2 L
+N
+J
+501.64 240.04 502.28 239.65 2 L
+N
+J
+500.86 236.38 508.83 235.62 501.67 232.04 501.27 234.21 4 Y
+V
+J
+461.31 226.76 501.27 234.21 2 L
+J
+461.31 226.76 462.05 226.9 2 L
+N
+[1.45 4.349] 1.45 I
+462.05 226.9 500.53 234.07 2 L
+N
+J
+500.53 234.07 501.27 234.21 2 L
+N
+J
+418.12 235.62 439.71 235.62 2 L
+4 H
+0 Z
+N
+452.67 178.04 469.95 178.04 2 L
+N
+7 X
+90 450 4.32 4.86 439.71 236.05 G
+0.5 H
+2 Z
+0 X
+90 450 4.32 4.86 439.71 236.05 A
+7 X
+90 450 4.32 4.86 469.95 177.61 G
+0 X
+90 450 4.32 4.86 469.95 177.61 A
+J
+466.94 185.45 469.94 178.04 463.47 182.74 465.21 184.1 4 Y
+V
+[1.521 4.563] 0.76 I
+508.83 235.62 M
+ 521.78 231.19 521.78 231.19 526.1 224.55 D
+ 530.42 217.9 530.42 217.9 530.42 211.26 D
+ 530.42 204.61 526.1 202.4 517.46 200.18 D
+ 508.83 197.97 513.15 202.4 504.51 200.18 D
+ 495.87 197.97 500.19 197.97 487.23 200.18 D
+ 474.27 202.4 474.27 202.4 469.95 200.18 D
+ 465.63 197.97 461.31 195.76 463.47 189.11 D
+ 464.23 186.78 464.72 185.26 465.23 184.09 D
+N
+J
+441.89 243.32 439.71 235.62 437.48 243.3 439.68 243.31 4 Y
+V
+[1.48 4.439] 0.74 I
+349.01 302.05 M
+ 392.2 302.05 392.2 302.05 409.48 293.2 D
+ 426.76 284.34 426.76 284.34 433.23 271.05 D
+ 438.86 259.52 439.6 257.99 439.7 243.3 D
+N
+J
+83.35 316.7 91.04 314.49 83.35 312.29 83.35 314.49 4 Y
+V
+J
+71.19 314.49 83.35 314.49 2 L
+J
+71.19 314.49 71.94 314.49 2 L
+N
+[1.523 4.569] 1.523 I
+71.94 314.49 82.6 314.49 2 L
+N
+J
+82.6 314.49 83.35 314.49 2 L
+N
+J
+(version derivation) 97.2 311.26 T
+0 0 0 1 0 0 0 K
+0.01 0 595.29 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 8
+%%Page: "11" 9
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.3 Design methodology) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(1) 509.62 746.65 T
+(1) 516.64 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.18 (compatible changes such as deleting interface elements or introducing incompatible) 56.71 696.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.42 (type changes. An interface may be associated with a graph of implementations, each) 56.71 679.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of which de\336nes an exact realization of behaviour) 56.71 662.49 T
+(, structure, or geometry) 335.68 662.49 T
+(.) 465.8 662.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(1.2.3) 56.71 623.49 T
+(Hierarchy) 91.74 623.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.34 (The third approach to handle complexity is) 56.71 594.49 B
+3 F
+0.35 0.34 (hierar) 318.54 594.49 B
+0.35 0.34 (chical decomposition) 355.08 594.49 B
+2 F
+0.35 0.34 (. In the) 481.7 594.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.2 (behavioural domain, the implementation of a procedure may recursively contain) 56.71 577.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.23 (procedure calls. In the structural and physical domains, the implementation of a) 56.71 560.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(compound module may contain sub-modules.) 56.71 543.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 56.71 514.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.24 (The implementation of a module may make use of other mod-) 136.08 514.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (ules. W) 136.08 497.49 P
+0.03 (e call such a module a) 177.75 497.49 P
+3 F
+0.03 (compound) 305.43 497.49 P
+2 F
+0.03 ( module; the used mod-) 363.76 497.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.99 (ules are referred to as) 136.08 480.49 P
+3 F
+1.99 (components) 270.01 480.49 P
+2 F
+1.99 (. A component may appear) 336.89 480.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.2 (more than once in the implementation of a compound module.) 136.08 463.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The individual manifestations are called) 136.08 446.49 T
+3 F
+(instances) 364.32 446.49 T
+2 F
+(.) 416.43 446.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(There are two important observations related to hierarchical composition:) 56.71 417.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(Pr) 56.71 388.49 T
+(operty:) 71.22 388.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.79 (A module used as component typically is itself a compound mod-) 136.08 388.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.16 (ule, constructed from instances of more primitive modules. In-) 136.08 371.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.94 (stances two or more levels down a composition hierarchy are) 136.08 354.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.69 (sometimes called) 136.08 337.49 P
+3 F
+-0.69 (occurr) 235.02 337.49 P
+-0.69 (ences) 271.82 337.49 P
+2 F
+-0.69 (. It is important to keep track of oc-) 302.92 337.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.03 (currences to completely specify the hierarchical decomposition) 136.08 320.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of a module.) 136.08 303.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(Pr) 56.71 274.49 T
+(operty:) 71.22 274.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+1.06 (A design object may be hierarchically decomposed into design) 136.08 274.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.67 (objects on dif) 136.08 257.49 P
+-0.67 (ferent levels of detail. It is important to note that the) 210.71 257.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.63 (decompositions of design objects in a single module may be non-) 136.08 240.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 (isomorphic, i.e. there is no one-to-one mapping between the de-) 136.08 223.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(composition structures.) 136.08 206.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.3) 56.71 167.16 T
+(Design methodology) 83.39 167.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.57 (W) 56.71 137.49 B
+0.35 0.57 (e assume a design methodology that proceeds basically top-down. V) 69.38 137.49 B
+0.35 0.57 (iews,) 492.39 137.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.12 (abstraction and hierarchical decomposition are used to reduce design complexity) 56.71 120.49 B
+0.35 0.12 (.) 520.92 120.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.2 (Design starts with a behavioural description of a design on a low level of detail.) 56.71 103.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.01 (This description def) 56.71 86.49 B
+0.35 0.01 (ines the top-level behaviour of the design in terms of program-) 168.82 86.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 9
+%%Page: "12" 10
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(12) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.35 0.18 (ming language constructs like communicating processes, \050recursive\051 procedures,) 70.88 696.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (loops, abstract data types, or variables. The design is either self-contained or has an) 70.88 679.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.16 (interface def) 70.88 662.49 B
+0.35 0.16 (ined in terms of high-level data types. The design implementation is) 142.89 662.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.33 (then partitioned into a hierarchy of functional blocks, each of which is again de\336ned) 70.88 645.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(by its behaviour) 70.88 628.49 T
+(.) 160.33 628.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(Pr) 70.88 599.49 T
+(operty:) 85.4 599.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(In general, interfaces are de\336ned) 150.25 599.49 T
+3 F
+(befor) 336.84 599.49 T
+(e) 365.88 599.49 T
+2 F
+( their implementations.) 372.09 599.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (First, the interface of each functional block is de\336ned and only then are the individ-) 70.88 570.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.05 (ual block implementations realized. The high-level behavioural design description) 70.88 553.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.02 (is then stepwise transformed into a physical description on circuit level. A number) 70.88 536.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.24 (of commercial and research synthesis tools exist to automatically perform these) 70.88 519.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.32 (transformations on functional block level, logic and circuit levels [W) 70.88 502.49 B
+0.35 0.32 (alker) 481.76 502.49 B
+0.35 0.32 (91].) 515.16 502.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (Apart from synthesis tools, there are extraction and simulation tools that validate) 70.88 485.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (design results and allow to compare the behaviour of implementations in dif) 70.88 468.49 B
+0.35 0.06 (ferent) 505.64 468.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(domains and on dif) 70.88 451.49 T
+(ferent levels of detail \050cf. for example [Greiner) 178.34 451.49 T
+(93]\051.) 444.64 451.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.15 (While exploring design alternatives for a complex module, the selection of a spe-) 85.05 432.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (ci\336c implementation of a component needs to be \337exible. On the other hand, once a) 70.88 415.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.03 (module is released to a customer or other developers, its composition must be well-) 70.88 398.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(de\336ned and \336xed. W) 70.88 381.49 T
+(e use con\336gurations to provide this \337exibility) 186.41 381.49 T
+(.) 439.84 381.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 70.88 352.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.48 (A) 150.25 352.49 P
+3 F
+-0.48 (con\336guration) 163.38 352.49 P
+2 F
+-0.48 ( is associated with an implementation of a partic-) 238.82 352.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.89 (ular module. It de\336nes a tree of design objects and subordinate) 150.25 335.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.55 (con\336gurations by recursively selecting interfaces, implementa-) 150.25 318.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.76 (tions or con\336gurations of components used in this implementa-) 150.25 301.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tion.) 150.25 284.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (During early design stages, it is appropriate to always select a working implementa-) 70.88 255.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.03 (tion of a component by some) 70.88 238.49 B
+3 F
+0.35 0.03 (default selection rule) 240.24 238.49 B
+2 F
+0.35 0.03 (. Depending on the design task,) 359.81 238.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.17 (however) 70.88 221.49 B
+0.35 0.17 (, the explicit selection of implementations from dif) 119.7 221.49 B
+0.35 0.17 (ferent levels of detail) 415.27 221.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.3 (and from dif) 70.88 204.49 P
+0.3 (ferent domains may be more appropriate. Or) 141.22 204.49 P
+0.3 (, the designer of a module) 391.67 204.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (used as component in other modules may designate a selected implementation as) 70.88 187.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.31 (the default, leaving it up to the designers of compound modules to select other) 70.88 170.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.08 (implementations for special purposes. During simulation, for example, only ques-) 70.88 153.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (tionable components need to be simulated to full detail. Other components may just) 70.88 136.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (be simulated behaviourally at a low level of detail. Designers will want to build a) 70.88 119.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.08 (speci\336c con\336guration of a design object for dif) 70.88 102.49 P
+0.08 (ferent design tasks and store them in) 333.62 102.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the framework database alongside the actual design objects.) 70.88 85.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 10
+%%Page: "13" 11
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.4 Design description languages) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(13) 508.86 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.4) 56.71 695.16 T
+(Design description languages) 83.39 695.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.39 (In 1987, the hardware description language VHDL was standardized by IEEE) 56.71 665.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.69 ([VHDL) 56.71 648.49 B
+0.35 0.69 (87] and has become a driving force in EDA interoperability today) 107.91 648.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.55 (\050[Carlson) 56.71 631.49 B
+0.35 0.55 (92], [Heusinger) 118.58 631.49 B
+0.35 0.55 (93]\051. All major EDA tool vendors support VHDL) 219.08 631.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.07 (descriptions as input for synthesis and simulation tools and as result format on vari-) 56.71 614.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (ous levels of detail in the behavioural and structural domains. Apart from VHDL,) 56.71 597.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.17 (there are other mature languages like EDIF [EDIF) 56.71 580.49 B
+0.35 0.17 (88] that are in constant use in) 352.15 580.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.5 (electronic design practice, especially for representing circuit schematics and) 56.71 563.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.04 (netlists. Y) 56.71 546.49 P
+0.04 (et other formats like CIF of GDSII are used for representing design in the) 112.13 546.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(physical domain.) 56.71 529.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.86 (On the other hand, after \336ve years in existence, the Design Representation Pro-) 70.88 510.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.87 (gramming Interface [CFI-DRPI) 56.71 493.49 P
+-0.87 (93] de\336ned by the CAD Framework Initiative \050CFI\051,) 235.76 493.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.33 (the dominant standardization body in the \336eld, is still restricted to representing elec-) 56.71 476.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.11 (trical connectivity data. Electrical connectivity deals with structural aspects of a de-) 56.71 459.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.5 (sign on functional block, logic, and circuit levels. As can be seen in the Y) 56.71 442.49 P
+1.5 (-Chart) 488.65 442.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.39 (\050Figure) 56.71 425.49 P
+0.39 (1 on page) 101.42 425.49 P
+0.39 (8\051, it does not cover all aspects necessary to describe a complete) 160.13 425.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.37 (electronic design. T) 56.71 408.49 P
+0.37 (o conclude, it is to be expected that language-based design tool) 167.28 408.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(interoperability will be common-place for some more years.) 56.71 391.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.5) 56.71 352.16 T
+(Design environments) 83.39 352.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.12 (Successful design of a complex electronic system in a team of designers not only) 56.71 322.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (requires the reliable management of design objects themselves but also the mainte-) 56.71 305.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (nance of a complex web of structural information \050relationships and annotations\051) 56.71 288.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+0.35 0.19 (about) 56.71 271.49 B
+2 F
+0.35 0.19 ( the design objects. Relationships between design objects are used to build) 89.56 271.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.28 (composition hierarchies, to associate derived design versions with their originals, or) 56.71 254.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.45 (to relate design objects that are functionally or otherwise equivalent. Several) 56.71 237.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.29 (researchers \050[Batory) 56.71 220.49 B
+0.35 0.29 (85], [Katz) 180.52 220.49 B
+0.35 0.29 (86], [Biliris) 244.3 220.49 B
+0.35 0.29 (89], [Bredenfeld) 317.54 220.49 B
+0.35 0.29 (90], [W) 418.83 220.49 B
+0.35 0.29 (agner) 463.62 220.49 B
+0.35 0.29 (91],) 499.95 220.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.31 ([Brielmann) 56.71 203.49 B
+0.35 0.31 (92]\051 have pointed to the most important relationships:) 127.37 203.49 B
+3 F
+0.35 0.31 (hierar) 452.02 203.49 B
+0.35 0.31 (chical) 488.35 203.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (composition) 56.71 186.49 B
+2 F
+0.35 0.06 (,) 125.85 186.49 B
+3 F
+0.35 0.06 (version derivation) 133.32 186.49 B
+2 F
+0.35 0.06 (, and) 237.07 186.49 B
+3 F
+0.35 0.06 (equivalence) 268.87 186.49 B
+2 F
+0.35 0.06 ( between design objects. In addi-) 336.42 186.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.15 (tion, design objects may be annotated with attributes like) 56.71 169.49 B
+3 F
+0.35 0.15 (level of detail) 391.28 169.49 B
+2 F
+0.35 0.15 (,) 470.4 169.49 B
+3 F
+0.35 0.15 (domain) 478.04 169.49 B
+2 F
+0.35 0.15 (,) 520.92 169.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(owner) 56.71 152.49 T
+2 F
+(, or) 91.15 152.49 T
+3 F
+(status) 113.31 152.49 T
+2 F
+( \050[Gajski) 145.99 152.49 T
+(83], [vanderW) 198.86 152.49 T
+(olf) 279.38 152.49 T
+(93]\051.) 298.43 152.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 11
+%%Page: "14" 12
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(14) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 70.88 696.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.69 (Design objects may have annotations and relationships which are) 150.25 696.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.24 (collectively referred to as) 150.25 679.49 P
+3 F
+0.24 (structural information) 297.37 679.49 P
+2 F
+0.24 (. The actual de-) 422.46 679.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2.13 (sign descriptions de\336ne the behaviour) 150.25 662.49 P
+2.13 (, structure, and physical) 370.51 662.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (properties of a design and are referred to as) 150.25 645.49 P
+3 F
+-0.21 (r) 394.44 645.49 P
+-0.21 (epr) 399.37 645.49 P
+-0.21 (esentation infor-) 417.51 645.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.64 (mation) 150.25 628.49 P
+2 F
+1.64 (. When the distinction is not important, we collectively) 189.14 628.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(talk about) 150.25 611.49 T
+3 F
+(design information) 209.36 611.49 T
+2 F
+(.) 315.53 611.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.18 (This def) 70.88 582.49 B
+0.35 0.18 (inition is in line with the terms \322representational details\323 and \322structural) 118.15 582.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.19 (details\323 as used by Katz et. al. in [Katz) 70.88 565.49 B
+0.35 0.19 (86]. Structural information sometimes is) 302.88 565.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.12 (called \322meta-data\323, representation information is referred to as \322raw design data\323) 70.88 548.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.31 ([vanderW) 70.88 531.49 B
+0.35 0.31 (olf) 128.24 531.49 B
+0.35 0.31 (90]. Structural information is accessed by designers in an ad-hoc,) 148.55 531.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.02 (query-by-value manner to understand the disposition and history of their design. It) 70.88 514.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.03 (is mostly independent of domain and level of detail. Representational information,) 70.88 497.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.27 (on the other hand, is accessed by designers and design tools in a navigational man-) 70.88 480.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.08 (ner to get detailed knowledge about the behaviour) 70.88 463.49 B
+0.35 0.08 (, structure, and physical proper-) 356.8 463.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ties of a design.) 70.88 446.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (A design environment should serve as an electronic note book to the design team,) 85.05 427.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (forming the information basis for more formal forms of project documentation like) 70.88 410.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.45 (project binders and manuals. It maintains design information in a component dedi-) 70.88 393.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.28 (cated to the management of design information. The task of this component is to) 70.88 376.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (keep structural information accessible, up-to-date and consistent with regard to rep-) 70.88 359.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.64 (resentation information. Both parts of design information have to be managed in a) 70.88 342.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.27 (protected environment to assure that it correctly re\337ects the state of the design, even) 70.88 325.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1.55 (in a multi-user environment. A framework component for data management pro-) 70.88 308.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.7 (vides basic services like locking, concurrent access, transactions, and object version-) 70.88 291.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ing.) 70.88 274.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 F
+(De\336nition:) 70.88 245.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.51 (The) 150.25 245.49 P
+3 F
+0.51 (design information management \050DIM\051) 176.03 245.49 P
+2 F
+0.51 ( framework compo-) 398.04 245.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.49 (nent consists of design information and data management servic-) 150.25 228.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(es.) 150.25 211.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (The CAD Framework Initiative suggests the architecture shown in Figure) 70.88 182.49 B
+0.35 0.06 (3 as the) 494.56 182.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.15 (reference architecture for a design environment [CFI-F) 70.88 165.49 B
+0.35 0.15 (AR) 387.96 165.49 B
+0.35 0.15 (93]. According to this) 411.36 165.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.16 (architecture, a design environment consists of a framework, domain independent) 70.88 148.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.34 (tools and design tools. T) 70.88 131.49 B
+0.35 0.34 (o build an environment complying with this structure,) 216.96 131.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(design tools have to be integrated with the framework components.) 70.88 114.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 12
+%%Page: "15" 13
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.6 Requirements and problems) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(15) 508.86 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(1.6) 56.71 298.31 T
+(Requirements and problems) 83.39 298.31 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.41 (T) 56.71 268.64 B
+0.35 0.41 (o summarize, in the area of electronic design we have to meet the following) 64.69 268.64 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.04 (requirements on the management of design information, on design methodologies,) 56.71 251.64 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and on design environments:) 56.71 234.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R1) 56.71 209.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(Manage structural information about design objects) 79.38 209.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R2) 56.71 186.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(Manage design objects from dif) 79.38 186.64 T
+(ferent domains and dif) 257.21 186.64 T
+(ferent levels of detail) 383.32 186.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R3) 56.71 163.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(Support abstraction by distinguishing interfaces and implementations) 79.38 163.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R4) 56.71 140.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.29 (Support top-down design. Design objects may be incorporated into the compo-) 79.38 140.64 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.09 (sition hierarchy when only their interface but no implementation has yet been) 79.38 125.64 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(de\336ned.) 79.38 110.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R5) 56.71 87.64 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(Support con\336gurations of design objects for dif) 79.38 87.64 T
+(ferent design tasks) 344.33 87.64 T
+0 0 0 1 0 0 0 K
+55.6 308.98 525.53 705.83 C
+0 0 0 1 0 0 0 K
+98.34 379.84 491.6 653.38 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+0 X
+N
+118.02 554.3 481.89 644.88 R
+7 X
+V
+0 X
+N
+118.64 388.89 482.51 535.59 R
+5 X
+V
+0 X
+N
+119.87 563.56 175.19 589.99 13.22 RR
+7 X
+V
+0 X
+N
+180.62 563.56 235.94 589.99 13.22 RR
+7 X
+V
+0 X
+N
+194.07 609.2 260.67 635.62 13.21 RR
+7 X
+V
+0 X
+N
+267.2 609.2 333.79 635.62 13.21 RR
+7 X
+V
+0 X
+N
+302.12 563.56 357.45 589.99 13.22 RR
+7 X
+V
+0 X
+N
+413.44 609.2 480.04 635.62 13.21 RR
+7 X
+V
+0 X
+N
+340.32 609.2 406.91 635.62 13.21 RR
+5 X
+V
+0 X
+N
+362.87 563.56 418.2 589.99 13.22 RR
+5 X
+V
+0 X
+N
+241.37 563.56 296.7 589.99 13.22 RR
+5 X
+V
+0 X
+N
+120.95 609.2 187.55 635.62 13.21 RR
+5 X
+V
+0 X
+N
+423.62 563.56 478.95 589.99 13.22 RR
+5 X
+V
+0 X
+N
+127.45 400.3 473.68 419.3 R
+7 X
+V
+0 X
+N
+399.9 433.95 474.18 473.23 R
+7 X
+V
+0 X
+N
+55.6 325.99 523.32 362.84 R
+7 X
+V
+5 14 Q
+0 X
+(Figure 3.) 55.6 353.5 T
+3 F
+(CFI reference architecture for a framework-based design environment.) 112.78 353.5 T
+0 0 0 1 0 0 0 K
+55.6 325.84 523.32 331.84 C
+0 0 0 1 0 0 0 K
+55.6 329.84 289.6 329.84 2 L
+0.25 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+0 0 0 1 0 0 0 K
+55.6 308.98 525.53 705.83 C
+0 0 0 1 0 0 0 K
+3 14 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.32 (This high-level view shows the dependencies between framework services and tools.) 55.6 336.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6 10 Q
+(Browser) 135.91 618.71 T
+(Design) 131.97 578.43 T
+(Analysis) 128.91 569.65 T
+(Design) 211.81 624.06 T
+(Capture) 209.59 615.29 T
+(Synthesis) 278.82 618.71 T
+(Release) 355.27 624.06 T
+(T) 361.85 615.29 T
+(ools) 367.04 615.29 T
+(Simulator) 425.62 618.71 T
+(Other) 195.78 578.43 T
+(T) 199.02 569.65 T
+(ool) 204.21 569.65 T
+(Backup) 252.36 578.43 T
+(T) 259.77 569.65 T
+(ool) 264.96 569.65 T
+(Other T) 306.62 573.08 T
+(ool) 339.6 573.08 T
+(Cockpit) 373.86 573.08 T
+(Framework) 426.29 578.43 T
+(T) 442.02 569.65 T
+(ool) 447.21 569.65 T
+(Session) 419.26 455.71 T
+(Manager) 417.31 446.03 T
+0 11 Q
+(T) 0 -270 114.42 583.73 TF
+(ools) 0 -270 114.42 589.23 TF
+(Framework) 0 -270 114.42 408.94 TF
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6 10 Q
+(System Environment) 254.44 406.02 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+210.55 524.02 207.24 512.49 203.93 524.02 207.24 524.02 4 Y
+V
+207.24 554.3 207.24 524.02 2 L
+0.5 H
+2 Z
+N
+352.72 484.77 349.41 473.23 346.1 484.77 349.41 484.77 4 Y
+V
+349.41 554.3 349.41 484.77 2 L
+N
+437.42 484.77 434.11 473.23 430.8 484.77 434.11 484.77 4 Y
+V
+434.11 554.3 434.11 484.77 2 L
+N
+334.57 484.77 331.26 473.23 327.95 484.77 331.26 484.77 4 Y
+V
+418.98 473.23 418.98 529.36 331.26 529.36 331.26 484.77 4 L
+N
+271.05 522.18 267.74 510.65 264.43 522.18 267.74 522.18 4 Y
+V
+331.26 529.36 267.74 529.36 267.74 522.18 3 L
+N
+304.32 428.64 301.01 417.11 297.7 428.64 301.01 428.64 4 Y
+V
+301.01 554.3 301.01 428.64 2 L
+N
+303.47 448.25 291.94 451.56 303.47 454.87 303.47 451.56 4 Y
+V
+316.14 451.56 303.47 451.56 2 L
+N
+166.2 430.84 162.89 419.3 159.58 430.84 162.89 430.84 4 Y
+V
+162.89 431.98 162.89 430.84 2 L
+N
+252.25 430.84 248.94 419.3 245.63 430.84 248.94 430.84 4 Y
+V
+248.94 431.98 248.94 430.84 2 L
+N
+351.82 430.84 348.51 419.3 345.2 430.84 348.51 430.84 4 Y
+V
+348.51 431.98 348.51 430.84 2 L
+N
+439.1 430.84 435.79 419.3 432.48 430.84 435.79 430.84 4 Y
+V
+435.79 431.98 435.79 430.84 2 L
+N
+J
+125.57 510.65 291.94 510.65 291.94 429.58 125.57 429.58 4 Y
+7 X
+V
+J
+125.57 510.65 291.94 510.65 291.94 429.58 125.57 429.58 4 Y
+J
+125.57 506.9 125.57 510.65 129.32 510.65 3 L
+0 X
+N
+[7.424 6.434] 7.424 I
+129.32 510.65 288.19 510.65 2 L
+N
+J
+288.19 510.65 291.94 510.65 291.94 506.9 3 L
+N
+[7.213 6.251] 7.213 I
+291.94 506.9 291.94 433.33 2 L
+N
+J
+291.94 433.33 291.94 429.58 288.19 429.58 3 L
+N
+[7.424 6.434] 7.424 I
+288.19 429.58 129.32 429.58 2 L
+N
+J
+129.32 429.58 125.57 429.58 125.57 433.33 3 L
+N
+[7.213 6.251] 7.213 I
+125.57 433.33 125.57 506.9 2 L
+N
+J
+213.82 431.98 288.1 488.82 R
+7 X
+V
+0 X
+N
+126.95 431.98 201.23 491.94 R
+7 X
+V
+0 X
+N
+(Design) 148.53 453.74 T
+(Information) 139.08 444.06 T
+(Data) 240.4 464.48 T
+(Management) 221.78 450.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+201.76 454.29 213.29 450.98 201.76 447.67 201.76 450.98 4 Y
+V
+201 450.98 201.76 450.98 2 L
+N
+(structure &) 138.52 479.72 T
+(representation) 132.13 469.58 T
+(Design Information Management) 140.52 497.45 T
+J
+0 11 Q
+(Design Environment) 0 -270 94.8 442.49 TF
+313.11 433.95 387.4 473.23 R
+7 X
+V
+0 X
+N
+6 10 Q
+(Methodology) 321.63 455.71 T
+(Management) 321.07 446.03 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+69.93 680.08 101.47 691.65 5.79 RR
+5 X
+V
+0 X
+N
+(domain independent) 69.93 669.82 T
+174.66 680.03 206.2 691.65 5.81 RR
+7 X
+V
+0 X
+N
+(design tool) 174.66 669.74 T
+257.21 686.46 268.74 683.15 257.21 679.84 257.21 683.15 4 Y
+V
+234.35 683.15 257.21 683.15 2 L
+N
+(uses services from) 234.35 670.94 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(tool) 69.93 659.82 T
+0 0 0 1 0 0 0 K
+0.01 0 595.29 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 13
+%%Page: "16" 14
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(16) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R6) 70.88 696.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(Support design description languages) 93.56 696.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(R7) 70.88 673.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+0.35 0.25 (Support the integration of commercial design tools with framework compo-) 93.56 673.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nents) 93.56 658.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.14 (Whereas requirements) 70.88 631.49 P
+4 F
+0.14 (R1) 200.24 631.49 P
+2 F
+0.14 (-) 217.35 631.49 P
+4 F
+0.14 (R5) 222.01 631.49 P
+2 F
+0.14 ( are a matter of an appropriate conceptual schema for) 239.12 631.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.14 (design information, there is a trade-of) 70.88 614.49 B
+0.35 0.14 (f between requirement) 289.5 614.49 B
+4 F
+0.35 0.14 (R1) 423.18 614.49 B
+2 F
+0.35 0.14 ( and) 440.57 614.49 B
+4 F
+0.35 0.14 (R6) 469.21 614.49 B
+2 F
+0.35 0.14 (/) 486.6 614.49 B
+4 F
+0.35 0.14 (R7) 490.64 614.49 B
+2 F
+0.35 0.14 (. The) 508.04 614.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (designer thinks of his design in terms of design objects. Design objects have a well-) 70.88 597.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.17 (def) 70.88 580.49 B
+0.35 0.17 (ined interface, they can be versioned, used as components in compound mod-) 88.49 580.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.28 (ules, and they can be checked for functional equivalence. Framework tools support) 70.88 563.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.06 (this point of view by providing browsers and query interfaces that let the designer) 70.88 546.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.18 (browse the design information according to dif) 70.88 529.49 B
+0.35 0.18 (ferent criteria. On the other hand,) 343.78 529.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (language based design tools expect design \336les as input and produce \336les as output.) 70.88 512.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 0.11 (In general, a design f) 70.88 495.49 B
+0.35 0.11 (ile contains more than one design object, embedded in some) 191.71 495.49 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(contextual information.) 70.88 478.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.4 (A design project could adhere to the policy that design \336les describe only single) 85.05 459.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.62 (design objects. This way) 70.88 442.49 P
+0.62 (, design \336les could serve as representatives for design ob-) 210.27 442.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.63 (jects and can be used as end-points of relationships and holder of attributes. Whereas) 70.88 425.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (input \336les can be purposefully arranged by a designer to describe only single design) 70.88 408.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (objects, the contents of result \336les are under the control of design tools and beyond) 70.88 391.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.47 (the control of the designer) 70.88 374.49 P
+0.47 (. If there is no support from the framework, the designer) 218.96 374.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (has to manually analyse the contents of result \336les, split them at design unit borders) 70.88 357.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (and insert them as single \336les into the data management component. In addition, re-) 70.88 340.5 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.06 (lationships among result design objects and between derived design objects and the) 70.88 323.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.1 (originals already in the database have to be established manually) 70.88 306.49 P
+0.1 (. This is the neces-) 433.61 306.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(sary mode of operation in the JESSI Common Framework [JCF) 70.88 289.49 T
+(94a].) 430.97 289.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (In this thesis, we will describe a new framework service that helps to encapsulate) 85.05 270.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.92 (design tools to avoid this tedious and error) 70.88 253.49 P
+0.92 (-prone manual processing. Its design is) 315.45 253.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.35 (based on the three principles we will develop in Chapter) 70.88 236.49 P
+0.35 (2. Following these princi-) 392.88 236.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.84 (ples, design tools are) 70.88 219.49 P
+3 F
+-0.84 (encapsulated) 188.45 219.49 P
+2 F
+-0.84 ( into the framework. No access to tool source code) 262.33 219.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.61 (is required. W) 70.88 202.49 P
+-0.61 (ith the assumption that commercial design tools interface to design de-) 148.81 202.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.81 (scriptions by means of \336le input and output, we need to extract structural information) 70.88 185.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.7 (and representational information from design \336les on import into the design infor-) 70.88 168.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.17 (mation management system and to reconstruct valid design \336les on export from this) 70.88 151.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.67 (system. Using this approach, it is possible to use the browsing and querying facilities) 70.88 134.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.18 (of existing framework tools, regardless of whether design objects have been created) 70.88 117.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.12 (by tightly integrated tools or by encapsulated, \336le-based tools. In Chapter) 70.88 100.49 P
+0.12 (7 we dis-) 487.02 100.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.22 (cuss a prototype design environment based on the new integration service that sup-) 70.88 83.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "16" 14
+%%Page: "17" 15
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(1.6 Requirements and problems) 56.71 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(17) 508.86 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.25 (ports the VHDL language. The prototype has been implemented both on the Nelsis) 56.71 696.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.6 (CAD Framework and on the object-oriented database management system Object-) 56.71 679.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (Store and encapsulates some design tools from the Synopsys suite of synthesis tools) 56.71 662.49 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([Schettler) 56.71 645.49 T
+(94a].) 114.64 645.49 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "17" 15
+%%Page: "18" 16
+595.3 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+1 14 Q
+0 X
+0 0 0 1 0 0 0 K
+(18) 70.88 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Introduction) 465.45 746.65 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "18" 16
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.89
+%%PageOrder: Ascend
+%%Pages: 16
+%%DocumentFonts: Helvetica
+%%+ Helvetica-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Times-Bold
+%%+ Times-BoldItalic
+%%+ Helvetica-Oblique
+%%EOF
