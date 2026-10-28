@@ -1,0 +1,53 @@
+= Appendix. Design example: The DP32 microprocessor
+
+Throughout this thesis we use design descriptions from a hypothetical processor called the DP32 as running example. These descriptions are taken from the first edition of __“The VHDL Cookbook”__ by Peter J. Ashenden of University of Adelaide, South Australiafootnote:[Mr. Ashenden kindly gave permission to use his microprocessor design in this thesis.] [<<bib-ashenden-90,Ashenden 90>>]. The DP32 is a hypothetical 32-bit micro-processor with a simple instruction set. There are 256 general purpose registers, a program counter and a condition code register. The memory accessible to the DP32 consists of 32-bit words, addressed by a 32-bit word address. Tables 15-16 list the instruction set of the processor. Figure 31 shows its port diagram. The actual microprocessor is embedded in a test bench circuit which is depicted in Figure 32. As this thesis is about CAD frameworks and not about electronic design, the detailed design description is not relevant to us. Examples taken from this description are used throughout the text to illustrate concepts. What is relevant, however, is the overall disposition of the design. Figure 33 depicts the composition hierarchy of the design description for the DP32 test bench circuit along with two configurations.
+
+[#figure-31]
+.Figure 31. DP32 port diagram
+image::figure-31.png["Figure 31. DP32 port diagram"]
+
+[#figure-32]
+.Figure 32. Test bench circuit for the DP32 microprocessor. The clock_gen component generates the two-phase clock and reset signal to drive the processor. The memory stores a test program and data. These behavioural models for these two components are connected in the structural description of the test bench.
+image::figure-32.png["Figure 32. Test bench circuit for the DP32 microprocessor. The clockgen component generates the two-phase clock and reset signal to drive the processor. The memory stores a test program and data. These behavioural models for these two components are connected in the structural description of the test bench."]
+
+[#table-15,%header,cols=3*]
+.Table 15. DP32 branch instructions
+|===
+| Instruction | Name | Function
+| Br-ivnz | branch | if cond then __PC__ ← __PC__ + __disp__32
+| Brq-ivnz | branch quick | if cond then __PC__ ← __PC__ + __i__8
+| Bi-ivnz | branch indexed | if cond then __PC__ ← __r__1 + __disp__32
+| Biq-ivnz | branch indexed quick | if cond then __PC__ ← __r__1 + __i__8
+|===
+
+[#table-16,%header,cols=3*]
+.Table 16. DP32 load and store instructions
+|===
+| Instruction | Name | Function
+| Ld | load | __r__3 ← __M__ [__r__1 + __disp__32]
+| St | store | __M__ [__r__1 + __disp__32 ] ← __r__3
+| Ldq | load quick | __r__3 ← __M__ [__r__1 + __i__8]
+| Stq | store quick | __M__ [__r__1 + __i__8 ] ← __r__3
+|===
+
+[#table-17,%header,cols=7*]
+.Table 17. DP32 arithmetic and logic instructions
+|===
+|  |  |  |  | Instruction | Name | Function
+|  |  |  |  | Add | add | __r__3 ← __r__1 + __r__2
+|  |  |  |  | Sub | subtract | __r__3 ← __r__1 – __r__2
+|  |  |  |  | Mul | multiply | __r__3 ← __r__1 × __r__2
+|  |  |  |  | Div | divide | __r__3 ← __r__1 ÷ __r__2
+|  |  |  |  | Addq | add quick | __r__3 ← __r__1 + __i__8
+|  |  |  |  | Subq | subtract quick | __r__3 ← __r__1 – __i__8
+|  |  |  |  | Mulq | multiply quick | __r__3 ← __r__1 × __i__8
+|  |  |  |  | Divq | divide quick | __r__3 ← __r__1 ÷ __i__8
+|  |  |  |  | Land | logical and | __r__3 ← __r__1 ∧ __r__2
+|  |  |  |  | Lor | logical or | __r__3 ← __r__1 ∨ __r__2
+|  |  |  |  | Lxor | logical exclusive or | __r__3 ← __r__1 ⊕ __r__2
+|  |  |  |  | Lmask | logical mask | __r__3 ← __r__1 ∧ ¬__r__2
+|===
+
+[#figure-33]
+.Figure 33. Structure of the design description for the DP32 test bench circuit. Two design configurations are shown. One, in which a behavioural description of the microprocessor is used; the other one which uses a structural description.
+image::figure-33.png["Figure 33. Structure of the design description for the DP32 test bench circuit. Two design configurations are shown. One, in which a behavioural description of the microprocessor is used; the other one which uses a structural description."]

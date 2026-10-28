@@ -1,0 +1,84 @@
+[bibliography]
+= References
+
+* [[[bib-adams-79,Adams 79]]] Adams, Douglas, __“The Hitch Hiker’s Guide to the Galaxy”__, Pan Books, London, 1979, p. 135
+* [[[bib-ashenden-90,Ashenden 90]]] Ashenden, Peter J., __“The VHDL Cookbook”__, First Edition, Dept. Computer Science, University of Adelaide, South Australia, July 1990
+* [[[bib-batory-85,Batory 85]]] Batory,D.S. Kim,W., __“Modeling Concepts for VLSI CAD Objects”__, ACM Transactions on Database Systems, vol. 10, #3, 1985, pp. 322-346
+* [[[bib-beaty-94,Beaty 94]]] Beaty, Steven J., __“ParsesraP: Using one grammar to specify both input and output”__, Cray Computer Corporation, 1110 Bayfield Drive, Colorado Springs, Colorado 80906 URL=http://www.craycos.com/~beaty/ParsesraP/ParsesraP.html
+* [[[bib-biliris-89,Biliris 89]]] Biliris, A., __“Database support for evolving design objects”__, 26th ACM/IEEE Design Automation Conference, 1989
+* [[[bib-blackburn-85,Blackburn 85]]] Blackburn, Robert L.; Thomas. Donald E., __“Linking the Behavioral and Structural Domains of Representation in a Synthesis System”__, 22nd Design Automation Conference, 1985, pp. 374-380
+* [[[bib-brannon-94,Brannon 94]]] Brannon, Terrence Monroe, __“Survey of Quick Interpreted Languages”__, P.O. Box 5027, Bethlehem, PA 18015, tb06@122e.eecs.lehigh.edu, March 1994
+* [[[bib-bredenfeld-90,Bredenfeld 90]]] Bredenfeld, Ansgar, __“Definition of Modeling Concepts for a Procedural Interface between VLSI-Design Tools and a Common Database“__, Proc. of the 2nd International Workshop on Electronic Design Automation Frameworks, Charlotteville, USA, 1990
+* [[[bib-brielmann-92,Brielmann 92]]] Brielmann, Maria; Kupitz, Elisabeth, __“Representing the Hardware Design Process by a Common Data Schema”__, IEEE, 1992
+* [[[bib-brown-92,Brown 92]]] Brown,Alan W.; McDermid, John A, __“Learning from IPSE’s Mistakes“__, IEEE Software, March 1992, pp. 23-27
+* [[[bib-camposano-90,Camposano 90]]] Camposano, Raul, __“From Behavior to Structure: High-Level Synthesis”__, IEEE Design & Test of Computers, 1990, pp. 8-19
+* [[[bib-carlson-92,Carlson 92]]] Carlson, Steve; Lehbrink, Wolfgang; Rothenaicher, Peter, __“HDL-orientierte Synthese-Methodik (Teil III)“__ (in German), 1992, pp. 82-93
+* [[[bib-carmichael-92,Carmichael 92]]] Carmichael, Ian, H.; Cordy, James R., __“TXL - Tree Transformation Language; Syntax and Informal Semantics (Version 6.0)”__, Kingston, Canada K7L 3N6 - cordy@quis.queensu.ca, 1992
+* [[[bib-carter-91,Carter 91]]] Carter, Donald E.; Stilwell Baker, Barbara, __“Concurrent Engineering: The Production Development Environment for the 1990s”__, Addison-Wesley Publishing Corporation, 1991
+* [[[bib-casotto-90,Casotto 90]]] Casotto, Andrea; Newton, Richard A.; Sangiovanni-Vincentelli, Alberto, __“Design Management based on Traces“__, 27th Design Automation Conference, 1990
+* [[[bib-cfi-el-91,CFI-EL 91]]] CAD Framework Initiative, Extension Language Working Group; Timothy Barnes (ed.), __“Extension Language: Core Language Selection”__, Version 0.6, 1991
+* [[[bib-cfi-drpi-93,CFI-DRPI 93]]] CAD Framework Initiative, Design Representation Technical Subcommittee, __“Electrical Connectivity Programming Interface”__, Version 1.0, 1993
+* [[[bib-cfi-eii-95,CFI-EII 95]]] Teets, John, __“EDA Industry Standards for Design and Test Roadmap“__, in preparation of the EDA Industry Roadmap Workshop Review, CFI EII, TLM, DMM working groups, August 1995 URL=ftp://cfi.org/public/Cfi/Development/Roadmap/EII/roadmap-eii-report.ps
+* [[[bib-cfi-far-93,CFI-FAR 93]]] CFI Architecture Working Group, __“Framework Architecture Reference”__, Version 1.2, #91, 1993
+* [[[bib-cfi-tes-93,CFI-TES 93]]] CAD Framework Initiative, Design Methodology Management Subcommittee, __“Tool Encapsulation Specification”__, Version 1.0, 1993
+* [[[bib-cfi-ugo-90,CFI-UGO 90]]] CFI Architecture, __“CAD Framework - Users, Goals, and Objectives”__, Version 0.92, 1990
+* [[[bib-chen-76,Chen 76]]] Chen, Peter Pin-Shan, __“The Entity-Relationship Model - Towards a Unified View of Data”__, ACM Transactions on Database Systems, vol. 1, #1, March 1976, pp. 9-36
+* [[[bib-demicheli-92,DeMicheli 92]]] DeMicheli, Giovanni; Ku, David; Mailbot, Frederic; Truong, Thomas, __“The Olympus Synthesis System for Digital Design”__, Stanford, CA 94305
+* [[[bib-deman-92,DeMan 92]]] De Man, Hugo, __“Design Technology Research for the Nineties: More of the Same?“__, Proc. EURO-DAC92, pp. 592-596, September 1992
+* [[[bib-dimes-93a,Dimes 93a]]] Dimes Design and Test Centre, __“DDL and DML for Meta Data Management in the Nelsis CAD   Framework”__, Delft University of Technology, P.O. Box 5053, 2600 GB Delft, The Netherlands, December 1993
+* [[[bib-dimes-93b,Dimes 93b]]] Dimes Design and Test Centre, __“The Nelsis CAD Framework: DMI Application Notes”__, Delft University of Technology, P.O. Box 5053, 2600 GB Delft, The Netherlands, December 1993
+* [[[bib-ecma-91,ECMA 91]]] National Institute for Standards and Technology, __“Reference Model for Frameworks of Software Engineering Environments“__, Draft Version 1.5, Gaithersburg, Md., 1991
+* [[[bib-edif-88,EDIF 88]]] Electronic Industries Association, Engineering Dept., Paul Stanford (ed.), __“Electronic Design Interchange Format”__, Version 2 0 0, ANSI/EIA-548-1988, Recommended Standard EIA-548, March 14, 1988
+* [[[bib-fiduk-90,Fiduk 90]]] Fiduk, Kenneth W.; Kleinfeldt, Sally; Kosarchyn, Marta; Perez, Eileen B., __“Design Methodology Management - A CAD Framework Initiative Perspective”__, 27th Design Automation Conference, 1990, pp. 278-282
+* [[[bib-gajski-83,Gajski 83]]] Gajski,D., Kuhn,R.H., __“Guest Editors Introduction - New VLSI Tools”__, IEEE Computer, vol. 16, #2, 1983, pp. 14-17
+* [[[bib-gedye-88,Gedye 88]]] Gedye, David; Katz, Randy, __“Browsing the Chip Design Database”__, 25th IEEE/ACM Design Automation Conference, 1988, pp. 269-275
+* [[[bib-graver-93,Graver 93]]] Graver, Justin O., __“T-gen User’s Guide”__, Computer & Information Sciences, U of Florida, E301 CSE, Gainesville, FL 3611, 1993
+* [[[bib-greiner-93,Greiner 93]]] Greiner, Alain; Pecheux, Francois, __“ALLIANCE: A complete Set of CAD Tools for teaching VLSI Design”__, Universite PARIS VI, 4, Place Jussieu 75252 PARIS Cedex 05 FRANCE, 1992
+* [[[bib-grosch-91,Grosch 91]]] Grosch, Josef, __“Puma - A Generator for the Transformation of Attributed Trees”__, technical report 26, Gesellschaft für Mathematik und Datenverarbeitung mbH; Universität Karlsruhe, November 1991
+* [[[bib-vdhamer-94,vdHamer 94]]] van den Hamer, Peter; Lepoeter, Kees, __“Managing Design Data - The 5 dimensions of CAD Frameworks, Configuration management and Product Data management”__, Philips Research, Eindhoven, NL, doc# JCF/Philips/001-1/7-Nov-94, November 1994
+* [[[bib-harrison86,Harrison86]]] Harrison,D.S.; Moore,P.; Spicklmier,R.L.; Newton,A.R.__, “Data Management and Graphics Editing in the Berkeley Design Environment”__, ICCAD 86, Electronics Research Laboratory, University of California at Berkeley, 1986, pp. 24-27
+* [[[bib-heusinger-93,Heusinger 93]]] Heusinger, Peter; Ronge, Karlheinz; Stock, Gerhard, __“Moderne Entwurfswerkzeuge - aber bloß welche (1. Teil)”__ (in German) #2, 1993, pp. 86-111
+* [[[bib-hunzelmann-92,Hunzelmann 92]]] Hunzelmann, Uwe; Wilkes, Wolfgang; Schlageter, G., __“Design of a Tool Interface for Integrated CAD-Environments”__, European Design Automation Conference 1992, pp. 558-563
+* [[[bib-huwel-92,Hüwel 92]]] Hüwel, Gerd, __“Top-Down-Design mit VHDL”__ (in German), Elektronik, pp. 84-88, Franzis-Verlag, München, September 1992
+* [[[bib-jcf-94a,JCF 94a]]] Krannich, Günter (ed.), __“JESSI-COMMON-FRAMEWORK V4.0: Global View - Detailed Functional Specification”__, SP2 Draft Version, JCF/SNI/???-01/29-Apr-94
+* [[[bib-jcf-94b,JCF 94b]]] Task force __“Cadence Integration”__, JCF internal report, 1994
+* [[[bib-johnson-78,Johnson 78]]] Johnson, Stephen C., __“Yacc: Yet Another Compiler-Compiler“__, Bell Laboratories, Murray Hill, NJ 07974, 1978
+* [[[bib-kathofer-90,Kathöfer 90]]] Kathöfer, Th.; Fox, W.; Nolte, D.; Pielsticker, K.; Quester, R.; Rupprecht, F.; Schrewe, M., __“A Database Interface for Phased Tool Integration”__, EuroDAC’90, pp. 24-29
+* [[[bib-kathofer-92,Kathöfer 92]]] Kathöfer, Thomas; Miller, Julia, __“The JESSI-COMMON-FRAMEWORK Project - Subproject Development”__, in: T. Rhyne ed., Electronic Design Automation Frameworks, Elsevier Science Publishers B.V. (North-Holland), 1992
+* [[[bib-katz-86,Katz 86]]] Katz, Randy H.; Anwarrudin, M.; Chang, E., __“A Version Server for Computer-Aided Design Data“__, 23rd ACM/IEEE Design Automation Conference, 1986, pp. 27-33
+* [[[bib-katz-87,Katz 87]]] Katz, Randy; Bhateja, Rajiv; Chang, Ellis E-Li; Trijanto, Vony, Gedye, David, __“Design Version Management”__, IEEE Design and Test of Computers, vol. 4, #1, February 1987
+* [[[bib-kupitz-92,Kupitz 92]]] Kupitz, Elisabeth; Tacken, Jürgen, __“DECOR - Tightly Integrated Design Control and Observation”__, IEEE International Conference on Computer-Aided Design (ICCAD), Santa Clara, 1991, pp. 532-537
+* [[[bib-lesk-75,Lesk 75]]] Lesk, M. E., __“LEX - A Lexical Analyser Generator”__, Computing Science Technical Report 39, Bell Telephone Laboratories, Murray Hill, NJ, 1975
+* [[[bib-linux,Linux]]] NFS-Server implementation within the Linux operating system, URL=ftp://ftp.sunsite.edu/pub/linux
+* [[[bib-mclennan-92,McLennan 92]]] McLennan, Michael J., __“[incr Tcl] - Object-Oriented Programming in Tcl”__, AT&T Bell Laboratories, 1247 S. Cedar Crest Blvd, Allentown, PA 18103 URL=ftp://ftp.aud.alcatel.com/tcl/extensions/itcl-1.5.tar.gz
+* [[[bib-meersman-94,Meersman 94]]] Meersman, C., __“The VHDL Standard”__, European Space Agency Contract Report, E2S Software Engineering, Technologiepark 5, B-9052 Zwijnaarde URL=ftp://aixesa2.estec.esa.nl/pub/vhdl/VHDLReport.ps.Z.uue
+* [[[bib-mentor,Mentor]]] Mentor Graphics SupportNet URL=ftp://supportnet.mentorg.com/pub/mentortech/translators/utilities/
+* [[[bib-nfs,NFS]]] Nowicki, Bill, __“NFS: Network File System Protocol Specification”__, Request for Comments (RFC) 1094, Sun Microsystems, Inc., Mail Stop 1-40, 2550 Garcia Avenue, CA 94043, March 1989 URL=ftp://ftp.internic.net/rfc/rfc1094.txt
+* [[[bib-objectdesign-94,ObjectDesign 94]]] Object Design, Inc., __“ObjectStore Technical Overview__”, Release 3, March 1994 URL=ftp://ftp.odi.com/pub/docs/techsum.{framemaker,postscript}
+* [[[bib-omg-90,OMG 90]]] Soley, Richard Mark (ed.), __“Object Management Architecture Guide - 1.0”__, OMG TC Document 90.9.1, Object Management Group, Inc., 492 Old Connecticut Path, Framingham, MA 01701, 1990
+* [[[bib-ousterhout-90,Ousterhout 90]]] Ousterhout, John K., __“Tcl: An Embeddable Command Language”__, Proc. USENIX Winter Conference, 1990
+* [[[bib-ousterhout-91,Ousterhout 91]]] Ousterhout, John, __“An X11 Toolkit Based on the Tcl Language”__, Proc. USENIX Winter Conference, January 1991 URL=ftp://sprite.berkeley.edu/tcl/tkUsenix91.ps
+* [[[bib-ousterhout-94,Ousterhout 94]]] Ousterhout, John, __“Tcl and the Tk Toolkit”__, Addison-Wesley Publishing, ISBN: 0-201-63337-X, 1994
+* [[[bib-parikh-93,Parikh 93]]] Parikh, Sandip; Bushnell, Michael L.; Sienicki, Jim; Ganesh, Ramakrishnan, __“Distributed Computing, Automatic Design, and Error Recovery in the ULYSSES II Framework”__, European Design and Test Conference (EDAC), Paris, 1994, pp. 610-617
+* [[[bib-parr-94,Parr 94]]] Parr, Terence John, __“An Overview of SORCERER: A Simple Tree-Parser Generator”__, technical report, University of Minnesota, Army High Performance Computing Research Center, February 1994 URL=ftp://marvin.ecn.purdue.edu/pub/pccts/sorcerer
+* [[[bib-pergande-93,Pergande 93]]] Pergande, Michael, __“Inside STF”__, #FZI.055.0, Forschungszentrum Informatik, Haid-und-Neu-Str. 10-14, D-7500 Karlsruhe 1
+* [[[bib-schettler-94a,Schettler 94a]]] Schettler, Olav, __“Advanced Tool Encapsulation - Goals, Issues, and Technology”__, Poster and Demonstration, Workshop on Applied Framework Research, JCF Project, Karlsruhe, April 14-15, 1994
+* [[[bib-schettler-94b,Schettler 94b]]] Schettler, Olav; Heymann, Susanne, __“Towards Support for Design Description Languages in EDA Frameworks“__, IEEE International Conference on Computer-Aided Design (ICCAD), San Jose, 1994
+* [[[bib-silva-93,Silva 93]]] Silva, Mario J.; Katz, Randy H., __“Active Documentation: a New Interface for VLSI Design”__, 30th ACM/IEEE Design Automation Conference, 1993, pp. 654-660
+* [[[bib-smith-77,Smith 77]]] Smith, J.M. Smith, D.C.P., __“Database Abstractions: Aggregation and Generalization”__, ACM Transactions on Database Systems, vol. 2, #2, 1977, pp. 105-122
+* [[[bib-spiby-93,Spiby 93]]] Spiby, Phil (ed.), __“STEP Part 11: The EXPRESS Language Reference Manual”__, WG5, doc# 14, release draft, 29 April 1993
+* [[[bib-synopsys-92,Synopsys 92]]] __“VHDL - Brücke zwischen Systemanalyse und Siliziumdesign”__ (in German) Synopsys Produktübersicht, in: CADS, Jahrgang 5, Heft 6, September 1992, VP-Verlagsgesellschaft, Herrenberg, 1992
+* [[[bib-synopsys,Synopsys]]] __“Synopsys Online Documentation”__, Version 3.1, Synopsys, Inc. 700 East Middlefield Road, Mountain View, CA 94043-4033 USA
+* [[[bib-terbekke-92,terBekke 92]]] terBekke, Johan H., __“Semantic Data Modeling”__, Prentice Hall International (UK), 1992
+* [[[bib-terbekke-93,terBekke 93]]] terBekke, Johan H., __“Object Databases: structure and behaviour”__, TU Delft, report 93-58, Delft, 1993
+* [[[bib-thomas-83,Thomas 83]]] Thomas, Donald, E; Hitchcock III, Charles Y.; Kowalski, Thaddeus J.; Rajan, Jayanth V.; Walker, Robert A., __“Automatic Data Path Synthesis”__, Computer vol. 16, #12, December 1983, pp. 59-70
+* [[[bib-thomas-92,Thomas 92]]] Thomas, I.; Nejmeh,B.A. (HP, Innovative Software Practices), __“Definitions of Tools Integration for Environments”__, 1992, pp. 29-35
+* [[[bib-tooltalk,ToolTalk]]] __“Solaris OpenWindows - ToolTalk in Electronic Design Automation, A White Paper”__, Sun Microsystems, Inc., 2550 Carcia Avenue, Mountain View, CA 94043-1100 USA URL=ftp://sunsite.unc.edu/pub/sun-info/white-papers/ToolTalk/ToolTalk_EDA.ps.Z
+* [[[bib-udell-94,Udell 94]]] Udell, Jon, __“Componentware”__, Byte, 19 (5), pp. 46-56, May 1994
+* [[[bib-wagner-91,Wagner 91]]] Wagner, F.R.; Viegas de Lima, A.H., __“Design Version Management in the GARDEN Framework”__, 28th ACM/IEEE Design Automation Conference, 1991, pp. 705-711
+* [[[bib-walker-85,Walker 85]]] Walker, Robert A.; Thomas, Donald E, __“A Model of Design Representation and Synthesis”__, 22th ACM/IEEE Design Automation Conference, 1985, pp. 453-459
+* [[[bib-walker-91,Walker 91]]] Walker, Robert A.; Camposano, Raul, __“Introduction to High-Level Synthesis”__, Kluwer Academic Publishers, Boston/Dordrecht/London, 1991, pp. 3-34
+* [[[bib-wasserman-90,Wasserman 90]]] Wasserman, Anthony I., __“Tool Integration in Software Engineering Environments”__, in Software Engineering Environments: Proc. Int’l Workshop on Environments, F. Long, ed., Springer-Verlag, Berlin, 1990, pp. 137-149
+* [[[bib-vanderwolf-90,vanderWolf 90]]] van der Wolf, Pieter, __“On the Architecture of a CAD Framework: The Nelsis Approach“__, EuroDAC’90, pp. 29-33
+* [[[bib-vanderwolf-93,vanderWolf 93]]] van der Wolf, Pieter, __“Architecture of an Open and Efficient CAD Framework”__, PhD Thesis Technische Universiteit Delft, June 1993
+* [[[bib-vhdl-87,VHDL 87]]] Institute of Electrical and Electronic Engineers, __“IEEE Standard VHDL - Language Reference Manual”__, IEEE Std 1076-1987, March 31, 1988

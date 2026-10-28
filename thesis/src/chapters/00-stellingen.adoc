@@ -1,0 +1,38 @@
+[preface]
+= Stellingen
+
+[.text-center]
+behorende bij het proefschrift +
+__Encapsulating Tools into an EDA Framework__ +
+door Olav Schettler
+
+. Geïntegreerde Ontwerpomgevingen moeten zich evolutionair in de werksomgeving van designers invoegen. Hierbij zouden bij iedere stap de onmiddellijke voordelen de extra moeite rechtvaardigen.
+
+. Precieze informatiemodellering en het vroegtijdig gebruik van prototypen zijn noodzakelijk voor de succesvolle vervaardiging van complexe, voordelige, en uitbreidbare informatiesystemen van iedere aard.
+
+. Het gebruik van nieuwste en complexe technologie is voor het succes van een produkt minder belangrijk dan de continue dialoog met de toekomstige gebruiker, duidelijke en eenvoudige concepten en een efficiënte realisatie.
+
+. Het openleggen van interfaces en het maken van referentie implementaties voor uitbreidingen door de gebruikers is succesvoller dan de verkoop van een “black box”.
+
+. Complexe software systemen zullen primitieve operaties gereedhouden, die de gebruiker aan de hand van zijn behoefden flexibel kan samenstellen.
+
+. “Ondergrondse projecten” zijn vaak een beslissende motor van vooruitgang.
+
+'''
+
+[.text-center]
+behorende bij het proefschrift +
+__Encapsulating Tools into an EDA Framework__ +
+door Olav Schettler
+
+. Integrated design environments have to be applicable by designers in an evolutionary manner. With each step, the immediate improvement in productivity should compensate for the additional effort.
+
+. Precise information modelling and the early creation of working software prototypes are essential for the construction of complex, useful, and extensible information systems of any kind.
+
+. The use of complex and latest technology is less decisive for the success of a product than the continuous dialogue with prospective users, clean and simple concepts and an efficient implementation.
+
+. The publication of interfaces and the creation of reference implementations for user extensions promise more success than the selling of a “black box”.
+
+. Complex software systems should provide primitive operations which can be flexibly combined by users according to their requirements.
+
+. “Underground projects” often prove as important procreator of progress.

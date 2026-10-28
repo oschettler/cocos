@@ -1,0 +1,128 @@
+[glossary]
+= Acronyms
+
+ASCII::
+  American standard code for information interchange
+
+ALU::
+  Arithmetic/logic unit
+
+CAD::
+  Computer aided design
+
+CPU::
+  Central processing unit
+
+CFI::
+  CAD Framework Initiative
+
+CMU::
+  Carnegie Mellon University
+
+DBMS::
+  Database management system
+
+DBM::
+  Database management
+
+DDE::
+  Dynamic data exchange
+
+DDM::
+  Design data management
+
+DIM::
+  Design information management
+
+DMI::
+  Design management interface
+
+DML::
+  Data manipulation language
+
+DO::
+  Design object
+
+EBNF::
+  Extended Backus-Naur Form
+
+ECAD::
+  Computer-aided design for electronics
+
+EDA::
+  Electronic design automation
+
+ER::
+  Entity-Relationship model
+
+FAR::
+  Framework architecture reference
+
+Fortytwo::
+  The Answer to the Great Question of Life, the Universe and Everything
+
+IC::
+  Integrated circuit
+
+ID::
+  Identifier
+
+IPC::
+  Inter-process communication
+
+IPSE::
+  Integrated project support environmen
+
+ISO::
+  International Standards Organization
+
+ITC::
+  Inter-tool communication
+
+HDL::
+  Hardware description language
+
+JCF::
+  JESSI Common Framework
+
+JESSI::
+  Joint European Submicron Silicon Initiative
+
+MS::
+  Microsoft
+
+MUX::
+  Multiplexer
+
+NFS::
+  Network file system
+
+OLE::
+  Object linking and embedding
+
+ONC/RPC::
+  Open network connect / remote procedure calls
+
+OODBMS::
+  Object-oriented database management system
+
+OSF/DCE::
+  Open software foundation / distributed computing environment
+
+PI::
+  Programming interface
+
+PTB::
+  Parse-tree builder
+
+STF::
+  Structurer and flattener
+
+TCP/IP::
+  Transmission control protocol / internet protocol
+
+Tcl::
+  Tool command language
+
+Txl::
+  Tree transformation language

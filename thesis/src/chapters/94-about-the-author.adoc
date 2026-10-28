@@ -1,0 +1,11 @@
+= About the author
+
+Olav Schettler was born in Hamburg on July 19, 1963 as son of the accountant Magrit Krämer and Heinrich Krämer, a school teacher for fine arts. He went through basic education in Wanne-Eickel, a town in the German Ruhr Area. After receiving the Abitur, he worked for three months in Blackburn, England, in the maintenance department of Dextralog, a company specialized in providing microprocessor based supervisory equipment for the shop floors of the weaving industry.
+
+In 1982 and 1983, the author did military service on a ship of the German navy at Kiel. Upon discharge in 1983, he began studies of computer science at Dortmund University, which he finished with a degree as Diplom Informatiker in 1989, specializing in CAD for microelectronics. During the study, he also worked in the projects DACAPO-III and Desire at Lehrstuhl 1 of the Computer Science Department at Dortmund University.
+
+In 1990, the author and his wife Birgit moved to Bonn where he joined the framework technology group headed by Mrs. E. Abel at GMD, Sankt Augustin. His tasks there included participation in the German DASSY project and the evaluation of the Jessi Common Framework (JCF). In 1991 and 1992, he participated in two integration projects conducted together with the CAD Framework Initiative, Austin, Texas.
+
+In early 1993, the author left the evaluation subproject of JCF and joined the applied research subproject. During the summer, he spent three months in the Information Systems Group of faculty TWI at TU Delft, headed by Prof. W. Gerhardt. During this time, due to contacts with the Nelsis group at DIMES, some of the ideas underlying the work described in this thesis could be formulated. Back at GMD, he continued to work on the topic of design tool encapsulation. A first working software prototype of the new encapsulation framework service could be demonstrated at the Applied Research Workshop in Karlsruhe in April, 1994.
+
+In October 1994, the author left GMD to work for Assem Audi + Co GmbH, a Meckenheim based, medium-sized software house successful in providing standard EDI solutions for financial institutions. Since February 1996 he works for METROnet, a premium provider of online services in Germany.

@@ -1,0 +1,25 @@
+= Acknowledgements
+
+I wish to thank the following persons for contributing to this work:
+
+My mentor, Prof. Dr. W. Gerhardt for approving this research topic, for copious technical discussions and for helping in the more administrative aspects of a promotion.
+
+The members of the commission: Prof. dr. ir. P. Dewilde, Prof. dr. H. Koppelaar, Prof. dr. ir. F. Rammig, Dr. ir. R. van Leuken, and Dr. ir. P. van den Hamer for reading and correcting the concept version of this thesis.
+
+My manager at GMD, Mrs. E. Abel, for making this research possible.
+
+Dr. M. Sim, for initiating the contact with Prof. Gerhardt and lively discussing early ideas about the subject of tool encapsulation.
+
+Dr. P. van der Wolf for discussing alternative approaches to extending the Nelsis schema and for giving me insight into the Nelsis messaging interface.
+
+My colleagues at GMD, in particular A. Bredenfeld, R. Czech, S. Heymann, and A. Rockenberg for reading and discussing various versions of this thesis.
+
+{empty}S. Heymann, for continuously encouraging me that tool encapsulation is in fact important.
+
+The system administrators at the SET institute of GMD, R. Czech and B. Schwarz, for maintaining such a superb work environment.
+
+Dr. D. Marquardt, for proof-reading my English.
+
+My employer, A. Audi, for tolerating my continuous work on the topic of this thesis, yet unrelated to his business.
+
+My wife, Birgit, for her patience.

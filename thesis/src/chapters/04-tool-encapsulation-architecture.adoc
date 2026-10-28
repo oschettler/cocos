@@ -1,0 +1,368 @@
+[#ch-4]
+= 4. Tool encapsulation architecture
+
+== 4.1 Overview
+
+Principles 1 (“granularity of design objects”) and 2 (“design representation in files”) presented in Section 2.10 clearly deviate from the classical assumption that granularities of design data storage, browsing, and transport are equal. In this scenario, design data are either handled at a file-based granularity or at a value-based granularity. On the other hand, we want to achieve granularities as follows:
+
+[#table-8]
+.Table 8. Granularities for storage, transport, processing and browsing of design data
+image::table-08.png["Table 8. Granularities for storage, transport, processing and browsing of design data"]
+
+While gap (2) is bridged by the input/output processors of design tools themselves, our encapsulation mechanism has to consider gap (1). As outlined in the Introduction, this encompasses
+
+* the analysis of design files and storage of extracted structural information in the design information management component of the framework, and
+
+* the construction of design files from structural information and design representation managed by the framework.
+
+The structural information is managed separately from the design representation information which is stored as text chunks attached to design objects. On export, these text chunks have to be recombined as required by the current design step and design configuration to be fed into the design tool.
+
+For control integration, our minimum requirement is that we have to be able to communicate an initial request for some activity from the framework to a design tool and to transfer notifications of activities on design objects between framework and tool. Despite this low level of control integration without intermediate requests being passed to the tool, there can be no general solution due to a lack of agreed standards in the area of tool control.
+
+Even less can be achieved for presentation integration. As tools generally do not provide access to their internal object structures, it is by and large not feasible to combine browsers that work on framework data structures as well as on tool data structures. Integration in this area has to be achieved on a case-by-case basis. At least, due to the possibility to manage meaningful relationships between design objects in the design information management (DIM) component, useful browsers can be implemented on top of it.
+
+Principle 3 of Section 2.10 prescribes that design tools be encapsulated into the framework. Yet, with purely file-based storage and transport, writing the appropriate tool wrappers can be quite lengthy and error prone due to the lack of standard behaviour on the side of design tools. The amount of work would simply be overwhelming if we attempted to bridge the gap between object-based storage and file-based transport in an equally ad-hoc manner. A new framework service is called for. This service replaces the UNIX shell conventionally used for programming wrappers for encapsulated tools. By looking again at the execution protocols introduced in Section 2.8, we conclude that such a service must be able to perform the following tasks:
+
+. Determine affected design objects from tool arguments
+
+. Elaborate dynamic version bindings
+
+. Map between physical design files and text chunks attached to design objects in the design information manager
+
+. Check in/out design objects
+
+. Establish an execution context (file system directories, environment variables, global libraries, start-up files, resource files)
+
+. Start tool
+
+. Maintain message connection with activity in tool
+
+. Scrutinize tool execution
+
+== 4.2 A new framework service
+
+We assume that tight integration is too expensive to be feasible for a majority of design tools so that in many cases only encapsulation will be attempted. We assist design tool encapsulation by an architecture that directly supports the tasks addressed by an environment builder with appropriate services. As a first step towards such an architecture, we refine the CFI reference architecture (cf. Figure 3 on page 15) as shown in Figure 7.
+
+In this refined architecture, an encapsulated tool is augmented by a set of tool-specific adaptors. While the tool is not aware of its encapsulation into a framework, these adaptors connect to the public interfaces offered by the framework services in much the same way as tools that are directly integrated with these framework services would. From the framework point of view, an augmented tool behaves just like a tightly integrated tool. As suggested in this architecture, tool adaptors are considered tool specific and not subject to direct framework support. Thus, ad-hoc techniques prosper, giving little room to the reuse of adaptor code. Our approach is to consider the adaptors needed for tool encapsulation as additional framework services. Code can be shared among tools with similar adaptor requirements. For example, all tools that interface to the design description language VHDL can reuse the same file processing adaptors. Encapsulated simulators can share the same inter-process link to a text editor that displays the source line currently executed. We conclude that adaptors for encapsulated tools should be part of the framework (Figure 8). While Figure 8 identifies the tasks addressed by the new tool encapsulation service, we will introduce a detailed component architecture in the next section.
+
+[#figure-7]
+.Figure 7. Service view of the CFI reference architecture. Also shown is an encapsulated design tool with its tool wrapper that performs file import and export and some other services.
+image::figure-07.png["Figure 7. Service view of the CFI reference architecture. Also shown is an encapsulated design tool with its tool wrapper that performs file import and export and some other services."]
+
+== 4.3 Component architecture
+
+=== 4.3.1 Language selection
+
+The new encapsulation service is built as a language driven, programmable engine. This architecture provides the required flexibility to cope with widely different encapsulation tasks. At the heart of this engine is an interpreter of the Tool Command Language __Tcl__ [<<bib-ousterhout-91,Ousterhout 91>>]. The main reason to select Tcl over CFI’s choice __Scheme__ ([<<bib-cfi-el-91,CFI-EL 91>>]) is its modelessness:
+
+[#figure-8]
+.Figure 8. Service view of the framework, extended with tool encapsulation service
+image::figure-08.png["Figure 8. Service view of the framework, extended with tool encapsulation service"]
+
+[quote]
+____
+__“Tcl does not enforce any particular programming paradigm such as functional, logic, or object-oriented.” [<<bib-brannon-94,Brannon 94>>], p. 12__
+____
+
+The language is not to replace the framework’s extension language but to supplement it with a language that is more familiar to tool integrators already being exposed to UNIX shell programming. Tcl was chosen over its competitors for the following reasons:footnote:[Despite this list of good arguments in favour of Tcl, our new encapsulation framework service could have been based on Scheme, with some more effort needed for the implementation and adaptation to a lisp-like language for the tool encapsulator.]
+
+* The language syntax is close enough to UNIX shell languages so that tool integrators, familiar with writing shell wrappers, will quickly adapt to the new language.
+
+* It is interpreted, so tool integrators and even designers can readily configure the design environment. This is especially useful when encapsulating new design tools or extending the granularity at which design data is managed by the design management system. Not least, it provides an easy-to-use environment for rapid prototyping of new design management tasks.
+
+* It has but one data type, i.e. character strings. Experience shows that what looks like a serious flaw both for script writers and from the standpoint of efficiency, hardly ever is a restriction. However, it dramatically simplifies the interface to the language from “C” as well as the language itself. When more complex types are needed, time-critical parts of an encapsulation wrapper can always be written in “C”. The “C” code is demand-loaded into the engine and becomes available as new Tcl commands. From Tcl scripts there is no visible difference except for improved execution speed.
+
+* It has a complete language kernel with variables, lists, arrays, procedures, as well as string and file handling capabilities. An object-oriented extension is available to help structuring large applications.
+
+* It is designed to be embedded in applications. It has an orthogonal, well designed and documented procedural interface that makes it easy to define new commands, access variables and other state information in an interpreter.
+
+* It is easily extendible. A single procedure call in “C” is required to register a new command with an interpreter.
+
+* It is integrated with a powerful and easy-to-use, Motif compliant toolkit for the X11 Window System as well as for Microsoft Windows, so creating execution protocols which require fancy user interaction is possible not depending on a single platform without too much effort. The key features of this toolkit are a constraint driven geometry management and useful default values for all widget parameters so only the really necessary values have to be given.
+
+* A versatile extension __expect__ exists that allows to control a design tool via its input/output.
+
+* Extensions exist which allow to easily use mechanisms for inter-process communication (IPC) such as sockets, remote procedure calls, or ToolTalk [<<bib-tooltalk,ToolTalk>>].
+
+=== 4.3.2 The Tool Command Language
+
+For the purposes of this thesis we will explain only that part of Tcl’s syntax and semantics that is necessary to understand the Tcl code examples given in the sequel. For a more thorough introduction to Tcl and the Tk toolkit the reader is referred to [<<bib-ousterhout-94,Ousterhout 94>>]. A Tcl command consists of a command name and a list of command arguments, separated by white space. Newline characters or semicolons are used as command separators. Each Tcl command returns a string result and a code signalling success or failure.
+
+Four additional syntactic constructs give the language a Lisp-like character:
+
+* Curly braces act as nestable quote characters used to group complex arguments.
+
+* Square brackets are used to invoke command substitution.
+
+* Dollar signs are used for variable substitution.
+
+* Backslashes may be used to insert special characters into arguments.
+
+There is only one data type in Tcl: __Strings__. ASCII strings are used for commands, command arguments, results returned by commands, and variable values. Some commands expect one or more of their arguments to have one of the special forms of string: list, expression, or command. What makes Tcl extremely usable in our context is that it is easy to integrate into applications. The interpreter consists of a small library of “C” functions used to invoke Tcl commands, to bind “C” functions defined in the application to new Tcl commands, and to manipulate the values of Tcl variables (Figure 9).
+
+[#figure-9]
+.Figure 9. Structure of an application that uses a Tcl interpreter [<<bib-ousterhout-90,Ousterhout 90>>].
+image::figure-09.png["Figure 9. Structure of an application that uses a Tcl interpreter [Ousterhout 90]."]
+
+We have extended the interpreter with new commands to fit it to its new task as execution protocol engine. Key to the extension is a module we added to make compiled object-oriented classes, written in “C” or “C++”, accessible from Tcl scripts. Objects can thus be created, manipulated and deleted. The public features of compiled classes have to be registered to the Tcl interpreter. This is achieved either by invoking a schema programming interface or by feeding the interpreter a schema via extended Tcl scripts. The wrapper facility interfaces to objects through a small set of well-defined procedures which have to be implemented for each public member of a class. We have implemented a generator that wraps the more regular cases of public data members and member functions, constructors, and destructors of “C++” classes.
+
+It is desirable to load the parsers for particular design description language into the encapsulation engine on demand. Thus, support for new languages can be added or existing modules replaced when requirements change. We have therefore added a facility that is able to load a module with compiled class definitions into a running encapsulation engine. Demand loading can be triggered while loading a schema for a compiled class into the Tcl interpreter.
+
+Other than the generic modules for the wrapping of compiled classes and for demand loading, the encapsulation engine is equipped with modules more specific to the task of tool encapsulation (cf. Figure 10):
+
+* __Language independent parse tree and symbol table.__ This module contains classes to construct and manipulate syntax trees and symbol tables in-core. A corresponding schema is fed to the encapsulation engine through the Tcl interpreter to wrap these classes and make them accessible from execution protocols.
+
+* __The mapping between DIM Application Programming Interface (API) and the base framework API__ is realized as a Tcl script and is loaded into the encapsulation engine at start-up time.
+
+[#figure-10]
+.Figure 10. Component architecture of the encapsulation service (services in Figure 8 are shaded)
+image::figure-10.png["Figure 10. Component architecture of the encapsulation service (services in Figure 8 are shaded)"]
+
+* __File import and export.__ Whenever a new language needs to be supported, a new language parser module is generated from a specification and dynamically loaded into the engine. In addition, reading out information from the parse tree and storing it in the DIM system on import is performed in a Tcl script that is specific to a design description language. Export can completely rely on the information stored in DIM and is therefore carried out by standard methods, invariant to design language and tool changes.
+
+* __Execution protocols.__ Assuming that language parsers for the supported design description languages exist, the tool integrator is mostly concerned with writing execution protocols for the design tools to be encapsulated. Execution protocols handle all the details of preparing a tool run, starting and controlling the tool, and finally cleaning up and evaluating the results.
+
+== 4.4 Wrapping compiled “C” and “C++” objects
+
+The execution protocol engine needs to make a number of compiled modules accessible to the tool integrator. These include the procedural interface to the underlying DIM component, the scanner and parser for design description languages generated by scanner and parser generator tools, and the implementation of parse trees. Other modules, e.g. to support designer interaction, are conceivable. Although these modules may not be implemented in an object-oriented language like “C++”, the object-oriented paradigm is well accepted and so even pure “C” implementations offer opaque handles as object identifiers. We have therefore chosen to uniformly wrap compiled modules with object-oriented classes, regardless of whether the underlying implementation is fully object-oriented or only object-based. A basic requirement for the wrapping mechanism was that it should blend nicely with the object-oriented extension __iTcl__ [<<bib-mclennan-92,McLennan 92>>] we have adopted for our extended Tcl interpreter.
+
+=== 4.4.1 Schema representation
+
+The challenge for the wrapping mechanism is to map between object identifiers in the compiled module and strings in the extended Tcl interpreter. As objects may be created both from compiled code and from execution protocols, the strings representing object identifiers need to be dynamically created whenever a new object is encountered. Figure 11 shows the information model we use to manage the schema of a compiled module. As it is used to represent schema information, it can be regarded as a meta schema for compiled modules.
+
+[#figure-11]
+.Figure 11. Schema for the object wrapping module. The name attributes of __Type__, __Procedure__, and __Variable__ are inherited from a common supertype __Named__.
+image::figure-11.png["Figure 11. Schema for the object wrapping module. The name attributes of Type, Procedure, and Variable are inherited from a common supertype Named."]
+
+Every compiled object we want to handle from an execution protocol is associated with an object of type __WrapperObject__. A __WrapperObject__ has a unique __Handle__ and identifies its associated compiled object. __Identifiers__ can be in-core memory addresses for “C” or “C++” objects, or database identifiers for objects residing in an (object-oriented) databasefootnote:[The types __Handle__ and __Identifier__ are not depicted in the schema diagram because they have a one-to-one relationship with type __WrapperObject__.]. __WrapperObjects__ are typed, that is, they are associated with a __ClassType__ object.
+
+As subtype of type __Type__, __ClassTypes__ are named. In addition, they may have a number of data members (objects of type __Variable__) and member functions (objects of type __Procedure__). __ClassTypes__ may also be involved in multiple inheritance by maintaining a list of __ancestor-ClassTypes__.
+
+__Variables__ and __Procedures__ both have a __Name__ and (value- or return-) __Type__, which can be either a __ClassType__, __EnumerationType__, or one of the __PrimitiveTypes__ void, integer, boolean, float, or string.
+
+__WrapperObjects__ access data members and member functions of their associated wrapped objects via wrapper procedures written in “C”. Data members are wrapped by associating them with a pair of wrapper procedures for read and write access. The __set-Wrapper__ procedure may be omitted for read-only data members. Two different signatures are defined for these wrapper procedures:
+
+[listing,subs="+quotes,+attributes"]
+----
+**typedef** int ({asterisk}Enc{us}Wrapper)
+ (Enc{us}Info{asterisk} info, Enc{us}Identifier obj, Enc{us}Value& result,
+ int parmCnt, Enc{us}Variable parm[]);
+----
+
+Procedures of type __Enc_Wrapper__ are used to wrap ordinary member functions or give read or write access to a data member. An object identifier is required.
+
+[listing,subs="+quotes,+attributes"]
+----
+**typedef** int ({asterisk}Enc{us}StaticWrapper)
+ (Enc{us}Info{asterisk} info, Enc{us}Value& result, int parmCnt, Enc{us}Variable parm[]);
+----
+
+Procedures of type __Enc_StaticWrapper__ are used to wrap static member functions or constructors where no object identifier is needed as a parameter.
+
+Using a purely procedural interface to wrapped objects has the advantage that even objects implemented in “C” may be wrapped. Only some kind of opaque handle mechanism is necessary which is a common concept in both operating system libraries (e.g. FILE*), and design data management systems (e.g. CELL_HANDLE, STREAM_HANDLE in Nelsis).
+
+The implementation of this meta-schema facility provides a set of classes and member functions to easily define __Types__ and associate them with __Variables__ and __Procedures__. At run-time, each __ClassType__ object maintains its extent in a hash-table to efficiently map from handles to object identifiers. The reverse direction is also supported: Whenever a new object identifier is encountered, maybe as a result of a procedure call or as value of a data member, that has not yet been assigned a handle, a new object handle is generated consisting of the class name and a unique number.
+
+As the whole system is not persistent, object handles are only valid within a single session and are not suitable as object identifiers per se. It is, however, possible to override the standard handle generation procedure and use e.g. a persistent object id as handle. This is achieved by writing a new procedure
+
+[listing,subs="+quotes,+attributes"]
+----
+char{asterisk} genId (Enc{us}Type{asterisk} type, void{asterisk} obj);
+----
+
+and registering it with the schema programming interface. Thus, handles may be made valid between sessions or among different instances of the encapsulation service and can be used directly as object identifiers in inter-tool messaging.
+
+Now that we are able to describe types implemented in compiled modules, the next step is to be able to load such modules into a running execution protocol engine. New modules, e.g. for new or modified design description languages, can be added to the engine by the tool integrator on demand. No relinking of the engine is needed. The implementation relies on the UNIX library functions __dlopen__, __dlsym__, and __dlclose__ to implement this feature. The only requirement on the demand loaded module is that it must contain position independent code. This can be achieved with a compiler switch.
+
+Using a procedural interface to define a schema has little overhead but is complicated to use and difficult to maintain. We have therefore defined two new Tcl commands that allow to write schemas in Tcl. The commands translate the class definitions read from a schema definition file into procedure calls to the meta-schema facility. They also automate the demand-loading of compiled modules into the execution protocol engine. Here is the grammar for the schema definition language, using the syntax notation introduced in Section 3.2:
+
+[listing,subs="+quotes,+attributes"]
+----
+**rule** tcl{us}command {lbrace}
+  tcl{us}builtin{us}command
+ | “enc{us}enum” IDENTIFIER “{lbrace}“ **repeat** {lbrace} STRING{us}LITERAL } “}”
+ | “enc{us}class” IDENTIFIER **opt** {lbrace} module:IDENTIFIER }
+  “{lbrace}” **opt** {lbrace} “inherit” **repeat** {lbrace} class:IDENTIFIER } }
+     **list** {lbrace} class{us}member }
+  “}”
+}
+**rule** class{us}member {lbrace}
+  “constructor” c{us}proc
+ | “destructor” c{us}proc
+ | {lbrace} “method” | “proc” } type{us}designator IDENTIFIER
+  “{lbrace}” **list** {lbrace} variable } “}” c{us}proc
+ | “public” type{us}designator IDENTIFIER get:c{us}proc **opt** {lbrace} set:c{us}proc }
+}
+**rule** type{us}designator {lbrace}
+  “void” | “int” | “float” | “boolean” | “string” | type:IDENTIFIER
+}
+----
+
+What is most remarkable about this schema language is the handling of demand-loadable compiled modules as well as the use of “C” function names to associate procedures and data members with the appropriate wrapper functions. To automatically load a compiled module, a class definition may optionally name the location of this module in the UNIX file system. A table of already loaded modules is maintained so that a module is loaded only once. When the module name is omitted, the corresponding class definitions are assumed to be compiled into the engine. Naming “C” functions works in both cases. Whereas only fixed numbers of positional parameters are supported for ordinary methods, constructors and destructors are allowed to have arbitrary, named parameters. The schema programming interface allows both alternatives for either type of function.
+
+=== 4.4.2 Object use
+
+Once the engine has a description of the classes defined in a compiled module, objects can be created from classes that define a constructor. In the interpreter into which the schema has been read, each class defines a new Tcl command named after the class. New commands are also created for static member functions, named with class name and member name separated by “::”. The class commands are used to create new instances of the associated compiled objects with the following basic command syntax:
+
+[listing,subs="+quotes,+attributes,+macros"]
+----
+**rule** class{us}command {lbrace}
+  class:IDENTIFIER {lbrace} object:IDENTIFER | “{hash}auto” }
+  **list** {lbrace} named{us}parameter }
+ | class:IDENTIFIER “info” {lbrace} “inherit” | “heritage” }
+}
+**rule** named{us}parameter {lbrace}
+  “-” parameter:IDENTIFERfootnote:[no space is allowed between the dash “-” and the parameter:IDENTIFIER] typed{us}value
+}
+**rule** typed{us}value {lbrace}
+  INTEGER{us}LITERAL | FLOAT{us}LITERAL
+ | BOOLEAN{us}LITERAL | STRING{us}LITERAL
+ | enum:STRING{us}LITERAL | OBJECT{us}HANDLE }
+}
+----
+
+The result of executing a class command is a new object handle, either automatically generated or chosen by the programmer. In addition a new command is created in the Tcl interpreter that is used to invoke methods on the new object. A class command may fail if the underlying constructor function signals an error, e.g. because of conflicting lock requests. It is the responsibility of the wrapper function for the constructor to check the validity of any named parameters passed on the command line. A class command may also be used to retrieve the direct ancestors of the associated class from the schema data structure.
+
+The purpose of invoking a constructor through a class command is not always to create an entirely new object. As the execution protocol engine maintains no persistent memory in itself, a constructor call is always needed to pull an object from a compiled module into the realm of execution protocols. In these cases the named parameters allowed on the constructor command line may pass selection criteria like names to the constructor implementation. The check-out of a design object in Nelsis could be regarded as a typical example of this. The Nelsis DMI returns a CELL_HANDLE which is used as an object identifier in the wrapper module. The destruction of the wrapped object using the standard message __destroy__ on an object handle may then actually check in the design object. This application shows why destructors may have parameters in execution protocols, too. Nelsis requires a completion code to accompany the check-in operation.
+
+Object handles need not be created with class commands. They can either be returned from procedures or be referenced through a data member of a wrapped object. The object handles are created the first time the procedure is invoked or the data member is accessed. The object handle can be used as value wherever an object of that type is expected. In any case, its value is also the name of a new Tcl command that is used to invoke methods on the associated object:
+
+[listing,subs="+quotes,+attributes,+macros"]
+----
+**rule** object{us}command {lbrace}
+  object:IDENTIFIER “destroy” **list** {lbrace} named{us}parameter }
+ | object:IDENTIFIER **opt** {lbrace} ancestor:IDENTIFIER “::”footnote:[no space is allowed between the ancestor class name, the two colons “::”, and the method name] }
+  method:IDENTIFIER **list** {lbrace} positional{us}parameter }
+ | object:IDENTIFIER “config”
+  **repeat** {lbrace} “-” attribute:IDENTIFIER{asterisk} typed{us}value }
+ | object:IDENTIFIER “info”
+  {lbrace} “class” | “inherit” | “heritage” | “proc” | “method” | “public” }
+ | object:IDENTIFIER “isa” class:IDENTIFIER
+}
+**rule** positional{us}parameter {lbrace} typed{us}value }
+----
+
+Methods and data members are searched in the class of the object first and then, if not found, recursively upwards the inheritance hierarchy of the object class. A list of class names in exactly the sequence of method lookup can be retrieved by issuing the request __info heritage__. This default search can be overridden by prefixing a method name with the base class that defines the requested method. Data members can be set with the standard message __config__. A method with the name of the data member is automatically provided to read the value of a data member. Other standard messages exist to query the type data structures for certain information. The standard message __destroy__ invokes the destructor with optional parameters. A short example illustrates the use of class commands and the manipulation of objects:
+
+[listing,subs="+quotes,+attributes"]
+----
+/{asterisk} file: class.h {asterisk}/
+**struct** base;
+**struct** derived;
+**struct** base {lbrace}
+ int a;
+ char{asterisk} s;
+ base{asterisk} obj;
+ base(): a(0), s(0), obj(0) {lbrace} printf (“base (0)\n”); }
+ base (char{asterisk} s{us}): a(0), s(strdup(s{us})), obj(0)
+                       {lbrace} printf (“base (s=’%s’)\n”, s); }
+ int incr (int i) {lbrace} printf (“incr(%d)->%d\n”, i, a{plus}i);
+                         return a {plus}= i; }
+};
+**struct** derived: **public** base {lbrace}
+ int b;
+ char{asterisk} t;
+ derived(): b(0), t(0) {lbrace} printf (“derived (0)\n”); }
+ derived (char{asterisk} s{us}): b(0), t(0), derived (s{us})
+                       {lbrace} printf (“derived (s=’%s’)\n”, s); }
+};
+int add (base{asterisk} a, base{asterisk} b) {lbrace} return a->a {plus} b->a; }
+----
+
+[listing,subs="+quotes,+attributes"]
+----
+/{asterisk} file class.tcl {asterisk}/
+**enc{us}enum** blubber {lbrace} blubber waber glibber }
+**enc{us}class** base libclass.so.1.0 {lbrace}
+ **constructor** new{us}base
+ **destructor** del{us}base
+ **method** int incr {lbrace} {lbrace}int incr} } base{us}incr
+ **public** int a base{us}get{us}a base{us}set{us}a
+ **public** blubber soft base{us}get{us}a base{us}set{us}a
+ **public** string s base{us}get{us}s base{us}set{us}s
+ **public** base obj base{us}get{us}obj base{us}set{us}obj
+}
+**enc{us}class** derived libclass.so.1.0 {lbrace}
+ **inherit** base
+ **constructor** new{us}bar
+ **destructor** del{us}bar
+ **public** int b derived{us}get{us}b derived{us}set{us}b
+ **public** string t derived{us}get{us}t derived{us}set{us}t
+}
+**enc{us}class** ex libclass.so.1.0 {lbrace}
+ **proc** int add {lbrace} {lbrace}base a} {lbrace}base b} } ex{us}add
+}
+----
+
+Now we can create some objects:
+
+[listing,subs="+quotes,+attributes"]
+----
+% base b -s “aBase” -> base (s=”aBase”)
+% derived d -s “aDerived” -> base (s=”aDerived”)
+                          derived (s=”aDerived”)
+% b config -soft glibber; d config -a 40
+% ex::add b d -> 42
+----
+
+The last line shows the use of a static member function. Please note that enumeration values are quietly coerced into integers.footnote:[The result of this addition operation is of course purely coincidental and has no philosophical meaning whatsoever [<<bib-adams-79,Adams 79>>\].]
+
+=== 4.4.3 An example: The Nelsis DMI
+
+The following is an excerpt from a schema definition for the Nelsis DDM system:
+
+[listing,subs="+quotes,+attributes"]
+----
+**enc{us}enum** completionModeEnum {lbrace}quit complete}
+**enc{us}enum** openModeEnum {lbrace}read write update}
+**enc{us}enum** purposeEnum {lbrace}edit import derive export extract view}
+**enc{us}class** DesignObject {lbrace}}
+**enc{us}class** Library $DDMLib/schemas/libnelsis.so.4.3 {lbrace}
+ **constructor** new{us}Library
+ **destructor** del{us}Library
+ **method** string query {lbrace}{lbrace}string query}} Library{us}query
+ **method** DesignObject designObject {lbrace}
+     {lbrace}purposeEnum purpose} {lbrace}string name} {lbrace}string viewType}} \
+                                   Library{us}designObject
+ **...**
+}
+**enc{us}class** DesignObject $DDMLib/schemas/libnelsis.so.4.3 {lbrace}
+ **destructor** del{us}DesignObject
+ **public** Library lib DesignObject{us}getLib
+ **public** string mod{us}name DesignObject{us}getModName
+ **public** int v{us}number DesignObject{us}getVNumber
+ **public** string view{us}type DesignObject{us}getViewType
+ **public** string hierarchy DesignObject{us}getHierarchy \
+                                   DesignObject{us}setHierarchy
+ **...**
+}
+**enc{us}class** Nelsis $DDMLib/schemas/libnelsis.so.4.3 {lbrace}
+ **proc** void init {lbrace}{lbrace}string tool}} Nelsis{us}init
+ **proc** void quit {lbrace}} Nelsis{us}quit
+ **proc** void checkInAll {lbrace}} Nelsis{us}checkInAll
+ **...**
+}
+----
+
+Only some of the class members are shown here to demonstrate the use of the schema definition language. The data member __hierarchy__ of class DesignObject is worth noting. Nelsis allows to access hierarchical relationships through the use of streams. The two wrapper functions __DesignObject_getHierarchy__ and __DesignObject_setHierarchy__ map this stream interface to an interface to a pseudo data member __hierarchy__. Whenever there is read access to this data member, the corresponding stream is read and its contents is returned as value of this data member. On write access, the string passed as parameter to the __set__ procedure is written as new contents into the __hierarchy__ stream. The class __Nelsis__ collects functions that are not associated with any particular class. As such its member functions are static and do not pass an object identifier as parameter. A typical use of these classes in an execution protocol would look like this:
+
+[listing,subs="+quotes,+attributes"]
+----
+Nelsis::init browser{us}tools
+Library lib -path {tilde}/projects/DP32 -mode update
+browse “DP32”
+lib **destroy** -mode complete
+Nelsis::quit
+
+**proc** browse {lbrace}mod{us}name {lbrace}lv 0}} {lbrace}
+ **puts** “[incr lv]: mod{us}name”
+ **set** q [lib **query** “GET DesignObject
+     WHERE Module ITS Name == $mod{us}name AND
+                Module ITS ViewType == ’structure’"]
+ **if** {lbrace} [**llength** $q] == 1 } **return**
+ **set** do [**lindex** $q 1]
+ **foreach** h [$do hierarchy] {lbrace} browse $h $lv }
+}
+----
+
+This short Tcl program will open the Nelsis project “~/project/DP32” for update, and list the elements of the hierarchical composition of a __Module__ “DP32”. All the real work is done by the procedure browse, which prints the __Module__ name passed as parameter and then searches for a __DesignObject__ with __Module__ name “DP32” and __ViewType__ “structure” in the Nelsis database. The method __query__ of class __Library__ provides the interface to the Nelsis DML. It allows to pass queries as strings and returns query results as a Tcl list that are easily processed by Tcl commands. The first list element always contains the list of attributes requested, followed by a - possibly empty - list of results. The first __DesignObject__ found is extracted from the list. A loop then iterates over its children in the composition hierarchy returned as value from the pseudo data member __hierarchy__, calling itself recursively with the __Module__ name of that child.

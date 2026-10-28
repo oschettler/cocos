@@ -1,0 +1,116 @@
+= Encapsulating Tools into an EDA Framework
+Olav Schettler
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums!:
+:figure-caption!:
+:table-caption!:
+:icons: font
+:lang: en
+:encoding: utf-8
+:imagesdir: images
+:xrefstyle: short
+// EPUB-specific
+:ebook-format: epub3
+:front-cover-image: images/cover.jpg
+// Metadata
+:author: Olav Schettler
+:publisher: Universiteitsdrukkerij TU Delft
+:copyright: © Olav Schettler, 1995
+:revdate: 1995-09-13
+:description: Dissertation, Technische Universiteit Delft, 1995. How to integrate file-based design tools into a framework-based electronic design environment.
+:keywords: EDA, CAD framework, tool encapsulation, design information management, VHDL, parser generator, Tcl
+:uuid: urn:uuid:a6292190-5003-4893-b24d-7a976b871dc3
+// Characters used in code listings with [subs="+quotes,+attributes"]
+:us: _
+:hash: #
+:lbrace: {
+// Build number (set by the Makefile)
+ifndef::build-number[:build-number: 1]
+
+[colophon]
+== Title page
+
+[.text-center]
+**Encapsulating Tools into an EDA Framework**
+
+[.text-center]
+Proefschrift
+
+[.text-center]
+ter verkrijging van de graad van doctor +
+aan de Technische Universiteit Delft, +
+op gezag van de Rector Magnificus Prof.ir K.F. Wakker, +
+in het openbaar te verdedigen ten overstaan van een commissie +
+aangewezen door het College van Dekanen +
+op woensdag 13 september 1995 te 13.30 uur
+
+[.text-center]
+door
+
+[.text-center]
+__Olav Schettler__ +
+Diplom-Informatiker
+
+[.text-center]
+geboren te Hamburg, Duitsland
+
+'''
+
+Dit proefschrift is goedgekeurd door de promotor, Prof. Dr. W. Gerhardt
+
+Members of the promotion commission:
+
+Prof. Dr. W. Gerhardt (TU Delft, fac TWI) +
+Prof. dr. ir. P. Dewilde (TU Delft, fac Et) +
+Prof. dr. H. Koppelaar (TU Delft, fac TWI) +
+Prof. dr. ir. F. Rammig (CADLAB Paderborn) +
+Dr. ir. R. van Leuken (TU Delft, DIMES) +
+Dr. ir. P. van den Hamer (Philips Research, Eindhoven)
+
+Published and distributed by:
+
+Universiteitsdrukkerij TU Delft +
+Kanaalweg 2b +
+NL-2628 EB Delft +
+The Netherlands
+
+'''
+
+Also published as: Schettler, Olav, __Encapsulating tools into an EDA framework__, Oldenbourg, 1996, ISBN 3-486-23985-6.
+
+This EPUB edition was converted from the PDF of the dissertation; the FrameMaker sources are lost.
+The Samenvatting and Summary (pp. 177–180 of the printed edition) are not contained in the PDF.
+
+[.build]
+_EPUB build {build-number}_
+
+include::chapters/00-stellingen.adoc[leveloffset=+1]
+
+include::chapters/01-introduction.adoc[leveloffset=+1]
+
+include::chapters/02-design-tool-integration.adoc[leveloffset=+1]
+
+include::chapters/03-workmans-tools.adoc[leveloffset=+1]
+
+include::chapters/04-tool-encapsulation-architecture.adoc[leveloffset=+1]
+
+include::chapters/05-design-information-management.adoc[leveloffset=+1]
+
+include::chapters/06-processing-design-description-files.adoc[leveloffset=+1]
+
+include::chapters/07-case-study-design-system-for-high-level-synthesis.adoc[leveloffset=+1]
+
+include::chapters/08-conclusions.adoc[leveloffset=+1]
+
+include::chapters/90-references.adoc[leveloffset=+1]
+
+include::chapters/91-acronyms.adoc[leveloffset=+1]
+
+include::chapters/92-appendix.adoc[leveloffset=+1]
+
+include::chapters/93-acknowledgements.adoc[leveloffset=+1]
+
+include::chapters/94-about-the-author.adoc[leveloffset=+1]
+

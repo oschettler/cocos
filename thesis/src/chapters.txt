@@ -1,0 +1,13 @@
+01-introduction.adoc
+02-design-tool-integration.adoc
+03-workmans-tools.adoc
+04-tool-encapsulation-architecture.adoc
+05-design-information-management.adoc
+06-processing-design-description-files.adoc
+07-case-study-design-system-for-high-level-synthesis.adoc
+08-conclusions.adoc
+90-references.adoc
+91-acronyms.adoc
+92-appendix.adoc
+93-acknowledgements.adoc
+94-about-the-author.adoc
