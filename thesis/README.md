@@ -4,7 +4,6 @@ Olav Schettler, *Encapsulating Tools into an EDA Framework*. Proefschrift, Techn
 Also published as: Oldenbourg, 1996, ISBN 3-486-23985-6.
 
 The FrameMaker sources are lost. This project turns the PDF `thesis.pdf` into AsciiDoc and builds an EPUB 3 from it.
-The structure follows the build setup of *Systemic Relativism* (`../../Patrick_Dewilde_Systemic_Relativism`).
 
 ## Layout
 
