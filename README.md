@@ -38,7 +38,7 @@ encapsulation of EDA design tools is described:
 	ISBN 3-486-23985-6
 
 A somewhat outdated online version is available at
-http://encapsulate.tripod.com/
+https://web.archive.org/web/20240424090042/https://encapsulate.tripod.com/
 
 License
 =======

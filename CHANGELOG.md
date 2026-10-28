@@ -2,6 +2,10 @@
 
 ## 2026-10-28
 
+### Archived link to the online version
+
+The README now points to the web.archive.org copy of http://encapsulate.tripod.com/.
+
 ### EPUB edition of the thesis
 
 The FrameMaker sources are lost, so the thesis is converted from `thesis/thesis.pdf` via AsciiDoc to EPUB 3 (build setup as in *Systemic Relativism*).
